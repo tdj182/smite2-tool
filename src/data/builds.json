@@ -1,0 +1,129 @@
+{
+  "builds": [
+    {
+      "id": "generic-adc",
+      "name": "Generic ADC Build",
+      "role": "adc",
+      "description": "Standard ADC build focused on maximizing auto-attack damage through attack speed, attack power, and penetration. Strong early sustain with Death's Embrace, building into a powerful late-game boxing build.",
+      "itemIds": [
+        "deaths-embrace",
+        "lernaean-bow",
+        "dagger-of-frenzy",
+        "odysseus-bow",
+        "titans-bane",
+        "tyrfing",
+        "riptalon"
+      ],
+      "itemNotes": {
+        "deaths-embrace": "I just think its the best for most adcs",
+        "lernaean-bow": "Big strength and attack speed + a strong active off the rip",
+        "dagger-of-frenzy": "Now increase attack power (your auto's damage) and even more attack speed + another strong active for even more attack speed",
+        "odysseus-bow": "Big bump in attack speed with a solid passive for wave clear. Can save your ability while clearing wave even",
+        "titans-bane": "You need penetration by this point: must build in all adc builds",
+        "tyrfing": "Strength + attack power + attack speed + amazing boxing passive",
+        "riptalon": "Final bit of atk power + atk speed + sustain passive"
+      },
+      "tags": ["generic", "beginner-friendly", "auto-attack", "late-game"]
+    },
+    {
+      "id": "generic-mid",
+      "name": "Generic Mid Build",
+      "role": "mid",
+      "description": "Standard Mid build focused on magical power scaling and burst damage. Conduit Gem for early wave clear, Book of Thoth for massive stacked damage, finishing with penetration and the highest magical power items in the game.",
+      "itemIds": [
+        "conduit-gem",
+        "book-of-thoth",
+        "spear-of-desolation",
+        "chronos-pendant",
+        "obsidian-shard",
+        "rod-of-tahuti",
+        "soul-reaver"
+      ],
+      "itemNotes": {
+        "conduit-gem": "I like this for early clearing and hits pretty hard late game",
+        "book-of-thoth": "Big dmg when stacked",
+        "spear-of-desolation": "Huge power spike with good passive",
+        "chronos-pendant": "This is a flex slot. You go polynomicon, archmages gem, etc., but chronos is always a safe bet right now",
+        "obsidian-shard": "Pen time: must build in all mage builds",
+        "rod-of-tahuti": "Damage go boom: must build in all mage builds",
+        "soul-reaver": "Good damage + good passive + adds to your thoth damage"
+      },
+      "tags": ["generic", "beginner-friendly", "ability-damage", "burst"]
+    },
+    {
+      "id": "generic-jungle",
+      "name": "Generic Jungle Build",
+      "role": "jungle",
+      "description": "Standard Jungle build focused on ability damage, cooldown reduction, and penetration. Bumba's Hammer for jungle clear and power, building into high damage with penetration to assassinate targets.",
+      "itemIds": [
+        "bumbas-hammer",
+        "jotunns-revenge",
+        "oath-sworn-spear",
+        "tekko-kagi",
+        "titans-bane",
+        "heartseeker",
+        "the-crusher"
+      ],
+      "itemNotes": {
+        "bumbas-hammer": "Dagger is fine too. Read the passives",
+        "jotunns-revenge": "Strength + cooldown + good passive + good price",
+        "oath-sworn-spear": "Great power with amazing \"flat pen\" passive",
+        "tekko-kagi": "Great power + cooldown + zoomies passive - hydras is great here if you can use auto attack canceling. Ask me for help or look up a vid for this",
+        "titans-bane": "You need penetration by this point: must build in all jungle builds",
+        "heartseeker": "Damage go boom: must build in jungle build",
+        "the-crusher": "Strength + cooldown + extra dmg passive - can go blinking abyss here if you are confident in using your actives"
+      },
+      "tags": ["generic", "beginner-friendly", "ability-damage", "cooldown"]
+    },
+    {
+      "id": "generic-solo",
+      "name": "Generic Solo Build",
+      "role": "solo",
+      "description": "Balanced Solo build with sustain and protections. Works in most matchups. Bluestone for physical gods, building both magical and physical defense with sustain. Note: Build Breastplate of Valor before Genji's Guard if facing a physical solo laner.",
+      "itemIds": [
+        "bluestone-pendant",
+        "yogis-necklace",
+        "genjis-guard",
+        "breastplate-of-valor",
+        "dwarven-plate",
+        "spirit-robe",
+        "blinking-abyss"
+      ],
+      "itemNotes": {
+        "bluestone-pendant": "Strength + some sustain - Physical scaling gods",
+        "yogis-necklace": "Stat stick with sustain passive",
+        "genjis-guard": "Magical protection with cooldown and mana regen + cooldown passive for fights. You need to buy breastplate first if going against physical in solo",
+        "breastplate-of-valor": "Same as genji's but physical protection. Build this first if facing physical solo laner",
+        "dwarven-plate": "Big protection + active to add more protections to a specific dmg type",
+        "spirit-robe": "Protections + passive for more protections and sustain when getting cc'd",
+        "blinking-abyss": "Get in there bud"
+      },
+      "tags": ["generic", "beginner-friendly", "tank", "sustain", "flexible"]
+    },
+    {
+      "id": "generic-support",
+      "name": "Generic Support Build",
+      "role": "support",
+      "description": "Standard Support build focused on team utility and balanced protections. Heroism starter, building protections while enhancing team survivability. Strong sustain from Yogi's Necklace synergy with Stampede and Oni Hunter's Garb. Spectral Armor counters physical ADCs (use Spectral Visage vs magical ADCs).",
+      "itemIds": [
+        "heroism",
+        "stampede",
+        "yogis-necklace",
+        "oni-hunters-garb",
+        "spectral-armor",
+        "freyas-tears",
+        "shell-of-rebuke"
+      ],
+      "itemNotes": {
+        "heroism": "Good stuff",
+        "stampede": "Phys protections + speed active + adds to next item (yogis)",
+        "yogis-necklace": "Sustain + sustain passive",
+        "oni-hunters-garb": "Magical protections + amazing passive + adds to yogis",
+        "spectral-armor": "Physical protections + anti attack speed + anti crit - get spectral visage if adc is magical",
+        "freyas-tears": "Holy protections batman + cooldown",
+        "shell-of-rebuke": "Amazing relic for your team and allows you to have another relic (even another basic shell)"
+      },
+      "tags": ["generic", "beginner-friendly", "tank", "utility", "team-support"]
+    }
+  ]
+}

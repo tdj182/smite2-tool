@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "game": "smite2",
+    "dataVersion": 1,
+    "patch": "Open Beta 27",
+    "lastUpdatedUtc": "2026-02-08T00:00:00Z"
+  },
+  "gods": [
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "icon": {
+        "localPath": "/images/gods/zeus.webp",
+        "alt": "Zeus icon"
+      },
+      "identity": {
+        "pantheon": "Greek",
+        "roles": ["middle"],
+        "primaryDamageType": "magical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "ranged",
+        "rangeClass": "ranged"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.38,
+        "healthPerLevel": 92.62,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.34,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 17.57,
+        "physicalProtectionPerLevel": 2.85,
+        "magicalProtection": 27.43,
+        "magicalProtectionPerLevel": 1.42,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.45,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "High burst mage with strong teamfight damage. Basic attacks scale with 100% Strength + 20% Intelligence, while abilities primarily use Intelligence scaling.",
+        "strengths": ["High burst damage", "Strong area control"],
+        "weaknesses": ["Low mobility", "Vulnerable when abilities are down"],
+        "beginnerTips": ["Stay behind tanks", "Save ultimate for grouped enemies"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "icon": {
+        "localPath": "/images/gods/athena.webp",
+        "alt": "Athena icon"
+      },
+      "identity": {
+        "pantheon": "Greek",
+        "roles": ["support", "solo"],
+        "primaryDamageType": "magical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "melee",
+        "rangeClass": "melee"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 672.3,
+        "healthPerLevel": 105.3,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.84,
+        "healthRegenPerLevel": 0.211,
+        "manaRegen": 2.25,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 20.52,
+        "physicalProtectionPerLevel": 3.24,
+        "magicalProtection": 29.7,
+        "magicalProtectionPerLevel": 1.62,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.4,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Defensive guardian with global presence. Hybrid scaling with Strength on basic attacks (100%) and dash abilities, Intelligence on crowd control and ultimate (90%).",
+        "strengths": ["Strong crowd control", "Global ultimate rotation"],
+        "weaknesses": ["Low damage", "Relies on team coordination"],
+        "beginnerTips": ["Watch the map often", "Use taunt to peel for allies"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": ["ares"]
+      },
+      "history": []
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "icon": {
+        "localPath": "/images/gods/thor.webp",
+        "alt": "Thor icon"
+      },
+      "identity": {
+        "pantheon": "Norse",
+        "roles": ["jungle"],
+        "primaryDamageType": "physical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "melee",
+        "rangeClass": "melee"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.38,
+        "healthPerLevel": 92.62,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.25,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 18.05,
+        "physicalProtectionPerLevel": 2.85,
+        "magicalProtection": 26.13,
+        "magicalProtectionPerLevel": 1.42,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.45,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "High-impact assassin with global engage. Basic attacks scale with 100% Strength + 20% Intelligence. Abilities primarily use Strength (30-85%).",
+        "strengths": ["Strong burst", "Long-range initiation"],
+        "weaknesses": ["Falls off late if behind", "Requires good timing"],
+        "beginnerTips": ["Farm before fighting", "Use ultimate to start fights safely"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": ["loki"]
+      },
+      "history": []
+    },
+    {
+      "id": "neith",
+      "name": "Neith",
+      "icon": {
+        "localPath": "/images/gods/neith.webp",
+        "alt": "Neith icon"
+      },
+      "identity": {
+        "pantheon": "Egyptian",
+        "roles": ["carry"],
+        "primaryDamageType": "physical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "ranged",
+        "rangeClass": "ranged"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.38,
+        "healthPerLevel": 92.62,
+        "mana": 307.84,
+        "manaPerLevel": 43.68,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.14,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 18.05,
+        "physicalProtectionPerLevel": 2.85,
+        "magicalProtection": 26.13,
+        "magicalProtectionPerLevel": 1.42,
+        "attackSpeed": 1,
+        "attackSpeedPerLevel": 1.33,
+        "movementSpeed": 375,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Safe beginner hunter with global ultimate. Hybrid scaling: Basic attacks use 100% Strength + 20% Intelligence, Ultimate scales with 105% Strength + 90% Intelligence.",
+        "strengths": ["Easy to learn", "Strong lane safety"],
+        "weaknesses": ["Lower late-game damage than hyper carries"],
+        "beginnerTips": ["Use backflip defensively", "Watch the map for ultimate snipes"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "vulcan",
+      "name": "Vulcan",
+      "icon": {
+        "localPath": "/images/gods/vulcan.webp",
+        "alt": "Vulcan icon"
+      },
+      "identity": {
+        "pantheon": "Roman",
+        "roles": ["middle"],
+        "primaryDamageType": "magical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "ranged",
+        "rangeClass": "ranged"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.8,
+        "healthPerLevel": 92.62,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.34,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 19,
+        "physicalProtectionPerLevel": 3,
+        "magicalProtection": 26.7,
+        "magicalProtectionPerLevel": 1.46,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.46,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Artillery mage with deployable turret. Hybrid scaling: Basic attacks use 100% Strength + 20% Intelligence, abilities scale 40-110% Intelligence.",
+        "strengths": ["Long-range damage", "Strong objective pressure"],
+        "weaknesses": ["Immobile", "Punished by dive comps"],
+        "beginnerTips": ["Protect your turret", "Position far from enemies"]
+      },
+      "relationships": {
+        "uniqueItemIds": ["alternator-mod", "thermal-mod", "efficiency-mod"],
+        "relatedGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "anhur",
+      "name": "Anhur",
+      "icon": {
+        "localPath": "/images/gods/anhur.webp",
+        "alt": "Anhur icon"
+      },
+      "identity": {
+        "pantheon": "Egyptian",
+        "roles": ["carry"],
+        "primaryDamageType": "physical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "ranged",
+        "rangeClass": "ranged"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.38,
+        "healthPerLevel": 92.62,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.2,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 18.05,
+        "physicalProtectionPerLevel": 2.85,
+        "magicalProtection": 26.13,
+        "magicalProtectionPerLevel": 1.42,
+        "attackSpeed": 1,
+        "attackSpeedPerLevel": 1.3,
+        "movementSpeed": 375,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Aggressive hunter with strong early pressure.",
+        "strengths": ["High lane pressure", "Strong knockback control"],
+        "weaknesses": ["Requires good positioning"],
+        "beginnerTips": ["Use pillar to secure kills", "Play aggressively early"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "nu-wa",
+      "name": "Nu Wa",
+      "icon": {
+        "localPath": "/images/gods/nu-wa.webp",
+        "alt": "Nu Wa icon"
+      },
+      "identity": {
+        "pantheon": "Chinese",
+        "roles": ["middle"],
+        "primaryDamageType": "magical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "ranged",
+        "rangeClass": "ranged"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.38,
+        "healthPerLevel": 92.62,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.34,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 17.57,
+        "physicalProtectionPerLevel": 2.85,
+        "magicalProtection": 27.43,
+        "magicalProtectionPerLevel": 1.42,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.45,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Safe control mage with global ultimate.",
+        "strengths": ["Global pressure", "Strong late scaling"],
+        "weaknesses": ["Weak early mobility"],
+        "beginnerTips": ["Use fog for safety", "Time ultimate with fights"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "icon": {
+        "localPath": "/images/gods/loki.webp",
+        "alt": "Loki icon"
+      },
+      "identity": {
+        "pantheon": "Norse",
+        "roles": ["jungle"],
+        "primaryDamageType": "physical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "melee",
+        "rangeClass": "melee"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 591.38,
+        "healthPerLevel": 92.62,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.7,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.25,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 18.05,
+        "physicalProtectionPerLevel": 2.85,
+        "magicalProtection": 26.13,
+        "magicalProtectionPerLevel": 1.42,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.45,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Stealth assassin focused on picks.",
+        "strengths": ["High single-target burst", "Stealth mobility"],
+        "weaknesses": ["Weak in teamfights if behind"],
+        "beginnerTips": ["Pick isolated targets", "Avoid early deaths"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": ["thor"]
+      },
+      "history": []
+    },
+    {
+      "id": "mulan",
+      "name": "Mulan",
+      "icon": {
+        "localPath": "/images/gods/mulan.webp",
+        "alt": "Mulan icon"
+      },
+      "identity": {
+        "pantheon": "Chinese",
+        "roles": ["solo"],
+        "primaryDamageType": "physical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "melee",
+        "rangeClass": "melee"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 630,
+        "healthPerLevel": 95,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.8,
+        "healthRegenPerLevel": 0.2,
+        "manaRegen": 2.2,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 19.5,
+        "physicalProtectionPerLevel": 3,
+        "magicalProtection": 28,
+        "magicalProtectionPerLevel": 1.5,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.4,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Durable warrior with strong sustain fights.",
+        "strengths": ["Sustain", "Good dueling"],
+        "weaknesses": ["Limited mobility"],
+        "beginnerTips": ["Stack ability upgrades early", "Fight in extended trades"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "ganesha",
+      "name": "Ganesha",
+      "icon": {
+        "localPath": "/images/gods/ganesha.webp",
+        "alt": "Ganesha icon"
+      },
+      "identity": {
+        "pantheon": "Hindu",
+        "roles": ["support"],
+        "primaryDamageType": "magical",
+        "scalingProfile": "hybrid",
+        "basicAttackType": "ranged",
+        "rangeClass": "ranged"
+      },
+      "unlock": {
+        "costDiamonds": null,
+        "costGodTokens": null,
+        "isInRotation": null
+      },
+      "baseStats": {
+        "health": 672.3,
+        "healthPerLevel": 105.3,
+        "mana": 296,
+        "manaPerLevel": 42,
+        "healthRegen": 1.84,
+        "healthRegenPerLevel": 0.211,
+        "manaRegen": 2.25,
+        "manaRegenPerLevel": 0,
+        "physicalProtection": 20.52,
+        "physicalProtectionPerLevel": 3.24,
+        "magicalProtection": 29.7,
+        "magicalProtectionPerLevel": 1.62,
+        "attackSpeed": 0.97,
+        "attackSpeedPerLevel": 1.4,
+        "movementSpeed": 365,
+        "movementSpeedPerLevel": 0
+      },
+      "aspects": [],
+      "abilities": [],
+      "details": {
+        "summary": "Utility guardian focused on team enablement.",
+        "strengths": ["Strong crowd control", "Team protection"],
+        "weaknesses": ["Low personal damage"],
+        "beginnerTips": ["Peel for carries", "Use silence to stop engages"]
+      },
+      "relationships": {
+        "uniqueItemIds": [],
+        "relatedGodIds": []
+      },
+      "history": []
+    }
+  ]
+}

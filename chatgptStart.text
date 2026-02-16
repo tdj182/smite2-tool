@@ -1,0 +1,130 @@
+Project: Smite 2 Learning Tool (v1, no backend)
+
+Goal
+- Ship a useful React web app quickly for friends learning Smite 2.
+- No auth/login in v1.
+- Data stored locally as JSON in repo; images served as static assets.
+- Architecture should make it easy to add an API/DB later (v2) without rewriting UI.
+
+Tech Stack (v1)
+- Vite + React + TypeScript
+- Zod for schema validation
+- Static JSON data in src/data
+- Static images in public/images
+
+Repo Structure
+- public/
+  - images/
+    - gods/
+    - items/
+- src/
+  - data/
+    - gods.json
+    - items.json
+    - (later) builds.json, tags.json, etc.
+  - lib/
+    - schemas/
+      - god.ts
+      - item.ts
+    - data/
+      - load.ts       (loads JSON, validates with Zod)
+      - index.ts      (exports arrays + byId maps)
+      - search.ts     (simple search + helpers)
+  - pages/
+    - Gods.tsx
+    - Items.tsx
+  - App.tsx (simple nav)
+- scripts/
+  - validate-data.ts (runs Zod validation in CI/local)
+
+Data Model Conventions
+- Use stable string IDs (slugs) for all entities:
+  - gods: "zeus", "athena", etc.
+  - items: "deathbringer", etc.
+- Each record includes:
+  - id: string (stable slug)
+  - name: string
+  - tags: string[]
+  - icon: string path (ex: "/images/gods/zeus.webp")
+- Items also include:
+  - tier?: number
+  - stats: record<string, number> (flexible stat map)
+
+Example JSON Records
+- gods.json entry:
+  { id, name, role, damageType, difficulty, tags, icon }
+- items.json entry:
+  { id, name, tier, tags, stats, icon }
+
+Build-Time Validation
+- Create Zod schemas for God and Item.
+- Create a script (scripts/validate-data.ts) that reads src/data/*.json and parses arrays through schemas.
+- Add npm script "validate:data" and run it in CI (or at least before builds) to prevent broken JSON.
+
+Runtime Data Loading (one-time at startup)
+- Import JSON with Vite (godsRaw/itemsRaw).
+- Parse via Zod once in load.ts.
+- Export:
+  - gods/items arrays
+  - godsById/itemsById maps for O(1) access
+
+Search (v1)
+- Implement a simple normalized substring search:
+  - match query against name + tags + key metadata (role/difficulty for gods; stat keys for items)
+- Do not implement fuzzy search initially.
+- Keep search stable/predictable and fast.
+
+UI Pages (v1 deliverable)
+1) Gods page:
+   - list/cards with icon, name, role, damageType, difficulty, tags
+   - search box
+   - (optional next) filters: role, difficulty, damageType
+2) Items page:
+   - list/cards with icon, name, tier, tags, stats summary
+   - search box
+   - (optional next) filters: tier, tag, stat presence
+
+Images
+- Store icons in public/images/gods and public/images/items
+- Prefer .webp
+- JSON icon field is a stable public path:
+  - "/images/gods/<id>.webp"
+  - "/images/items/<id>.webp"
+- Use <img loading="lazy"> and fixed width/height to reduce layout shift.
+
+Milestones
+M0: Bootstrap
+- Create Vite React TS project
+- Add folder structure
+- Add 1-2 sample records + sample images
+- Prove pages render
+
+M1: Data Pipeline
+- Add Zod schemas + validate-data script
+- Load data + export maps
+- Add search utilities
+
+M2: Useful v1 UX
+- Add filters (role/difficulty/tier)
+- Add basic detail view (optional): click card -> simple modal or route
+
+M3: “Beginner Value” Content
+- Add builds.json (hand-curated starter builds for beginners)
+- Add “How to play / how to counter” short notes per god (optional field)
+- Keep it lightweight and curated; that’s the differentiator
+
+Deployment (v1)
+- Host as static site (Vercel, Netlify, Cloudflare Pages, or GitHub Pages)
+- No server required
+
+v2 Path (future, not now)
+- Add API routes (Next.js) or separate backend when needed.
+- Swap JSON data layer for DB (Supabase or Postgres) without changing UI much:
+  - keep UI consuming a “data access layer” interface (getAllGods, getGodById, searchGods, etc.)
+- Add auth only if needed for saved favorites/builds.
+
+Key Principles
+- Ship fast: JSON + static images first.
+- Keep a clean data layer so v2 migration is straightforward.
+- Validate early: schema validation avoids silent data breakage.
+- Focus on beginner-friendly curated content after the basics work.

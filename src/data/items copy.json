@@ -1,0 +1,1732 @@
+{
+  "meta": {
+    "game": "smite2",
+    "dataVersion": 1,
+    "patch": "Open Beta 27",
+    "lastUpdatedUtc": "2026-02-08T00:00:00Z"
+  },
+  "items": [
+    {
+      "id": "deathbringer",
+      "name": "Deathbringer",
+      "icon": {
+        "localPath": "/images/items/deathbringer.webp",
+        "alt": "Deathbringer icon"
+      },
+      "shop": {
+        "cost": 2900
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 40,
+        "critChance": 20
+      },
+      "tags": ["crit", "power", "carry", "physical"],
+      "details": {
+        "summary": "Premium critical strike item for physical damage dealers.",
+        "passive": "Critical Strike Damage is increased by 25%.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "tyrfing",
+      "name": "Tyrfing",
+      "icon": {
+        "localPath": "/images/items/tyrfing.webp",
+        "alt": "Tyrfing icon"
+      },
+      "shop": {
+        "cost": 2600
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "inhandPower": 25,
+        "strength": 25,
+        "attackSpeed": 10
+      },
+      "tags": ["attack-speed", "power", "physical", "stacking"],
+      "details": {
+        "summary": "Stacking attack damage item that rewards aggressive play.",
+        "passive": "Attacks deal +15 bonus Physical Damage. On God hit: Increase bonus Damage by +15 for 4s. Stacks once, +1 Stack per 4 Levels (Max 6 Stacks).",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["manchu-bow", "skeggox"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": [
+        {
+          "patch": "OB26",
+          "notes": "Physical Power reduced from 45 to 25, Inhand Power adjusted to 25"
+        }
+      ]
+    },
+    {
+      "id": "odysseus-bow",
+      "name": "Odysseus' Bow",
+      "icon": {
+        "localPath": "/images/items/odysseus-bow.webp",
+        "alt": "Odysseus' Bow icon"
+      },
+      "shop": {
+        "cost": 2450
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "attackSpeed": 45
+      },
+      "tags": ["attack-speed", "physical", "chain-lightning", "aoe"],
+      "details": {
+        "summary": "Attack speed item that provides AoE chain lightning damage.",
+        "passive": "Every fourth Attack Hit triggers Chain Lightning, dealing 15 damage +60% Attack Damage as Physical Damage. Hits primary target and up to 4 nearby enemies within 4.8m. Same target can be struck multiple times.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["hunters-bow", "bow"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "titans-bane",
+      "name": "Titan's Bane",
+      "icon": {
+        "localPath": "/images/items/titans-bane.webp",
+        "alt": "Titan's Bane icon"
+      },
+      "shop": {
+        "cost": 3100
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 50,
+        "physicalPenetrationPercent": 20
+      },
+      "tags": ["penetration", "power", "physical", "anti-tank"],
+      "details": {
+        "summary": "High power penetration item for shredding tanky targets.",
+        "passive": "Gain 20% Physical Penetration.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "dagger-of-frenzy",
+      "name": "Dagger of Frenzy",
+      "icon": {
+        "localPath": "/images/items/dagger-of-frenzy.webp",
+        "alt": "Dagger of Frenzy icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 35,
+        "attackSpeed": 25,
+        "movementSpeed": 7
+      },
+      "tags": ["attack-speed", "movement", "physical"],
+      "details": {
+        "summary": "Mobility-focused attack speed item for aggressive positioning.",
+        "passive": "Gain increased movement speed and attack speed.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "deaths-toll",
+      "name": "Death's Toll",
+      "icon": {
+        "localPath": "/images/items/deaths-toll.webp",
+        "alt": "Death's Toll icon"
+      },
+      "shop": {
+        "cost": 650
+      },
+      "classification": {
+        "tier": 1,
+        "category": "starter",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 15,
+        "health": 100
+      },
+      "tags": ["sustain", "starter", "physical", "health"],
+      "details": {
+        "summary": "Sustain-focused starter item for physical gods.",
+        "passive": "Attack Hit: +2 (+0.3% Max Health) Heal and +1 (+0.1% Max Mana) Restore.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["deaths-embrace"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "riptalon",
+      "name": "Riptalon",
+      "icon": {
+        "localPath": "/images/items/riptalon.webp",
+        "alt": "Riptalon icon"
+      },
+      "shop": {
+        "cost": 2400
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 35,
+        "attackSpeed": 20,
+        "lifesteal": 15
+      },
+      "tags": ["lifesteal", "attack-speed", "physical", "sustain"],
+      "details": {
+        "summary": "Lifesteal item providing sustain through basic attacks.",
+        "passive": "Gain lifesteal on basic attacks.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "purification-beads",
+      "name": "Purification Beads",
+      "icon": {
+        "localPath": "/images/items/purification-beads.webp",
+        "alt": "Purification Beads icon"
+      },
+      "shop": {
+        "cost": 0
+      },
+      "classification": {
+        "tier": null,
+        "category": "relic",
+        "effectType": "active"
+      },
+      "stats": {},
+      "tags": ["relic", "cc-immunity", "defensive"],
+      "details": {
+        "summary": "Essential defensive relic providing crowd control immunity.",
+        "passive": null,
+        "active": "Become immune to Crowd Control for 2 seconds.",
+        "cooldownSeconds": 150
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "sands-of-time",
+      "name": "Sands of Time",
+      "icon": {
+        "localPath": "/images/items/sands-of-time.webp",
+        "alt": "Sands of Time icon"
+      },
+      "shop": {
+        "cost": 650
+      },
+      "classification": {
+        "tier": 1,
+        "category": "starter",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 15,
+        "cooldownReduction": 10,
+        "manaRegen": 3
+      },
+      "tags": ["cooldown", "starter", "magical", "mana"],
+      "details": {
+        "summary": "Cooldown-focused starter item for magical gods.",
+        "passive": "Gain cooldown reduction and mana regeneration.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["pendulum-of-ages"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "book-of-thoth",
+      "name": "Book of Thoth",
+      "icon": {
+        "localPath": "/images/items/book-of-thoth.webp",
+        "alt": "Book of Thoth icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 30,
+        "maxMana": 200,
+        "manaRegen": 4
+      },
+      "tags": ["mana", "power", "magical", "stacking"],
+      "details": {
+        "summary": "Stacking mana item that converts mana into intelligence.",
+        "passive": "+Intelligence equal to 5% of Mana from items. Gain stacks by dealing damage (900 damage per stack for minions, double for gods). Each stack grants +10 Mana. At 50 stacks: evolves to add +20 Intelligence, +100 Mana, and +2% mana conversion.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["oracle-staff", "gem", "mana-tome"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "gem-of-focus",
+      "name": "Gem of Focus",
+      "icon": {
+        "localPath": "/images/items/gem-of-focus.webp",
+        "alt": "Gem of Focus icon"
+      },
+      "shop": {
+        "cost": 2200
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 70,
+        "cooldownReduction": 20
+      },
+      "tags": ["cooldown", "power", "magical"],
+      "details": {
+        "summary": "High cooldown reduction item for ability-focused mages.",
+        "passive": "Gain significant cooldown reduction for more frequent ability usage.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "spear-of-desolation",
+      "name": "Spear of Desolation",
+      "icon": {
+        "localPath": "/images/items/spear-of-desolation.webp",
+        "alt": "Spear of Desolation icon"
+      },
+      "shop": {
+        "cost": 2800
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 80,
+        "magicalPenetrationFlat": 15
+      },
+      "tags": ["penetration", "power", "magical", "cooldown"],
+      "details": {
+        "summary": "High power penetration item with cooldown reduction on kills.",
+        "passive": "On enemy god kill or assist, reduce all cooldowns by 2 seconds.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "rod-of-tahuti",
+      "name": "Rod of Tahuti",
+      "icon": {
+        "localPath": "/images/items/rod-of-tahuti.webp",
+        "alt": "Rod of Tahuti icon"
+      },
+      "shop": {
+        "cost": 3000
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 85,
+        "maxMana": 250,
+        "manaRegen": 2
+      },
+      "tags": ["power", "magical", "scaling"],
+      "details": {
+        "summary": "Premium intelligence item with scaling passive.",
+        "passive": "Grants additional Intelligence equal to 25% of your Intelligence from items. Provides 106 total Intelligence (85 base + 21 from conversion).",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["evil-eye", "evil-eye"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "obsidian-shard",
+      "name": "Obsidian Shard",
+      "icon": {
+        "localPath": "/images/items/obsidian-shard.webp",
+        "alt": "Obsidian Shard icon"
+      },
+      "shop": {
+        "cost": 2700
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 65,
+        "magicalPenetrationPercent": 20
+      },
+      "tags": ["penetration", "power", "magical", "anti-tank"],
+      "details": {
+        "summary": "Percentage penetration item for shredding magical protections.",
+        "passive": "Gain 20% Magical Penetration.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "soul-reaver",
+      "name": "Soul Reaver",
+      "icon": {
+        "localPath": "/images/items/soul-reaver.webp",
+        "alt": "Soul Reaver icon"
+      },
+      "shop": {
+        "cost": 2600
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 75,
+        "maxMana": 150
+      },
+      "tags": ["power", "magical", "burst", "execute"],
+      "details": {
+        "summary": "Burst damage item that deals % health damage.",
+        "passive": "Abilities deal bonus damage equal to 2% of the target's maximum Health. Deals up to 400 bonus damage to gods.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "aegis",
+      "name": "Aegis",
+      "icon": {
+        "localPath": "/images/items/aegis.webp",
+        "alt": "Aegis icon"
+      },
+      "shop": {
+        "cost": 0
+      },
+      "classification": {
+        "tier": null,
+        "category": "relic",
+        "effectType": "active"
+      },
+      "stats": {},
+      "tags": ["relic", "immunity", "defensive"],
+      "details": {
+        "summary": "Defensive relic providing brief invulnerability.",
+        "passive": null,
+        "active": "Become invulnerable and untargetable for 1.5 seconds. Cannot move or take actions.",
+        "cooldownSeconds": 140
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "hydras",
+      "name": "Hydra's",
+      "icon": {
+        "localPath": "/images/items/hydras.webp",
+        "alt": "Hydra's icon"
+      },
+      "shop": {
+        "cost": 2450
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 40,
+        "cooldownReduction": 15,
+        "manaRegen": 2
+      },
+      "tags": ["cooldown", "power", "physical", "ability-based"],
+      "details": {
+        "summary": "Ability-focused item that enhances basic attacks after using abilities.",
+        "passive": "For 4s after using an ability, your next Basic Attack deals bonus damage equal to 30% of your Physical Power.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "oath-sworn-spear",
+      "name": "Oath-Sworn Spear",
+      "icon": {
+        "localPath": "/images/items/oath-sworn-spear.webp",
+        "alt": "Oath-Sworn Spear icon"
+      },
+      "shop": {
+        "cost": 2350
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 45,
+        "physicalPenetrationFlat": 10
+      },
+      "tags": ["penetration", "power", "physical"],
+      "details": {
+        "summary": "Flat penetration item for early-mid game damage.",
+        "passive": "Gain flat physical penetration.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "the-crusher",
+      "name": "The Crusher",
+      "icon": {
+        "localPath": "/images/items/the-crusher.webp",
+        "alt": "The Crusher icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 45,
+        "physicalPenetrationFlat": 15,
+        "attackSpeed": 15
+      },
+      "tags": ["penetration", "power", "physical", "attack-speed"],
+      "details": {
+        "summary": "Hybrid penetration and attack speed item with DoT passive.",
+        "passive": "Abilities apply a damage-over-time effect to enemies.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "heartseeker",
+      "name": "Heartseeker",
+      "icon": {
+        "localPath": "/images/items/heartseeker.webp",
+        "alt": "Heartseeker icon"
+      },
+      "shop": {
+        "cost": 2500
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 50,
+        "physicalPenetrationPercent": 10
+      },
+      "tags": ["penetration", "power", "physical", "burst"],
+      "details": {
+        "summary": "Burst damage item dealing % health damage on abilities.",
+        "passive": "Abilities deal bonus damage equal to 3% of the target's maximum Health.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "the-reaper",
+      "name": "The Reaper",
+      "icon": {
+        "localPath": "/images/items/the-reaper.webp",
+        "alt": "The Reaper icon"
+      },
+      "shop": {
+        "cost": 2700
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 55,
+        "critChance": 15
+      },
+      "tags": ["crit", "power", "physical", "execute"],
+      "details": {
+        "summary": "Critical strike item with enhanced damage on low health targets.",
+        "passive": "Deal increased damage to targets below 30% health.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "jotunns-revenge",
+      "name": "Jotunn's Revenge",
+      "icon": {
+        "localPath": "/images/items/jotunns-revenge.webp",
+        "alt": "Jotunn's Revenge icon"
+      },
+      "shop": {
+        "cost": 2400
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 50,
+        "cooldownReduction": 20,
+        "physicalPenetrationFlat": 10
+      },
+      "tags": ["cooldown", "penetration", "power", "physical"],
+      "details": {
+        "summary": "Balanced ability-damage item with cooldown and penetration.",
+        "passive": "Gain cooldown reduction and flat penetration for ability-based builds.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "bumbas-cudgel",
+      "name": "Bumba's Cudgel",
+      "icon": {
+        "localPath": "/images/items/bumbas-cudgel.webp",
+        "alt": "Bumba's Cudgel icon"
+      },
+      "shop": {
+        "cost": 2200
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 40,
+        "cooldownReduction": 10,
+        "health": 200
+      },
+      "tags": ["jungle", "power", "physical", "true-damage"],
+      "details": {
+        "summary": "Jungle-focused item dealing true damage on abilities.",
+        "passive": "Abilities deal bonus true damage.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["bumbas-dagger"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "warriors-axe",
+      "name": "Warrior's Axe",
+      "icon": {
+        "localPath": "/images/items/warriors-axe.webp",
+        "alt": "Warrior's Axe icon"
+      },
+      "shop": {
+        "cost": 650
+      },
+      "classification": {
+        "tier": 1,
+        "category": "starter",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 12,
+        "health": 75,
+        "physicalProtection": 5
+      },
+      "tags": ["starter", "physical", "health", "protections"],
+      "details": {
+        "summary": "Balanced starter item for warriors and bruisers.",
+        "passive": "Gain bonus stats for early game survivability.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["sundering-axe"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "sanguine-lash",
+      "name": "Sanguine Lash",
+      "icon": {
+        "localPath": "/images/items/sanguine-lash.webp",
+        "alt": "Sanguine Lash icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 30,
+        "lifesteal": 15,
+        "health": 150
+      },
+      "tags": ["lifesteal", "health", "physical", "sustain"],
+      "details": {
+        "summary": "Sustain item combining lifesteal with health.",
+        "passive": "Gain lifesteal and bonus health for sustained fighting.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "gladiators-shield",
+      "name": "Gladiator's Shield",
+      "icon": {
+        "localPath": "/images/items/gladiators-shield.webp",
+        "alt": "Gladiator's Shield icon"
+      },
+      "shop": {
+        "cost": 2200
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 25,
+        "physicalProtection": 20,
+        "health": 150
+      },
+      "tags": ["defense", "physical", "sustain", "health"],
+      "details": {
+        "summary": "Hybrid offensive-defensive item with ability heal.",
+        "passive": "Abilities heal you based on damage dealt to enemy gods.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "yogis-necklace",
+      "name": "Yogi's Necklace",
+      "icon": {
+        "localPath": "/images/items/yogis-necklace.webp",
+        "alt": "Yogi's Necklace icon"
+      },
+      "shop": {
+        "cost": 2100
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "health": 250,
+        "healthRegen": 15,
+        "cooldownReduction": 10
+      },
+      "tags": ["health", "regen", "cooldown", "sustain"],
+      "details": {
+        "summary": "High health regeneration item for sustained lane presence.",
+        "passive": "Gain significant health regeneration and cooldown reduction.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "oni-hunters-garb",
+      "name": "Oni Hunter's Garb",
+      "icon": {
+        "localPath": "/images/items/oni-hunters-garb.webp",
+        "alt": "Oni Hunter's Garb icon"
+      },
+      "shop": {
+        "cost": 2400
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "magicalProtection": 60,
+        "health": 200
+      },
+      "tags": ["defense", "magical-defense", "health", "stacking"],
+      "details": {
+        "summary": "Stacking magical protection item that grows stronger over time.",
+        "passive": "Gain stacks of magical protection as you take magical damage.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "spirit-robe",
+      "name": "Spirit Robe",
+      "icon": {
+        "localPath": "/images/items/spirit-robe.webp",
+        "alt": "Spirit Robe icon"
+      },
+      "shop": {
+        "cost": 2500
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 25,
+        "magicalProtection": 25
+      },
+      "tags": ["defense", "protections", "anti-cc", "hybrid"],
+      "details": {
+        "summary": "Hybrid protection item with anti-CC passive.",
+        "passive": "When struck by hard crowd control, gain +40 Physical Protection and +40 Magical Protection (total 65 each) alongside +4% Health Heal over 6 seconds (7% max health total).",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["legionnaire-armor", "circle-of-protection", "shield", "rune"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "selflessness",
+      "name": "Selflessness",
+      "icon": {
+        "localPath": "/images/items/selflessness.webp",
+        "alt": "Selflessness icon"
+      },
+      "shop": {
+        "cost": 650
+      },
+      "classification": {
+        "tier": 1,
+        "category": "starter",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 10,
+        "magicalProtection": 10,
+        "health": 50
+      },
+      "tags": ["starter", "support", "aura", "protections"],
+      "details": {
+        "summary": "Support starter item providing aura benefits to allies.",
+        "passive": "Provide aura benefits to nearby allies.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["compassion"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "stampede",
+      "name": "Stampede",
+      "icon": {
+        "localPath": "/images/items/stampede.webp",
+        "alt": "Stampede icon"
+      },
+      "shop": {
+        "cost": 0
+      },
+      "classification": {
+        "tier": null,
+        "category": "relic",
+        "effectType": "active"
+      },
+      "stats": {},
+      "tags": ["relic", "movement", "team"],
+      "details": {
+        "summary": "Team mobility relic for engaging or disengaging.",
+        "passive": null,
+        "active": "You and nearby allies gain increased movement speed for a short duration.",
+        "cooldownSeconds": 120
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "genjis-guard",
+      "name": "Genji's Guard",
+      "icon": {
+        "localPath": "/images/items/genjis-guard.webp",
+        "alt": "Genji's Guard icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "magicalProtection": 50,
+        "health": 150,
+        "cooldownReduction": 10
+      },
+      "tags": ["defense", "magical-defense", "cooldown", "health"],
+      "details": {
+        "summary": "Magical defense item with cooldown reduction on damage taken.",
+        "passive": "Taking magical damage reduces your cooldowns.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "spectral-armor",
+      "name": "Spectral Armor",
+      "icon": {
+        "localPath": "/images/items/spectral-armor.webp",
+        "alt": "Spectral Armor icon"
+      },
+      "shop": {
+        "cost": 2400
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 55,
+        "health": 200
+      },
+      "tags": ["defense", "physical-defense", "anti-crit", "health"],
+      "details": {
+        "summary": "Anti-critical strike item reducing crit damage taken.",
+        "passive": "Reduce critical strike damage taken from enemies.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "stygian-anchor",
+      "name": "Stygian Anchor",
+      "icon": {
+        "localPath": "/images/items/stygian-anchor.webp",
+        "alt": "Stygian Anchor icon"
+      },
+      "shop": {
+        "cost": 2350
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 30,
+        "health": 150
+      },
+      "tags": ["defense", "protections", "anti-healing", "hybrid"],
+      "details": {
+        "summary": "Hybrid protection item with anti-healing aura.",
+        "passive": "Enemies near you have reduced healing.",
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "phantom-shell",
+      "name": "Phantom Shell",
+      "icon": {
+        "localPath": "/images/items/phantom-shell.webp",
+        "alt": "Phantom Shell icon"
+      },
+      "shop": {
+        "cost": 0
+      },
+      "classification": {
+        "tier": null,
+        "category": "relic",
+        "effectType": "active"
+      },
+      "stats": {},
+      "tags": ["relic", "team", "defensive", "protections"],
+      "details": {
+        "summary": "Team defensive relic providing temporary protections.",
+        "passive": null,
+        "active": "You and nearby allies gain temporary protections and movement through enemies.",
+        "cooldownSeconds": 140
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "manchu-bow",
+      "name": "Manchu Bow",
+      "icon": {
+        "localPath": "/images/items/manchu-bow.webp",
+        "alt": "Manchu Bow icon"
+      },
+      "shop": {
+        "cost": 1400
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "inhandPower": 15,
+        "attackSpeed": 10
+      },
+      "tags": ["attack-speed", "physical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["tyrfing"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "skeggox",
+      "name": "Skeggox",
+      "icon": {
+        "localPath": "/images/items/skeggox.webp",
+        "alt": "Skeggox icon"
+      },
+      "shop": {
+        "cost": 850
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 15
+      },
+      "tags": ["power", "physical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["tyrfing"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "hunters-bow",
+      "name": "Hunter's Bow",
+      "icon": {
+        "localPath": "/images/items/hunters-bow.webp",
+        "alt": "Hunter's Bow icon"
+      },
+      "shop": {
+        "cost": 1350
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "attackSpeed": 25
+      },
+      "tags": ["attack-speed", "physical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["bow"],
+        "buildsInto": ["odysseus-bow"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "bow",
+      "name": "Bow",
+      "icon": {
+        "localPath": "/images/items/bow.webp",
+        "alt": "Bow icon"
+      },
+      "shop": {
+        "cost": 650
+      },
+      "classification": {
+        "tier": 1,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "attackSpeed": 15
+      },
+      "tags": ["attack-speed", "physical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["hunters-bow", "odysseus-bow"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "oracle-staff",
+      "name": "Oracle Staff",
+      "icon": {
+        "localPath": "/images/items/oracle-staff.webp",
+        "alt": "Oracle Staff icon"
+      },
+      "shop": {
+        "cost": 800
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 20,
+        "manaRegen": 2
+      },
+      "tags": ["power", "magical", "mana"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["gem"],
+        "buildsInto": ["book-of-thoth"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "gem",
+      "name": "Gem",
+      "icon": {
+        "localPath": "/images/items/gem.webp",
+        "alt": "Gem icon"
+      },
+      "shop": {
+        "cost": 550
+      },
+      "classification": {
+        "tier": 1,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 15
+      },
+      "tags": ["power", "magical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["oracle-staff", "book-of-thoth"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "mana-tome",
+      "name": "Mana Tome",
+      "icon": {
+        "localPath": "/images/items/mana-tome.webp",
+        "alt": "Mana Tome icon"
+      },
+      "shop": {
+        "cost": 700
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "maxMana": 150,
+        "manaRegen": 2
+      },
+      "tags": ["mana", "magical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["book-of-thoth"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "evil-eye",
+      "name": "Evil Eye",
+      "icon": {
+        "localPath": "/images/items/evil-eye.webp",
+        "alt": "Evil Eye icon"
+      },
+      "shop": {
+        "cost": 900
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 30,
+        "maxMana": 100
+      },
+      "tags": ["power", "magical", "mana"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["rod-of-tahuti"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "bumbas-dagger",
+      "name": "Bumba's Dagger",
+      "icon": {
+        "localPath": "/images/items/bumbas-dagger.webp",
+        "alt": "Bumba's Dagger icon"
+      },
+      "shop": {
+        "cost": 650
+      },
+      "classification": {
+        "tier": 1,
+        "category": "starter",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 10,
+        "health": 75
+      },
+      "tags": ["starter", "jungle", "physical"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["bumbas-cudgel"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "legionnaire-armor",
+      "name": "Legionnaire Armor",
+      "icon": {
+        "localPath": "/images/items/legionnaire-armor.webp",
+        "alt": "Legionnaire Armor icon"
+      },
+      "shop": {
+        "cost": 750
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 15,
+        "health": 100
+      },
+      "tags": ["defense", "physical-defense", "health"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["shield"],
+        "buildsInto": ["spirit-robe"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "circle-of-protection",
+      "name": "Circle of Protection",
+      "icon": {
+        "localPath": "/images/items/circle-of-protection.webp",
+        "alt": "Circle of Protection icon"
+      },
+      "shop": {
+        "cost": 750
+      },
+      "classification": {
+        "tier": 2,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "magicalProtection": 15,
+        "health": 100
+      },
+      "tags": ["defense", "magical-defense", "health"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["rune"],
+        "buildsInto": ["spirit-robe"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "icon": {
+        "localPath": "/images/items/shield.webp",
+        "alt": "Shield icon"
+      },
+      "shop": {
+        "cost": 450
+      },
+      "classification": {
+        "tier": 1,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 10
+      },
+      "tags": ["defense", "physical-defense"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["legionnaire-armor", "spirit-robe"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "rune",
+      "name": "Rune",
+      "icon": {
+        "localPath": "/images/items/rune.webp",
+        "alt": "Rune icon"
+      },
+      "shop": {
+        "cost": 450
+      },
+      "classification": {
+        "tier": 1,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "magicalProtection": 10
+      },
+      "tags": ["defense", "magical-defense"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": [],
+        "buildsInto": ["circle-of-protection", "spirit-robe"],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "deaths-embrace",
+      "name": "Death's Embrace",
+      "icon": {
+        "localPath": "/images/items/deaths-embrace.webp",
+        "alt": "Death's Embrace icon"
+      },
+      "shop": {
+        "cost": 2200
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 40,
+        "health": 250
+      },
+      "tags": ["sustain", "physical", "health"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["deaths-toll"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "pendulum-of-ages",
+      "name": "Pendulum of Ages",
+      "icon": {
+        "localPath": "/images/items/pendulum-of-ages.webp",
+        "alt": "Pendulum of Ages icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "intelligence": 50,
+        "cooldownReduction": 20,
+        "manaRegen": 5
+      },
+      "tags": ["cooldown", "magical", "mana"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["sands-of-time"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "sundering-axe",
+      "name": "Sundering Axe",
+      "icon": {
+        "localPath": "/images/items/sundering-axe.webp",
+        "alt": "Sundering Axe icon"
+      },
+      "shop": {
+        "cost": 2400
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "strength": 40,
+        "health": 200,
+        "physicalProtection": 20
+      },
+      "tags": ["physical", "health", "protections"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["warriors-axe"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    },
+    {
+      "id": "compassion",
+      "name": "Compassion",
+      "icon": {
+        "localPath": "/images/items/compassion.webp",
+        "alt": "Compassion icon"
+      },
+      "shop": {
+        "cost": 2300
+      },
+      "classification": {
+        "tier": 3,
+        "category": "item",
+        "effectType": "passive"
+      },
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 30,
+        "health": 200
+      },
+      "tags": ["support", "aura", "protections"],
+      "details": {
+        "summary": null,
+        "passive": null,
+        "active": null,
+        "cooldownSeconds": null
+      },
+      "relationships": {
+        "buildsFrom": ["selflessness"],
+        "buildsInto": [],
+        "restrictedToGodIds": []
+      },
+      "history": []
+    }
+  ]
+}

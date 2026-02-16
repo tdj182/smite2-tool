@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="100%" height="100%" fill="#1e3a8a" />
+  <circle cx="128" cy="96" r="48" fill="#ffe082" />
+  <text x="128" y="150" font-size="32" text-anchor="middle" fill="#fff">Zeus</text>
+</svg>
