@@ -41,7 +41,7 @@ export default function ItemDetail() {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '1.5rem' }}>
             <img
-              src={item.icon.localPath}
+              src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
               alt={item.icon.alt}
               style={{
                 width: '80px',

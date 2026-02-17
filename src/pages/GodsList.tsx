@@ -123,7 +123,7 @@ export default function GodsList() {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.75rem' }}>
               <img
-                src={god.icon.localPath}
+                src={import.meta.env.BASE_URL + god.icon.localPath.replace(/^\//, '')}
                 alt={god.icon.alt}
                 style={{
                   width: '50px',

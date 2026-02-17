@@ -48,7 +48,7 @@ export default function GodDetail() {
             }}
           >
             <img
-              src={god.icon.localPath}
+              src={import.meta.env.BASE_URL + god.icon.localPath.replace(/^\//, '')}
               alt={god.icon.alt}
               style={{
                 width: "100px",

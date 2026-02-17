@@ -142,7 +142,7 @@ export default function BuildsList() {
                               }}
                             >
                               <img
-                                src={item.icon.localPath}
+                                src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
                                 alt={item.icon.alt}
                                 style={{
                                   width: '60px',

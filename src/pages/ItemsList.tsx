@@ -123,7 +123,7 @@ export default function ItemsList() {
           >
             <div style={{ display: 'flex', gap: '1rem', marginBottom: '0.75rem' }}>
               <img
-                src={item.icon.localPath}
+                src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
                 alt={item.icon.alt}
                 style={{
                   width: '50px',
