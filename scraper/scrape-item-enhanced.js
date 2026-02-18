@@ -279,34 +279,72 @@ export async function scrapeItem(itemName) {
   // ============================================
   console.log('\n🔨 Parsing build paths...');
 
-  // Find "Builds from" section
+  // Headings are wrapped in <div class="mw-heading">, so we need
+  // to go from the heading -> parent div -> next sibling to find content.
+
+  // --- Builds Into: parsed from <ul> after the "Builds Into" heading ---
   $('h2, h3').each((_i, heading) => {
     const $heading = $(heading);
     const headingText = $heading.text().toLowerCase();
 
-    if (headingText.includes('builds from')) {
-      const nextElement = $heading.next();
-      nextElement.find('a').each((_j, link) => {
-        const itemName = $(link).attr('title') || $(link).text().trim();
-        if (itemName && !itemName.includes(':')) {
-          const buildItemId = sanitizeId(itemName);
-          if (!itemData.relationships.buildsFrom.includes(buildItemId)) {
-            itemData.relationships.buildsFrom.push(buildItemId);
-            console.log(`  ✓ Builds from: ${itemName}`);
+    if (headingText.includes('builds into')) {
+      // The heading is inside a div.mw-heading; the <ul> follows that div
+      const $wrapper = $heading.closest('div.mw-heading');
+      const $list = ($wrapper.length ? $wrapper : $heading).nextAll('ul').first();
+      $list.find('li > a[title]').each((_j, link) => {
+        const name = $(link).attr('title');
+        if (name && !name.includes(':')) {
+          const id = sanitizeId(name);
+          if (!itemData.relationships.buildsInto.includes(id)) {
+            itemData.relationships.buildsInto.push(id);
+            console.log(`  ✓ Builds into: ${name}`);
           }
         }
       });
     }
+  });
 
-    if (headingText.includes('builds into')) {
-      const nextElement = $heading.next();
-      nextElement.find('a').each((_j, link) => {
-        const itemName = $(link).attr('title') || $(link).text().trim();
-        if (itemName && !itemName.includes(':')) {
-          const buildItemId = sanitizeId(itemName);
-          if (!itemData.relationships.buildsInto.includes(buildItemId)) {
-            itemData.relationships.buildsInto.push(buildItemId);
-            console.log(`  ✓ Builds into: ${itemName}`);
+  // --- Builds From: parsed from the recipe-table ---
+  // The top-level recipe-table's first item-tooltip is the item itself.
+  // Direct child recipe-tables (one nesting level deep) are the components.
+  const $topRecipeTable = $('table.recipe-table').first();
+  if ($topRecipeTable.length) {
+    $topRecipeTable.find('table.recipe-table').each(function () {
+      // Only take direct children: tables whose only parent recipe-table is the top one
+      const parentRecipeTables = $(this).parents('table.recipe-table');
+      if (parentRecipeTables.length === 1) {
+        const name = $(this).find('td.item-tooltip').first().attr('data-name');
+        if (name) {
+          const id = sanitizeId(name);
+          if (!itemData.relationships.buildsFrom.includes(id)) {
+            itemData.relationships.buildsFrom.push(id);
+            console.log(`  ✓ Builds from: ${name}`);
+          }
+        }
+      }
+    });
+  }
+
+  // ============================================
+  // PARSE GOD RESTRICTIONS
+  // ============================================
+  console.log('\n🔒 Parsing god restrictions...');
+
+  // Notes section may contain "This item is only available to <God Name>."
+  $('h2, h3').each((_i, heading) => {
+    const $heading = $(heading);
+    if ($heading.text().toLowerCase().includes('notes')) {
+      const $wrapper = $heading.closest('div.mw-heading');
+      const $list = ($wrapper.length ? $wrapper : $heading).nextAll('ul').first();
+      $list.find('li').each((_j, li) => {
+        const text = $(li).text().trim();
+        const match = text.match(/this item is only available to\s+(.+?)\.?$/i);
+        if (match) {
+          const godName = match[1].trim();
+          const godId = sanitizeId(godName);
+          if (!itemData.relationships.restrictedToGodIds.includes(godId)) {
+            itemData.relationships.restrictedToGodIds.push(godId);
+            console.log(`  ✓ Restricted to: ${godName} (${godId})`);
           }
         }
       });
@@ -359,6 +397,6 @@ async function main() {
 }
 
 // Only run main() if this file is executed directly (not imported)
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
+if (process.argv[1] && import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
   main();
 }

@@ -147,7 +147,7 @@ export default function ItemDetail() {
           )}
 
           {/* Build Path */}
-          {(item.relationships.buildsFrom.length > 0 || upgradesInto.length > 0) && (
+          {(item.relationships.buildsFrom.length > 0 || item.relationships.buildsInto.length > 0) && (
             <div className="mb-8">
               <h2>Build Path</h2>
 
@@ -166,8 +166,23 @@ export default function ItemDetail() {
                   </div>
                 </div>
               )}
+              {item.relationships.buildsInto.length > 0 && (
+                <div className="mb-4">
+                  <h3 className="text-base ">Builds Into</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {item.relationships.buildsInto.map(id => {
+                      const buildItem = getItemById(id);
+                      return buildItem ? (
+                        <Button key={id} variant="outline" asChild>
+                          <Link to={`/items/${id}`}>{buildItem.name}</Link>
+                        </Button>
+                      ) : null;
+                    })}
+                  </div>
+                </div>
+              )}
 
-              {upgradesInto.length > 0 && (
+              {/* {upgradesInto.length > 0 && (
                 <div>
                   <h3 className="text-base ">Upgrades Into</h3>
                   <div className="flex flex-wrap gap-3">
@@ -178,7 +193,7 @@ export default function ItemDetail() {
                     ))}
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           )}
 

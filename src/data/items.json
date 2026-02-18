@@ -2289,7 +2289,15 @@
       },
       "relationships": {
         "buildsFrom": [],
-        "buildsInto": [],
+        "buildsInto": [
+          "enchanted-bracelet",
+          "killing-stone",
+          "soul-reliquary",
+          "flaming-pearl",
+          "oracle-staff",
+          "ring-of-dispel",
+          "zither"
+        ],
         "restrictedToGodIds": []
       },
       "history": []
@@ -2986,8 +2994,24 @@
         "cooldownSeconds": null
       },
       "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
+        "buildsFrom": [
+          "gem"
+        ],
+        "buildsInto": [
+          "blood-bound-book",
+          "gem-of-focus",
+          "rod-of-asclepius",
+          "bracer-of-the-abyss",
+          "divine-ruin",
+          "helm-of-radiance",
+          "polynomicon",
+          "typhons-heart",
+          "helm-of-darkness",
+          "jade-scepter",
+          "sphere-of-negation",
+          "staff-of-myrddin",
+          "dreamers-idol"
+        ],
         "restrictedToGodIds": []
       },
       "history": []
@@ -3682,7 +3706,10 @@
         "cooldownSeconds": 80
       },
       "relationships": {
-        "buildsFrom": [],
+        "buildsFrom": [
+          "killing-stone",
+          "cursed-sickle"
+        ],
         "buildsInto": [],
         "restrictedToGodIds": []
       },
@@ -8214,7 +8241,9 @@
       "relationships": {
         "buildsFrom": [],
         "buildsInto": [],
-        "restrictedToGodIds": []
+        "restrictedToGodIds": [
+          "aladdin"
+        ]
       },
       "history": []
     },
