@@ -1,4 +1,5 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import { cn } from '@/lib/utils';
 
 export default function Layout() {
   const location = useLocation();
@@ -9,92 +10,46 @@ export default function Layout() {
     return false;
   };
 
+  const navLinks = [
+    { to: '/', label: 'Home' },
+    { to: '/gods', label: 'Gods' },
+    { to: '/items', label: 'Items' },
+    { to: '/builds', label: 'Builds' },
+  ];
+
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <header
-        style={{
-          background: '#1a1a1a',
-          color: 'white',
-          padding: '1rem 2rem',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-        }}
-      >
-        <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <h1 style={{ margin: 0, fontSize: '1.5rem' }}>
-            <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
+    <div className="flex min-h-screen flex-col">
+      <header className="bg-header px-8 py-4 text-white shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+        <nav className="flex items-center gap-8">
+          <h1 className="m-0 text-2xl">
+            <Link to="/" className="text-white no-underline">
               SMITE 2 Tool
             </Link>
           </h1>
-          <div style={{ display: 'flex', gap: '1rem' }}>
-            <Link
-              to="/"
-              style={{
-                color: isActive('/') ? '#4CAF50' : 'white',
-                textDecoration: 'none',
-                fontWeight: isActive('/') ? 'bold' : 'normal',
-                padding: '0.5rem 1rem',
-                borderRadius: '4px',
-                background: isActive('/') ? 'rgba(76, 175, 80, 0.1)' : 'transparent',
-              }}
-            >
-              Home
-            </Link>
-            <Link
-              to="/gods"
-              style={{
-                color: isActive('/gods') ? '#4CAF50' : 'white',
-                textDecoration: 'none',
-                fontWeight: isActive('/gods') ? 'bold' : 'normal',
-                padding: '0.5rem 1rem',
-                borderRadius: '4px',
-                background: isActive('/gods') ? 'rgba(76, 175, 80, 0.1)' : 'transparent',
-              }}
-            >
-              Gods
-            </Link>
-            <Link
-              to="/items"
-              style={{
-                color: isActive('/items') ? '#4CAF50' : 'white',
-                textDecoration: 'none',
-                fontWeight: isActive('/items') ? 'bold' : 'normal',
-                padding: '0.5rem 1rem',
-                borderRadius: '4px',
-                background: isActive('/items') ? 'rgba(76, 175, 80, 0.1)' : 'transparent',
-              }}
-            >
-              Items
-            </Link>
-            <Link
-              to="/builds"
-              style={{
-                color: isActive('/builds') ? '#4CAF50' : 'white',
-                textDecoration: 'none',
-                fontWeight: isActive('/builds') ? 'bold' : 'normal',
-                padding: '0.5rem 1rem',
-                borderRadius: '4px',
-                background: isActive('/builds') ? 'rgba(76, 175, 80, 0.1)' : 'transparent',
-              }}
-            >
-              Builds
-            </Link>
+          <div className="flex gap-4">
+            {navLinks.map(({ to, label }) => (
+              <Link
+                key={to}
+                to={to}
+                className={cn(
+                  'rounded px-4 py-2 no-underline transition-colors',
+                  isActive(to)
+                    ? 'bg-gods-light font-bold text-gods'
+                    : 'text-white hover:text-gods'
+                )}
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </nav>
       </header>
 
-      <main style={{ flex: 1, margin: '0 auto', width: '95%' }}>
+      <main className="mx-auto w-[95%] flex-1">
         <Outlet />
       </main>
 
-      <footer
-        style={{
-          background: '#f5f5f5',
-          padding: '1rem 2rem',
-          textAlign: 'center',
-          color: '#666',
-          fontSize: '0.875rem',
-        }}
-      >
+      <footer className="bg-surface px-8 py-4 text-center text-sm text-text-secondary">
         SMITE 2 Tool v1.0 - Built with validated data using Zod
       </footer>
     </div>

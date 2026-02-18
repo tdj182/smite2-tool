@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { itemsData } from '@/lib/items';
 import type { ItemCategory } from '@/lib/schemas/items';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
 
 export default function ItemsList() {
   const [selectedCategory, setSelectedCategory] = useState<ItemCategory | 'all'>('all');
@@ -27,40 +30,29 @@ export default function ItemsList() {
   return (
     <div>
       <h1>Items</h1>
-      <p style={{ color: '#666', marginBottom: '2rem' }}>
+      <p className="mb-8 text-text-secondary">
         Browse all {itemsData.items.length} items. Click on an item to view detailed information.
       </p>
 
       {/* Filters */}
-      <div
-        style={{
-          background: '#f5f5f5',
-          padding: '1.5rem',
-          borderRadius: '8px',
-          marginBottom: '2rem',
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '1rem',
-          alignItems: 'center',
-        }}
-      >
+      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-surface p-6">
         <div>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Search:</label>
-          <input
+          <label className="mb-2 block font-bold">Search:</label>
+          <Input
             type="text"
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
             placeholder="Search items..."
-            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc', width: '200px' }}
+            className="w-[200px]"
           />
         </div>
 
         <div>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Category:</label>
+          <label className="mb-2 block font-bold">Category:</label>
           <select
             value={selectedCategory}
             onChange={e => setSelectedCategory(e.target.value as ItemCategory | 'all')}
-            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+            className="rounded border border-border-light px-2 py-2"
           >
             {categories.map(category => (
               <option key={category} value={category}>
@@ -71,11 +63,11 @@ export default function ItemsList() {
         </div>
 
         <div>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Tier:</label>
+          <label className="mb-2 block font-bold">Tier:</label>
           <select
             value={selectedTier}
             onChange={e => setSelectedTier(e.target.value === 'all' ? 'all' : Number(e.target.value))}
-            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+            className="rounded border border-border-light px-2 py-2"
           >
             {tiers.map(tier => (
               <option key={tier} value={tier}>
@@ -85,130 +77,81 @@ export default function ItemsList() {
           </select>
         </div>
 
-        <div style={{ marginLeft: 'auto' }}>
+        <div className="ml-auto">
           <strong>{filteredItems.length}</strong> items found
         </div>
       </div>
 
       {/* Items Grid */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-          gap: '1.5rem',
-        }}
-      >
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6">
         {filteredItems.map(item => (
           <Link
             key={item.id}
             to={`/items/${item.id}`}
-            style={{
-              textDecoration: 'none',
-              color: 'inherit',
-              border: '1px solid #ddd',
-              borderRadius: '8px',
-              padding: '1.5rem',
-              background: 'white',
-              transition: 'all 0.2s',
-              cursor: 'pointer',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-              e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.boxShadow = 'none';
-              e.currentTarget.style.transform = 'translateY(0)';
-            }}
+            className="block no-underline"
           >
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '0.75rem' }}>
-              <img
-                src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
-                alt={item.icon.alt}
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  objectFit: 'cover',
-                  borderRadius: '8px',
-                  border: '2px solid #2196F3',
-                }}
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <div style={{ flex: 1 }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.5rem' }}>
-                  <h3 style={{ margin: 0 }}>{item.name}</h3>
-                  <span
-                    style={{
-                      background: '#2196F3',
-                      color: 'white',
-                      padding: '0.25rem 0.75rem',
-                      borderRadius: '12px',
-                      fontSize: '0.75rem',
-                      fontWeight: 'bold',
+            <Card className="cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+              <CardContent className="p-6">
+                <div className="mb-3 flex gap-4">
+                  <img
+                    src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
+                    alt={item.icon.alt}
+                    className="size-[50px] rounded-lg border-2 border-items object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
                     }}
-                  >
-                    {item.shop.cost}g
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ color: '#666', fontSize: '0.875rem', marginBottom: '0.75rem' }}>
-              {item.classification.category} • {item.classification.effectType}
-              {item.classification.tier !== null && ` • Tier ${item.classification.tier}`}
-            </div>
-
-            {item.tags.length > 0 && (
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
-                {item.tags.slice(0, 3).map(tag => (
-                  <span
-                    key={tag}
-                    style={{
-                      background: '#eee',
-                      padding: '0.25rem 0.5rem',
-                      borderRadius: '4px',
-                      fontSize: '0.75rem',
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-                {item.tags.length > 3 && (
-                  <span
-                    style={{
-                      background: '#eee',
-                      padding: '0.25rem 0.5rem',
-                      borderRadius: '4px',
-                      fontSize: '0.75rem',
-                    }}
-                  >
-                    +{item.tags.length - 3}
-                  </span>
-                )}
-              </div>
-            )}
-
-            {/* Stats Preview */}
-            {Object.keys(item.stats).length > 0 && (
-              <div style={{ fontSize: '0.875rem', color: '#666' }}>
-                {Object.entries(item.stats)
-                  .slice(0, 2)
-                  .map(([stat, value]) => (
-                    <div key={stat}>
-                      +{value} {stat}
+                  />
+                  <div className="flex-1">
+                    <div className="mb-2 flex items-start justify-between">
+                      <h3 className="m-0">{item.name}</h3>
+                      <Badge className="bg-items text-xs text-white">
+                        {item.shop.cost}g
+                      </Badge>
                     </div>
-                  ))}
-                {Object.keys(item.stats).length > 2 && <div>+{Object.keys(item.stats).length - 2} more...</div>}
-              </div>
-            )}
+                  </div>
+                </div>
+
+                <div className="mb-3 text-sm text-text-secondary">
+                  {item.classification.category} • {item.classification.effectType}
+                  {item.classification.tier !== null && ` • Tier ${item.classification.tier}`}
+                </div>
+
+                {item.tags.length > 0 && (
+                  <div className="mb-3 flex flex-wrap gap-2">
+                    {item.tags.slice(0, 3).map(tag => (
+                      <Badge key={tag} variant="secondary" className="text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                    {item.tags.length > 3 && (
+                      <Badge variant="secondary" className="text-xs">
+                        +{item.tags.length - 3}
+                      </Badge>
+                    )}
+                  </div>
+                )}
+
+                {/* Stats Preview */}
+                {Object.keys(item.stats).length > 0 && (
+                  <div className="text-sm text-text-secondary">
+                    {Object.entries(item.stats)
+                      .slice(0, 2)
+                      .map(([stat, value]) => (
+                        <div key={stat}>
+                          +{value} {stat}
+                        </div>
+                      ))}
+                    {Object.keys(item.stats).length > 2 && <div>+{Object.keys(item.stats).length - 2} more...</div>}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
           </Link>
         ))}
       </div>
 
       {filteredItems.length === 0 && (
-        <div style={{ textAlign: 'center', padding: '3rem', color: '#666' }}>
+        <div className="p-12 text-center text-text-secondary">
           <p>No items found matching your filters.</p>
         </div>
       )}

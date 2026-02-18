@@ -6,7 +6,7 @@ import GodDetail from './pages/GodDetail';
 import ItemsList from './pages/ItemsList';
 import ItemDetail from './pages/ItemDetail';
 import BuildsList from './pages/BuildsList';
-import './App.css';
+
 
 function App() {
   return (

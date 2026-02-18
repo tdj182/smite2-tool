@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { godsData, getAllPantheons } from '@/lib/gods';
 import type { GodRole, Pantheon } from '@/lib/schemas/gods';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
 
 export default function GodsList() {
   const [selectedRole, setSelectedRole] = useState<GodRole | 'all'>('all');
@@ -27,40 +30,29 @@ export default function GodsList() {
   return (
     <div>
       <h1>Gods</h1>
-      <p style={{ color: '#666', marginBottom: '2rem' }}>
+      <p className="mb-8 text-text-secondary">
         Browse all {godsData.gods.length} gods. Click on a god to view detailed information.
       </p>
 
       {/* Filters */}
-      <div
-        style={{
-          background: '#f5f5f5',
-          padding: '1.5rem',
-          borderRadius: '8px',
-          marginBottom: '2rem',
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '1rem',
-          alignItems: 'center',
-        }}
-      >
+      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-surface p-6">
         <div>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Search:</label>
-          <input
+          <label className="mb-2 block font-bold">Search:</label>
+          <Input
             type="text"
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
             placeholder="Search gods..."
-            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc', width: '200px' }}
+            className="w-[200px]"
           />
         </div>
 
         <div>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Role:</label>
+          <label className="mb-2 block font-bold">Role:</label>
           <select
             value={selectedRole}
             onChange={e => setSelectedRole(e.target.value as GodRole | 'all')}
-            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+            className="rounded border border-border-light px-2 py-2"
           >
             {roles.map(role => (
               <option key={role} value={role}>
@@ -71,11 +63,11 @@ export default function GodsList() {
         </div>
 
         <div>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Pantheon:</label>
+          <label className="mb-2 block font-bold">Pantheon:</label>
           <select
             value={selectedPantheon}
             onChange={e => setSelectedPantheon(e.target.value as Pantheon | 'all')}
-            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+            className="rounded border border-border-light px-2 py-2"
           >
             {pantheons.map(pantheon => (
               <option key={pantheon} value={pantheon}>
@@ -85,93 +77,57 @@ export default function GodsList() {
           </select>
         </div>
 
-        <div style={{ marginLeft: 'auto' }}>
+        <div className="ml-auto">
           <strong>{filteredGods.length}</strong> gods found
         </div>
       </div>
 
       {/* Gods Grid */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-          gap: '1.5rem',
-        }}
-      >
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6">
         {filteredGods.map(god => (
           <Link
             key={god.id}
             to={`/gods/${god.id}`}
-            style={{
-              textDecoration: 'none',
-              color: 'inherit',
-              border: '1px solid #ddd',
-              borderRadius: '8px',
-              padding: '1.5rem',
-              background: 'white',
-              transition: 'all 0.2s',
-              cursor: 'pointer',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-              e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.boxShadow = 'none';
-              e.currentTarget.style.transform = 'translateY(0)';
-            }}
+            className="block no-underline"
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.75rem' }}>
-              <img
-                src={import.meta.env.BASE_URL + god.icon.localPath.replace(/^\//, '')}
-                alt={god.icon.alt}
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  objectFit: 'cover',
-                  borderRadius: '8px',
-                  border: '2px solid #4CAF50',
-                }}
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <div>
-                <h3 style={{ margin: '0 0 0.25rem 0' }}>{god.name}</h3>
-                <div style={{ color: '#666', fontSize: '0.875rem' }}>
-                  {god.identity.pantheon || 'Unknown'} • {god.identity.primaryDamageType || 'Unknown'}
+            <Card className="cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+              <CardContent className="p-6">
+                <div className="mb-3 flex items-center gap-4">
+                  <img
+                    src={import.meta.env.BASE_URL + god.icon.localPath.replace(/^\//, '')}
+                    alt={god.icon.alt}
+                    className="size-[50px] rounded-lg border-2 border-gods object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div>
+                    <h3 className="m-0 mb-1">{god.name}</h3>
+                    <div className="text-sm text-text-secondary">
+                      {god.identity.pantheon || 'Unknown'} • {god.identity.primaryDamageType || 'Unknown'}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
-              {god.identity.roles.map(role => (
-                <span
-                  key={role}
-                  style={{
-                    background: '#4CAF50',
-                    color: 'white',
-                    padding: '0.25rem 0.75rem',
-                    borderRadius: '12px',
-                    fontSize: '0.75rem',
-                    fontWeight: 'bold',
-                  }}
-                >
-                  {role.toUpperCase()}
-                </span>
-              ))}
-            </div>
-            {god.details.summary && (
-              <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0 0 0', lineHeight: '1.4' }}>
-                {god.details.summary.slice(0, 100)}
-                {god.details.summary.length > 100 ? '...' : ''}
-              </p>
-            )}
+                <div className="mb-3 flex flex-wrap gap-2">
+                  {god.identity.roles.map(role => (
+                    <Badge key={role} className="bg-gods text-xs text-white">
+                      {role.toUpperCase()}
+                    </Badge>
+                  ))}
+                </div>
+                {god.details.summary && (
+                  <p className="m-0 mt-2 line-clamp-2 text-sm leading-relaxed text-text-secondary">
+                    {god.details.summary}
+                  </p>
+                )}
+              </CardContent>
+            </Card>
           </Link>
         ))}
       </div>
 
       {filteredGods.length === 0 && (
-        <div style={{ textAlign: 'center', padding: '3rem', color: '#666' }}>
+        <div className="p-12 text-center text-text-secondary">
           <p>No gods found matching your filters.</p>
         </div>
       )}
