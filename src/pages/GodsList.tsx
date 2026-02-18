@@ -38,7 +38,6 @@ export default function GodsList() {
       {/* Filters */}
       <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
         <div>
-          <label className="mb-2 block font-bold">Search:</label>
           <Input
             type="text"
             value={searchQuery}
@@ -49,7 +48,6 @@ export default function GodsList() {
         </div>
 
         <div>
-          <label className="mb-2 block font-bold">Role:</label>
           <Select value={selectedRole} onValueChange={v => setSelectedRole(v as GodRole | 'all')}>
             <SelectTrigger>
               <SelectValue />
@@ -65,7 +63,6 @@ export default function GodsList() {
         </div>
 
         <div>
-          <label className="mb-2 block font-bold">Pantheon:</label>
           <Select value={selectedPantheon} onValueChange={v => setSelectedPantheon(v as Pantheon | 'all')}>
             <SelectTrigger>
               <SelectValue />

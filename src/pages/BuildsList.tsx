@@ -7,6 +7,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 
 export default function BuildsList() {
   const [selectedRole, setSelectedRole] = useState<BuildRole | 'all'>('all');
@@ -34,6 +36,19 @@ export default function BuildsList() {
     return true;
   });
 
+  const allNoteKeys = filteredBuilds.flatMap(build =>
+    build.itemNotes ? build.itemIds.filter(id => build.itemNotes![id]).map(id => `${build.id}-${id}`) : []
+  );
+  const allNotesExpanded = allNoteKeys.length > 0 && allNoteKeys.every(key => expandedNotes.has(key));
+
+  const toggleAllNotes = () => {
+    if (allNotesExpanded) {
+      setExpandedNotes(new Set());
+    } else {
+      setExpandedNotes(new Set(allNoteKeys));
+    }
+  };
+
   return (
     <div>
       <h1>Builds</h1>
@@ -43,8 +58,7 @@ export default function BuildsList() {
 
       {/* Filters */}
       <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
-        <div>
-          <label className="mb-2 block font-bold">Role:</label>
+        <div className='flex'>
           <Select value={selectedRole} onValueChange={v => setSelectedRole(v as BuildRole | 'all')}>
             <SelectTrigger>
               <SelectValue />
@@ -59,6 +73,17 @@ export default function BuildsList() {
           </Select>
         </div>
 
+        {allNoteKeys.length > 0 && (
+          <div className="flex items-center space-x-2">
+            <Switch
+              id="toggle-notes"
+              checked={allNotesExpanded}
+              onCheckedChange={toggleAllNotes}
+            />
+            <Label htmlFor="toggle-notes">Show All Notes</Label>
+          </div>
+        )}
+
         <div className="ml-auto">
           <strong>{filteredBuilds.length}</strong> builds found
         </div>
@@ -72,7 +97,7 @@ export default function BuildsList() {
               <div className="mb-6">
                 <div className="mb-2 flex items-center gap-4">
                   <h2 className="m-0">{build.name}</h2>
-                  <Badge className="bg-chart-1 text-sm font-bold uppercase">
+                  <Badge className="text-sm font-bold uppercase">
                     {build.role}
                   </Badge>
                 </div>

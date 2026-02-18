@@ -38,7 +38,6 @@ export default function ItemsList() {
       {/* Filters */}
       <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
         <div>
-          <label className="mb-2 block font-bold">Search:</label>
           <Input
             type="text"
             value={searchQuery}
@@ -49,7 +48,6 @@ export default function ItemsList() {
         </div>
 
         <div>
-          <label className="mb-2 block font-bold">Category:</label>
           <Select value={selectedCategory} onValueChange={v => setSelectedCategory(v as ItemCategory | 'all')}>
             <SelectTrigger>
               <SelectValue />
@@ -65,7 +63,6 @@ export default function ItemsList() {
         </div>
 
         <div>
-          <label className="mb-2 block font-bold">Tier:</label>
           <Select value={String(selectedTier)} onValueChange={v => setSelectedTier(v === 'all' ? 'all' : Number(v))}>
             <SelectTrigger>
               <SelectValue />
