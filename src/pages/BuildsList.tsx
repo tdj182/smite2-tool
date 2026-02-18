@@ -42,7 +42,7 @@ export default function BuildsList() {
       </p>
 
       {/* Filters */}
-      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-surface p-6">
+      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
         <div>
           <label className="mb-2 block font-bold">Role:</label>
           <select
@@ -139,7 +139,7 @@ export default function BuildsList() {
                               )}
                             </>
                           ) : (
-                            <div className="min-w-[120px] rounded-lg border-2 border-dashed border-border-light bg-surface p-4 text-center text-text-muted">
+                            <div className="min-w-[120px] rounded-lg border-2 border-dashed border-border-light bg-muted p-4 text-center text-text-muted">
                               <div className="text-sm">{itemId}</div>
                               <div className="text-xs">(Not found)</div>
                             </div>

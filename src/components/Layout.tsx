@@ -61,7 +61,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <footer className="bg-surface px-8 py-4 text-center text-sm ">
+      <footer className="bg-muted px-8 py-4 text-center text-sm ">
         SMITE 2 Tool v1.0 - Built with validated data using Zod
       </footer>
     </div>

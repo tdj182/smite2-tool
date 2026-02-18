@@ -44,7 +44,7 @@ export default function ItemDetail() {
             <h1 className="m-0">{item.name}</h1>
           </div>
 
-          <Card className="mb-6 bg-surface">
+          <Card className="mb-6 bg-muted">
             <CardContent className="p-6">
               <h3 className="mt-0">Classification</h3>
               <div className="grid gap-3">
@@ -57,15 +57,22 @@ export default function ItemDetail() {
             </CardContent>
           </Card>
 
-          <Card className="mb-6 bg-surface">
+          <Card className="mb-6 bg-muted">
             <CardContent className="p-6">
               <h3 className="mt-0">Shop</h3>
-              <div className="text-2xl font-bold text-items">{item.shop.cost} Gold</div>
+              {item.shop.totalCost != null ? (
+                <div className="grid gap-2">
+                  <div className="text-2xl font-bold text-items">{item.shop.totalCost} Gold</div>
+                  <div className="text-sm text-muted-foreground">Recipe cost: {item.shop.cost}g</div>
+                </div>
+              ) : (
+                <div className="text-2xl font-bold text-items">{item.shop.cost} Gold</div>
+              )}
             </CardContent>
           </Card>
 
           {item.tags.length > 0 && (
-            <Card className="bg-surface">
+            <Card className="bg-muted">
               <CardContent className="p-6">
                 <h3 className="mt-0">Tags</h3>
                 <div className="flex flex-wrap gap-2">
@@ -90,7 +97,7 @@ export default function ItemDetail() {
                 {Object.entries(item.stats).map(([stat, value]) => (
                   <div
                     key={stat}
-                    className="flex items-center justify-between rounded-lg bg-surface p-4"
+                    className="flex items-center justify-between rounded-lg bg-muted p-4"
                   >
                     <span className="capitalize">{stat}</span>
                     <strong className="text-xl text-items">+{value}</strong>
@@ -113,7 +120,7 @@ export default function ItemDetail() {
               )}
 
               {item.details.passive && (
-                <Card className="mb-4 bg-passive-bg">
+                <Card className="mb-4 bg-muted">
                   <CardContent className="p-4">
                     <strong className="text-amber-600">PASSIVE:</strong>
                     <p className="mt-2 mb-0 leading-relaxed ">{item.details.passive}</p>
@@ -122,7 +129,7 @@ export default function ItemDetail() {
               )}
 
               {item.details.active && (
-                <Card className="bg-active-bg">
+                <Card className="bg-muted">
                   <CardContent className="p-4">
                     <div className="flex items-center justify-between">
                       <strong className="text-blue-700">ACTIVE:</strong>

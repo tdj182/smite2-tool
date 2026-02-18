@@ -44,7 +44,7 @@ export default function GodDetail() {
             <h1 className="m-0">{god.name}</h1>
           </div>
 
-          <Card className="mb-6 bg-surface">
+          <Card className="mb-6 bg-muted">
             <CardContent className="p-6">
               <h3 className="mt-0">Identity</h3>
               <div className="grid gap-3">
@@ -59,7 +59,7 @@ export default function GodDetail() {
           </Card>
 
           {god.unlock && (
-            <Card className="mb-6 bg-surface">
+            <Card className="mb-6 bg-muted">
               <CardContent className="p-6">
                 <h3 className="mt-0">Unlock</h3>
                 {god.unlock.costDiamonds !== null && (
@@ -76,7 +76,7 @@ export default function GodDetail() {
           )}
 
           {/* Base Stats */}
-          <Card className="bg-surface">
+          <Card className="bg-muted">
             <CardContent className="p-6">
               <h3 className="mt-0">Base Stats (Level 1)</h3>
               <div className="grid gap-2 text-sm">

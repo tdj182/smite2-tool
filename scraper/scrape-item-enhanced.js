@@ -25,12 +25,13 @@ export async function scrapeItem(itemName) {
       alt: `${itemName} icon`
     },
     shop: {
-      cost: 0
+      cost: 0,
+      totalCost: null
     },
     classification: {
       tier: null,
       category: 'item',
-      effectType: 'passive'
+      effectType: 'none'
     },
     stats: {},
     tags: [],
@@ -70,6 +71,15 @@ export async function scrapeItem(itemName) {
       }
     }
 
+    // Extract total cost
+    if (header.includes('total cost')) {
+      const totalCostMatch = data.match(/(\d+)/);
+      if (totalCostMatch) {
+        itemData.shop.totalCost = parseInt(totalCostMatch[1]);
+        console.log(`  ✓ Total Cost: ${itemData.shop.totalCost}`);
+      }
+    }
+
     // Extract item type (relic, starter, consumable, curio, item)
     if (header.includes('type')) {
       const typeLower = data.toLowerCase();
@@ -96,11 +106,11 @@ export async function scrapeItem(itemName) {
   // Try to find tier in category links
   $('.catlinks a').each((_i, link) => {
     const categoryText = $(link).text().toLowerCase();
-    if (categoryText.includes('tier i items') && !categoryText.includes('tier ii') && !categoryText.includes('tier iii')) {
+    if (categoryText.includes('tier 1 items') && !categoryText.includes('tier 2') && !categoryText.includes('tier 3')) {
       itemData.classification.tier = 1;
-    } else if (categoryText.includes('tier ii items')) {
+    } else if (categoryText.includes('tier 2 items')) {
       itemData.classification.tier = 2;
-    } else if (categoryText.includes('tier iii items')) {
+    } else if (categoryText.includes('tier 3 items')) {
       itemData.classification.tier = 3;
     }
   });
@@ -134,25 +144,44 @@ export async function scrapeItem(itemName) {
     'movement speed': 'movementSpeed',
     'critical strike chance': 'criticalStrikeChance',
     'cooldown reduction': 'cooldownReduction',
+    'cooldown rate': 'cooldownRate',
     'in-hand power': 'inhandPower',
     'inhand power': 'inhandPower',
     'lifesteal': 'lifesteal',
-    'penetration': 'penetration'
+    'penetration': 'penetration',
+    'physical power': 'physicalPower',
+    'magical power': 'magicalPower'
   };
 
+  // Stats are in a single row: <th>Stats:</th> <td>all stats</td>
+  // cheerio .text() strips <br> tags, so we replace them with \n first
   rows.each((_i, row) => {
     const $row = $(row);
-    const header = $row.find('th').text().trim().toLowerCase().replace(/[:.]/g, '').trim();
-    const data = $row.find('td').text().trim();
+    const header = $row.find('th').first().text().trim().toLowerCase().replace(/[:.]/g, '').trim();
+    const $td = $row.find('td');
 
-    for (const [searchTerm, jsonKey] of Object.entries(statMappings)) {
-      if (header === searchTerm) {
-        // Extract numeric value (handle formats like "20", "+20", "20%")
-        const match = data.match(/([\d.]+)/);
+    if (header === 'stats' && $td.length) {
+      // Replace <br> with newlines, then strip remaining HTML to get text
+      const html = $td.html() || '';
+      const textWithBreaks = html
+        .replace(/<br\s*\/?>/gi, '\n')
+        .replace(/<[^>]+>/g, ' ')   // strip remaining HTML tags
+        .replace(/&nbsp;/g, ' ');
+      const lines = textWithBreaks.split(/\n/).map(l => l.trim()).filter(Boolean);
+
+      for (const line of lines) {
+        // Match patterns like "30 Physical Protection", "400 Max Health", "20% Attack Speed"
+        const match = line.match(/([\d.]+)%?\s+(.+)/);
         if (match) {
           const value = parseFloat(match[1]);
-          itemData.stats[jsonKey] = value;
-          console.log(`  ✓ ${searchTerm}: ${value}`);
+          const statName = match[2].trim().toLowerCase();
+          const jsonKey = statMappings[statName];
+          if (jsonKey) {
+            itemData.stats[jsonKey] = value;
+            console.log(`  ✓ ${statName}: ${value}`);
+          } else {
+            console.log(`  ? Unknown stat: "${statName}" = ${value}`);
+          }
         }
       }
     }
@@ -163,67 +192,87 @@ export async function scrapeItem(itemName) {
   // ============================================
   console.log('\n⚡ Parsing effects...');
 
-  // Look for passive effect
+  // Look for passive/active in page headings
   $('h2, h3').each((_i, heading) => {
     const $heading = $(heading);
     const headingText = $heading.text().toLowerCase();
 
     if (headingText.includes('passive')) {
-      itemData.classification.effectType = 'passive';
       const nextP = $heading.next('p');
       if (nextP.length) {
-        itemData.details.passive = nextP.text().trim();
-        console.log(`  ✓ Passive: ${itemData.details.passive.substring(0, 50)}...`);
+        const text = nextP.text().trim();
+        if (text) {
+          itemData.details.passive = text;
+          console.log(`  ✓ Passive (heading): ${text.substring(0, 50)}...`);
+        }
       }
     }
 
     if (headingText.includes('active')) {
-      itemData.classification.effectType = 'active';
       const nextP = $heading.next('p');
       if (nextP.length) {
         const activeText = nextP.text().trim();
-        itemData.details.active = activeText;
+        if (activeText) {
+          itemData.details.active = activeText;
 
-        // Extract cooldown from active text
-        const cooldownMatch = activeText.match(/cooldown:?\s*(\d+)s?/i);
-        if (cooldownMatch) {
-          itemData.details.cooldownSeconds = parseInt(cooldownMatch[1]);
-        }
+          // Extract cooldown from active text
+          const cooldownMatch = activeText.match(/cooldown:?\s*(\d+)s?/i);
+          if (cooldownMatch) {
+            itemData.details.cooldownSeconds = parseInt(cooldownMatch[1]);
+          }
 
-        console.log(`  ✓ Active: ${activeText.substring(0, 50)}...`);
-        if (itemData.details.cooldownSeconds) {
-          console.log(`  ✓ Cooldown: ${itemData.details.cooldownSeconds}s`);
+          console.log(`  ✓ Active (heading): ${activeText.substring(0, 50)}...`);
+          if (itemData.details.cooldownSeconds) {
+            console.log(`  ✓ Cooldown: ${itemData.details.cooldownSeconds}s`);
+          }
         }
       }
     }
   });
 
-  // Also check infobox for effects
+  // Also check infobox for effects (overwrites heading-based if found)
   rows.each((_i, row) => {
     const $row = $(row);
     const header = $row.find('th').text().trim().toLowerCase();
     const data = $row.find('td').text().trim();
 
     if (header.includes('passive effect') || header === 'passive') {
-      itemData.details.passive = data;
-      itemData.classification.effectType = 'passive';
-      console.log(`  ✓ Passive: ${data.substring(0, 50)}...`);
+      if (data) {
+        itemData.details.passive = data;
+        console.log(`  ✓ Passive (infobox): ${data.substring(0, 50)}...`);
+      }
     }
 
     if (header.includes('active effect') || header === 'active') {
-      itemData.details.active = data;
-      itemData.classification.effectType = 'active';
+      if (data) {
+        itemData.details.active = data;
 
-      // Extract cooldown
-      const cooldownMatch = data.match(/cooldown:?\s*(\d+)s?/i);
-      if (cooldownMatch) {
-        itemData.details.cooldownSeconds = parseInt(cooldownMatch[1]);
-        console.log(`  ✓ Cooldown: ${itemData.details.cooldownSeconds}s`);
+        // Extract cooldown
+        const cooldownMatch = data.match(/cooldown:?\s*(\d+)s?/i);
+        if (cooldownMatch) {
+          itemData.details.cooldownSeconds = parseInt(cooldownMatch[1]);
+          console.log(`  ✓ Cooldown: ${itemData.details.cooldownSeconds}s`);
+        }
+
+        console.log(`  ✓ Active (infobox): ${data.substring(0, 50)}...`);
       }
-
-      console.log(`  ✓ Active: ${data.substring(0, 50)}...`);
     }
   });
+
+  // Derive effectType from actual content
+  const hasPassive = itemData.details.passive && itemData.details.passive.trim().length > 0;
+  const hasActive = itemData.details.active && itemData.details.active.trim().length > 0;
+
+  if (hasPassive && hasActive) {
+    itemData.classification.effectType = 'both';
+  } else if (hasPassive) {
+    itemData.classification.effectType = 'passive';
+  } else if (hasActive) {
+    itemData.classification.effectType = 'active';
+  } else {
+    itemData.classification.effectType = 'none';
+  }
+  console.log(`  ✓ Effect type: ${itemData.classification.effectType}`);
 
   // ============================================
   // PARSE BUILD PATHS
@@ -282,7 +331,7 @@ export async function scrapeItem(itemName) {
   if (itemData.stats.physicalProtection || itemData.stats.magicalProtection) tags.add('defense');
   if (itemData.stats.attackSpeed) tags.add('attack-speed');
   if (itemData.stats.criticalStrikeChance) tags.add('crit');
-  if (itemData.stats.cooldownReduction) tags.add('cooldown');
+  if (itemData.stats.cooldownReduction || itemData.stats.cooldownRate) tags.add('cooldown');
   if (itemData.stats.lifesteal) tags.add('lifesteal');
   if (itemData.stats.penetration) tags.add('penetration');
 

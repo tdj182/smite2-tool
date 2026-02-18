@@ -105,7 +105,7 @@ export default function ItemsList() {
                     <div className="mb-2 flex items-start justify-between">
                       <h3 className="m-0">{item.name}</h3>
                       <Badge className="bg-items text-xs text-white">
-                        {item.shop.cost}g
+                        {item.shop.totalCost ?? item.shop.cost}g
                       </Badge>
                     </div>
                   </div>

@@ -3,237 +3,9 @@
     "game": "smite2",
     "dataVersion": 1,
     "patch": "Open Beta",
-    "lastUpdatedUtc": "2026-02-16T15:39:54.225Z"
+    "lastUpdatedUtc": "2026-02-18T21:02:59.662Z"
   },
   "items": [
-    {
-      "id": "smite-2",
-      "name": "SMITE 2",
-      "icon": {
-        "localPath": "/images/items/smite-2.webp",
-        "alt": "SMITE 2 icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {},
-      "tags": [
-        "item"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "gods",
-      "name": "Gods",
-      "icon": {
-        "localPath": "/images/items/gods.webp",
-        "alt": "Gods icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {},
-      "tags": [
-        "item"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "vulcan",
-      "name": "Vulcan",
-      "icon": {
-        "localPath": "/images/items/vulcan.webp",
-        "alt": "Vulcan icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {
-        "health": 591.8,
-        "healthRegen": 1.7,
-        "mana": 296,
-        "manaRegen": 2.34,
-        "attackSpeed": 0.97
-      },
-      "tags": [
-        "item",
-        "health",
-        "mana",
-        "attack-speed"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "aladdin",
-      "name": "Aladdin",
-      "icon": {
-        "localPath": "/images/items/aladdin.webp",
-        "alt": "Aladdin icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {
-        "health": 622.5,
-        "healthRegen": 1.7,
-        "mana": 296,
-        "manaRegen": 2.25,
-        "attackSpeed": 1
-      },
-      "tags": [
-        "item",
-        "health",
-        "mana",
-        "attack-speed"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "hua-mulan",
-      "name": "Hua Mulan",
-      "icon": {
-        "localPath": "/images/items/hua-mulan.webp",
-        "alt": "Hua Mulan icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {
-        "health": 647.4,
-        "healthRegen": 1.77,
-        "mana": 296,
-        "manaRegen": 2.25,
-        "attackSpeed": 0.97
-      },
-      "tags": [
-        "item",
-        "health",
-        "mana",
-        "attack-speed"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "baron-samedi",
-      "name": "Baron Samedi",
-      "icon": {
-        "localPath": "/images/items/baron-samedi.webp",
-        "alt": "Baron Samedi icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {
-        "health": 591.8,
-        "healthRegen": 1.7,
-        "mana": 296,
-        "manaRegen": 2.34,
-        "attackSpeed": 0.97
-      },
-      "tags": [
-        "item",
-        "health",
-        "mana",
-        "attack-speed"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
     {
       "id": "purification-beads",
       "name": "Purification Beads",
@@ -242,7 +14,8 @@
         "alt": "Purification Beads icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -255,7 +28,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Immune to Crowd Control for 2s.\nCooldown: 150s",
         "cooldownSeconds": 150
       },
@@ -274,7 +47,8 @@
         "alt": "Blink Rune icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -287,7 +61,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Teleport up to 5.6m.\nCannot be used for 3s after dealing or taking God damage.\nCan be used while casting.\nDamage or Kill a God within 4s of use: -30s Cooldown\nCooldown: 140s",
         "cooldownSeconds": 140
       },
@@ -306,12 +80,13 @@
         "alt": "Agility Relic icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
       "stats": {},
       "tags": [
@@ -338,7 +113,8 @@
         "alt": "Aegis of Acceleration icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -351,7 +127,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Become Immune (to damage and healing for 1.5s.\nCan only Move\nOn god Damage prevented: +7% Movement Speed for 6s (Max 3x)\nCooldown: 140s",
         "cooldownSeconds": 140
       },
@@ -370,7 +146,8 @@
         "alt": "Sundering Arc icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -383,7 +160,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use:\nBleed enemies, dealing 25 (+4 per Level) True Damage 3 times over 2s. Jungle Monsters and Bosses take 50 (+8 per Level) instead.\nCooldown: 120s. -30s Cooldown if only used on Jungle Monsters/Bosses.",
         "cooldownSeconds": 120
       },
@@ -402,7 +179,8 @@
         "alt": "Phantom Shell icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -415,7 +193,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: +100 (+10 per Level) Shield yourself and allies within 5.6m for 3s.\nAffected Gods:\n\nTake 20% (+1% per Level) reduced Attack Damage\nCan pass through players and player-made walls\nCooldown: 120s",
         "cooldownSeconds": 120
       },
@@ -434,16 +212,21 @@
         "alt": "Shell of Rebuke icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 2500
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 20,
+        "physicalProtection": 20
+      },
       "tags": [
-        "relic"
+        "relic",
+        "defense"
       ],
       "details": {
         "summary": null,
@@ -466,12 +249,13 @@
         "alt": "Sundering Echo icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 2500
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
       "stats": {},
       "tags": [
@@ -498,16 +282,20 @@
         "alt": "Talisman of Purification icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 2500
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "cooldownRate": 15
+      },
       "tags": [
-        "relic"
+        "relic",
+        "cooldown"
       ],
       "details": {
         "summary": null,
@@ -530,12 +318,13 @@
         "alt": "Blinking Abyss icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 2500
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
       "stats": {},
       "tags": [
@@ -562,16 +351,21 @@
         "alt": "Time-lock Aegis icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 2500
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 20,
+        "physicalProtection": 20
+      },
       "tags": [
-        "relic"
+        "relic",
+        "defense"
       ],
       "details": {
         "summary": null,
@@ -594,14 +388,17 @@
         "alt": "Agility Greaves icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 2500
       },
       "classification": {
         "tier": null,
         "category": "relic",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "movementSpeed": 5
+      },
       "tags": [
         "relic"
       ],
@@ -626,7 +423,8 @@
         "alt": "Meditation icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -639,7 +437,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "You and allies within 6.4m gain:\n+10 (+2.5% missing Health) Heal per second for 4s\n+10 (+3% missing Mana) Mana per second for 4s\nCooldown: 150s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 150
       },
@@ -658,7 +456,8 @@
         "alt": "Heimdallr's Sight icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -671,7 +470,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Pulse a reveal area 4 times over 4s.\nReveals enemies within 8.8m\nReveals Stealthed enemies and Wards\nCooldown: 90s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
@@ -690,7 +489,8 @@
         "alt": "Gjallarflare icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -703,7 +503,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Fire a traveling flare.\nReveals enemies within 8.8m\nTravels for 5s up to 44m\nOn Refire/Expire: Detonate Flare\n\nReveals enemies within 13.2m for 6s\nCooldown: 120s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 120
       },
@@ -722,7 +522,8 @@
         "alt": "Bifrost Shard icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -735,7 +536,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Place a Ward.\nReveals enemies within 7.2m\nLasts 90s or until destroyed\nCooldown: 90s\n(Max 2 Wards can be Placed)\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
@@ -754,12 +555,13 @@
         "alt": "Battle Cry icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "curio",
-        "effectType": "active"
+        "effectType": "both"
       },
       "stats": {},
       "tags": [
@@ -786,7 +588,8 @@
         "alt": "Eyes of the Jungle icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -799,7 +602,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: Ping all enemy God locations on the minimap.",
         "cooldownSeconds": null
       },
@@ -818,7 +621,8 @@
         "alt": "Runic Bomb icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -831,7 +635,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "One Use: Throw a Bomb, which after a delay:\nDeals 1000 True Damage to Minions and Structures\nDeals 300 Physical Damage to enemies\nApplies Knockback\nReduces enemy Attack Speed by 35% for 10s",
         "cooldownSeconds": null
       },
@@ -850,7 +654,8 @@
         "alt": "Crystalline Egg icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -863,7 +668,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: Summon two Naga familiars.\nThey attack your target",
         "cooldownSeconds": null
       },
@@ -882,7 +687,8 @@
         "alt": "Obsidian Dagger icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -895,7 +701,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: Take 500 True Damage.\nGain +15% Damage and Attack Speed for 9s\nIf this Damage would kill you, instead become Immune and fully Heal over 3s",
         "cooldownSeconds": null
       },
@@ -914,7 +720,8 @@
         "alt": "Health Potion icon"
       },
       "shop": {
-        "cost": 50
+        "cost": 50,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -927,7 +734,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: +10 Heal per second for 22s.\nCan carry up to 3.",
         "cooldownSeconds": null
       },
@@ -946,7 +753,8 @@
         "alt": "Vision Ward icon"
       },
       "shop": {
-        "cost": 50
+        "cost": 50,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -959,7 +767,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: Place a Ward.\nReveals enemies within 7.2m\nLasts 120s or until destroyed\nCan carry up to 2.\n(Max 2 Wards can be Placed)",
         "cooldownSeconds": null
       },
@@ -978,7 +786,8 @@
         "alt": "Multi Potion icon"
       },
       "shop": {
-        "cost": 50
+        "cost": 50,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -991,7 +800,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume:\n+5 Heal per second for 22s\n+5 Mana per second for 22s\nCan carry up to 3.",
         "cooldownSeconds": null
       },
@@ -1010,7 +819,8 @@
         "alt": "Mana Potion icon"
       },
       "shop": {
-        "cost": 50
+        "cost": 50,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -1023,7 +833,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: +12 Mana per second for 14s.\nCan carry up to 3.",
         "cooldownSeconds": null
       },
@@ -1042,7 +852,8 @@
         "alt": "Sentry Ward icon"
       },
       "shop": {
-        "cost": 120
+        "cost": 120,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -1055,7 +866,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: Place a Ward.\nReveals enemies and enemy wards within 7.2m\nLasts 120s or until destroyed\nCan carry up to 1.\n(Max 2 Wards can be Placed)",
         "cooldownSeconds": null
       },
@@ -1074,7 +885,8 @@
         "alt": "Health Chalice icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -1087,7 +899,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume Charge: +10 Heal per second for 22s.\nStarts with 3 charges. Refilled when returning to base.",
         "cooldownSeconds": null
       },
@@ -1106,7 +918,8 @@
         "alt": "Warding Chalice icon"
       },
       "shop": {
-        "cost": 400
+        "cost": 400,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -1119,7 +932,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume Charge: Place a Ward.\nReveals enemies within 7.2m\nLasts 120s or until destroyed\nStarts with 2 charges. Refilled when returning to base.\n(Max 2 Wards can be Placed)",
         "cooldownSeconds": null
       },
@@ -1138,7 +951,8 @@
         "alt": "Elixir of Strength icon"
       },
       "shop": {
-        "cost": 3000
+        "cost": 3000,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -1151,7 +965,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: +50 Strength for 360s.",
         "cooldownSeconds": null
       },
@@ -1170,7 +984,8 @@
         "alt": "Elixir of Intelligence icon"
       },
       "shop": {
-        "cost": 3000
+        "cost": 3000,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -1183,7 +998,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: +80 Intelligence for 360s.",
         "cooldownSeconds": null
       },
@@ -1202,21 +1017,28 @@
         "alt": "Selflessness icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 10,
+        "magicalProtection": 10,
+        "health": 60
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Assist Minion or Jungle Monster:\n+7 Bonus Gold\n+8 Heal\n+5 Mana Restore\nAlly god within 8.8m is hit by Hard CC:\n\nShield them for 25+5% of your Max Health\nCooldown: 30s\nRequires Level 15 to upgrade",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1234,21 +1056,28 @@
         "alt": "War Flag icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 10,
+        "magicalProtection": 10,
+        "health": 60
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Assist Minion or Jungle Monster:\n+7 Bonus Gold\n+8 Heal\n+5 Mana Restore\nYou and allies within 8.8m gain:\n+0.5% Movement Speed\n+1.25% Attack Speed\nBuff lasts 10s, Stacks up to 6 times\nRequires Level 15 to upgrade",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1266,21 +1095,27 @@
         "alt": "Leather Cowl icon"
       },
       "shop": {
-        "cost": 600
+        "cost": 600,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 15,
+        "lifesteal": 4
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Within 8.8m of an allied God: +15% Attack Speed.\nAlone: +5% Movement Speed.\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1298,21 +1133,28 @@
         "alt": "Warrior's Axe icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 12,
+        "physicalProtection": 10,
+        "magicalProtection": 10
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Damage a God:\n+30 (+2 per Level) Bonus True Damage\n+30 (+1 per Level) Heal\nHits only one God per activation\nCooldown: 8s\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1330,21 +1172,28 @@
         "alt": "Bluestone Pendant icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 15,
+        "healthRegen": 2.5,
+        "manaRegen": 2
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: +32 Physical Damage over 2s.\nSubsequent hits on the same target: 50% bonus damage for 3s\nRequires Level 20 to upgrade",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1362,21 +1211,25 @@
         "alt": "Gilded Arrow icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 10
+      },
       "tags": [
-        "starter"
+        "starter",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Every 10s: Mark the highest Health enemy minion or jungle monster within 12.8m.\nIf you land the killing blow:\n+3 Bonus Gold\n+15% Attack Speed for 8s\n+30 Mana\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1394,21 +1247,27 @@
         "alt": "Bumba's Golden Dagger icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 50,
+        "attackSpeed": 10
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +10 Strength or +20 Intelligence (based on highest item stat).\nAttacks & Abilities: +50% damage to Jungle Monsters, -40% (+1.5% Per Level) damage to Minions.\nOn Attack Hit: +15% bonus Physical Damage to Jungle Monsters within 1.92m of the target\nOn Jungle Monster Slain: Heal 10% of the slain Monster's Health, +30 Mana.\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1426,21 +1285,27 @@
         "alt": "Bumba's Cudgel icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 75,
+        "maxMana": 50
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +10 Strength or +20 Intelligence (based on highest item stat).\nAttacks & Abilities: +50% damage to Jungle Monsters, -40% (+1.5% Per Level) damage to Minions.\nAbility Used: Buff next Attack within 8s.\n\n+15 True Damage, +70 to Jungle Monsters to enemies within 1.92m of the target\nHit this Attack: -0.5s Cooldowns\nOn Jungle Monster Slain: Heal 10% of the slain Monster's Health, +30 Mana.\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1458,21 +1323,29 @@
         "alt": "Sands Of Time icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 25,
+        "manaRegen": 2,
+        "cooldownRate": 10
+      },
       "tags": [
-        "starter"
+        "starter",
+        "magical",
+        "mana",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "+0.6 Mana per second per 10% of missing Mana.\nDamaging Abilities deal +10 True Damage to Minions.\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1490,21 +1363,27 @@
         "alt": "Vampiric Shroud icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 20,
+        "health": 100
+      },
       "tags": [
-        "starter"
+        "starter",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit:\n+3 Health Heal\n+4 Mana Recovery\nIf the target is a God: Triple the effect\nOnce per target, per Ability.\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1522,21 +1401,28 @@
         "alt": "Conduit Gem icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 30,
+        "maxMana": 100,
+        "manaRegen": 1
+      },
       "tags": [
-        "starter"
+        "starter",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Every 0.5s: Gain 1 Stack (max 20).\nDamaging Abilities deals 3 True Damage per Stack (half vs Gods), then remove all Stacks.\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1554,21 +1440,27 @@
         "alt": "Death's Toll icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": null
       },
       "classification": {
         "tier": 1,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 15,
+        "health": 100
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Attack Hit:\n+2 (+0.3% Max Health) Heal\n+1 (+0.1% Max Mana) Restore\nRequires Level 20 to upgrade.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1586,21 +1478,28 @@
         "alt": "Heroism icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 1800
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 30,
+        "health": 200
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "+1 Gold per second.\nWhen an ally within 8.8m is hit by Hard Crowd Control:\n\nGive them a Shield equal to 50 +10% of your Max Health\nCooldown: 15s\nRequires Level 15",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1618,21 +1517,28 @@
         "alt": "War Banner icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": 1800
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 30,
+        "health": 200
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "+1 Gold per second.\nAssist Minion or Jungle Monster: You and allies within 8.8m gain:\n\n+1% Health Heal\n+1.25% Mana Restore\n+3.5% Movement Speed\n+6.5% Attack Speed\nMovement and Attack Speed Buff lasts 10s, Stacks up to 6 times.\nRequires Level 15",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1650,21 +1556,28 @@
         "alt": "Sundering Axe icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 30,
+        "physicalProtection": 30,
+        "magicalProtection": 30
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Damage a God:\n+150 (+10% of your Item Protections) Bonus True Damage\n+125 Heal\nHits only one God per activation\nCooldown: 8s\nRequires Level 20",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1682,21 +1595,30 @@
         "alt": "Bluestone Brooch icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 30,
+        "health": 200,
+        "healthRegen": 7,
+        "manaRegen": 5
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit:+100 Physical Damage over 2s\nGods take additional damage = 7.5% of their current Health\nSubsequent hits on the same target: 50% bonus damage for 3s\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1714,21 +1636,27 @@
         "alt": "Hunter's Cowl icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2100
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 55,
+        "lifesteal": 5
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Within 8.8m of an allied God: +30% Attack Speed and +5% Lifesteal.\nThis Buff is shared with allies within 8.8m.\nAlone: +10% Movement Speed.\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1746,21 +1674,29 @@
         "alt": "Death's Embrace icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 40,
+        "health": 150,
+        "lifesteal": 5
+      },
       "tags": [
-        "starter"
+        "starter",
+        "physical",
+        "health",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Attack Hit:\n+1% Max Health Heal\n+2% Max Mana Restore\n-0.33s Non Ultimate Cooldowns\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1778,21 +1714,29 @@
         "alt": "Pendulum Of The Ages icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 70,
+        "manaRegen": 4,
+        "cooldownRate": 20
+      },
       "tags": [
-        "starter"
+        "starter",
+        "magical",
+        "mana",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "+4 Mana per second per 10% of missing Mana.\n+7 Intelligence per 10% of available Mana.\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1810,21 +1754,28 @@
         "alt": "Archmage's Gem icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 90,
+        "maxMana": 150,
+        "manaRegen": 4
+      },
       "tags": [
-        "starter"
+        "starter",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit a God: Deal bonus Magical Damage.\nDamage = 40% of your Intelligence\nCooldown: 20s\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1842,21 +1793,25 @@
         "alt": "Sharpshooter's Arrow icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 15
+      },
       "tags": [
-        "starter"
+        "starter",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "+5% Gold Gain from Kills and Assists+10% Attack Damage against enemy Gods over 6m away\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1874,21 +1829,27 @@
         "alt": "Bumba's Spear icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 200,
+        "attackSpeed": 25
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +35 Strength or +60 Intelligence (based on highest item stat).\nAttacks & Abilities: +50% damage to Jungle Monsters & Bosses, -40% (+1.5% Per Level) damage to Minions.\nOn Attack Hit: 20% bonus Physical Damage to Enemies within 1.92m of the target\nOn Jungle Monsters & Bosses Slain: +10% Strength & Intelligence for 30s\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1906,21 +1867,27 @@
         "alt": "Bumba's Hammer icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 200,
+        "cooldownRate": 10
+      },
       "tags": [
-        "starter"
+        "starter",
+        "health",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +35 Strength or +60 Intelligence (based on highest item stat).\nAttacks & Abilities: +50% damage to Jungle Monsters & Bosses, -40% (+1.5% Per Level) damage to Minions.\nAbility Used:\n\nNext Attack deals +40 True Damage, +240 to Jungle Monsters & Bosses to enemies within 1.92m of the target\nHit this Attack: -0.75s Cooldowns, +60 Heal\nOn Jungle Monsters & Bosses Slain: +10 Cooldown Rate for 30s.\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1938,21 +1905,27 @@
         "alt": "Blood-soaked Shroud icon"
       },
       "shop": {
-        "cost": 1500
+        "cost": 1500,
+        "totalCost": 2150
       },
       "classification": {
-        "tier": 1,
+        "tier": 2,
         "category": "starter",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 60,
+        "health": 275
+      },
       "tags": [
-        "starter"
+        "starter",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit:\n+1% Max Health Heal\n+1% Max Mana Recovery\nIf the target is a god: +2% Max Health Heal and +2% Max Mana Recovery\nHeal increases by +0.1% per Kill you have this match.\nRequires Level 20.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -1970,21 +1943,25 @@
         "alt": "Bow icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2002,21 +1979,25 @@
         "alt": "Shield icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 6
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2034,21 +2015,24 @@
         "alt": "Sash icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "healthRegen": 2
+      },
       "tags": [
         "item"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2066,21 +2050,25 @@
         "alt": "Rune icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 7
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2098,21 +2086,25 @@
         "alt": "Reliquary icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "manaRegen": 2
+      },
       "tags": [
-        "item"
+        "item",
+        "mana"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2130,21 +2122,25 @@
         "alt": "Medallion icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "health": 75
+      },
       "tags": [
-        "item"
+        "item",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2162,21 +2158,25 @@
         "alt": "Circlet icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "maxMana": 150
+      },
       "tags": [
-        "item"
+        "item",
+        "mana"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2194,21 +2194,25 @@
         "alt": "Ring icon"
       },
       "shop": {
-        "cost": 400
+        "cost": 400,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "cooldownRate": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2226,21 +2230,25 @@
         "alt": "Axe icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "strength": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2258,21 +2266,25 @@
         "alt": "Gem icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "magical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2290,21 +2302,25 @@
         "alt": "Scythe icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "lifesteal": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2322,12 +2338,13 @@
         "alt": "Sabre icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 1,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
       "stats": {},
       "tags": [
@@ -2335,8 +2352,8 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2354,21 +2371,26 @@
         "alt": "Mana Tome icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 500
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "maxMana": 250,
+        "manaRegen": 2
+      },
       "tags": [
-        "item"
+        "item",
+        "mana"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2386,21 +2408,25 @@
         "alt": "Adroit Ring icon"
       },
       "shop": {
-        "cost": 250
+        "cost": 250,
+        "totalCost": 650
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2418,21 +2444,26 @@
         "alt": "Olmec Blue icon"
       },
       "shop": {
-        "cost": 100
+        "cost": 100,
+        "totalCost": 700
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "health": 185,
+        "healthRegen": 2
+      },
       "tags": [
-        "item"
+        "item",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2450,21 +2481,25 @@
         "alt": "Legionnaire Armor icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 750
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 18
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2482,21 +2517,25 @@
         "alt": "Hunter's Bow icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 750
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2514,21 +2553,25 @@
         "alt": "Circle of Protection icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 750
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 22
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2546,21 +2589,27 @@
         "alt": "Odigba icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 800
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 125,
+        "maxMana": 150
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "God Kill or Assist: Heal +5% Max Health over 6s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2578,21 +2627,25 @@
         "alt": "Veve Charm icon"
       },
       "shop": {
-        "cost": 500
+        "cost": 500,
+        "totalCost": 800
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "health": 240
+      },
       "tags": [
-        "item"
+        "item",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2610,21 +2663,27 @@
         "alt": "Captain's Ring icon"
       },
       "shop": {
-        "cost": 100
+        "cost": 100,
+        "totalCost": 800
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 10,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2642,21 +2701,27 @@
         "alt": "Sage's Ring icon"
       },
       "shop": {
-        "cost": 100
+        "cost": 100,
+        "totalCost": 800
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 12,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2674,21 +2739,26 @@
         "alt": "Engraved Guard icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 800
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 10,
+        "magicalProtection": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2706,21 +2776,25 @@
         "alt": "Cursed Sickle icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": 850
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2738,21 +2812,27 @@
         "alt": "Medal of Disruption icon"
       },
       "shop": {
-        "cost": 250
+        "cost": 250,
+        "totalCost": 850
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 12,
+        "health": 150
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2770,21 +2850,27 @@
         "alt": "Medal of Defense icon"
       },
       "shop": {
-        "cost": 250
+        "cost": 250,
+        "totalCost": 850
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 10,
+        "health": 125
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2802,21 +2888,27 @@
         "alt": "Enchanted Bracelet icon"
       },
       "shop": {
-        "cost": 150
+        "cost": 150,
+        "totalCost": 900
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 20,
+        "attackSpeed": 8
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2834,21 +2926,27 @@
         "alt": "Battle Axe icon"
       },
       "shop": {
-        "cost": 150
+        "cost": 150,
+        "totalCost": 900
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "strength": 15,
+        "health": 100
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2866,21 +2964,25 @@
         "alt": "Killing Stone icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 900
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 35
+      },
       "tags": [
-        "item"
+        "item",
+        "magical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2898,21 +3000,27 @@
         "alt": "Soul Reliquary icon"
       },
       "shop": {
-        "cost": 150
+        "cost": 150,
+        "totalCost": 900
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 20,
+        "manaRegen": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2930,21 +3038,25 @@
         "alt": "Void Shard icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "penetration": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "penetration"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2962,21 +3074,27 @@
         "alt": "Ring of Dispel icon"
       },
       "shop": {
-        "cost": 100
+        "cost": 100,
+        "totalCost": 950
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 20,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Hard Crowd Control a God: Target has -10 Strength and -16 Intelligence for 4s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -2994,21 +3112,27 @@
         "alt": "Flaming Pearl icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 950
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 25,
+        "health": 100
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3026,21 +3150,28 @@
         "alt": "Oracle Staff icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 950
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 20,
+        "maxMana": 150,
+        "manaRegen": 1
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Kill or Assist a God: +25% Mana",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3058,21 +3189,25 @@
         "alt": "Manchu Bow icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": 950
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 8
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Attacks deal +10 Physical Damage",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3090,12 +3225,13 @@
         "alt": "Survivor's Sash icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -3104,7 +3240,7 @@
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +25 Strength or +35 Intelligence (based on highest item stat).",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3122,21 +3258,25 @@
         "alt": "Skeggox icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": 1000
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "strength": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3154,21 +3294,27 @@
         "alt": "Caestus icon"
       },
       "shop": {
-        "cost": 150
+        "cost": 150,
+        "totalCost": 1000
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 10,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "When Hard Crowd Controlled: +15 Physical and Magical Protection for 4s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3186,12 +3332,13 @@
         "alt": "Hooked Sword icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 1000
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
       "stats": {},
       "tags": [
@@ -3199,8 +3346,8 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3218,21 +3365,28 @@
         "alt": "Infused Axe icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": 1050
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 15,
+        "maxMana": 150,
+        "manaRegen": 1
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Kill or Assist a God: +25% Mana",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3250,21 +3404,27 @@
         "alt": "Zither icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 1100
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "strength": 12,
+        "intelligence": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "magical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3282,21 +3442,26 @@
         "alt": "Stalwart Sigil icon"
       },
       "shop": {
-        "cost": 1150
+        "cost": 1150,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 15,
+        "magicalProtection": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3314,21 +3479,27 @@
         "alt": "Adamantine Sickle icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 1200
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 10,
+        "lifesteal": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "While Below 50% Health: +10 Strength.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3346,21 +3517,25 @@
         "alt": "Evil Eye icon"
       },
       "shop": {
-        "cost": 1200
+        "cost": 1200,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 45
+      },
       "tags": [
-        "item"
+        "item",
+        "magical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3378,21 +3553,25 @@
         "alt": "Kopesh icon"
       },
       "shop": {
-        "cost": 250
+        "cost": 250,
+        "totalCost": 1250
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
         "passive": "Critically Strike a God: +5% Movement Speed for 4s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3410,21 +3589,25 @@
         "alt": "Lucerne Hammer icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "strength": 35
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3442,12 +3625,13 @@
         "alt": "Mote of Chaos icon"
       },
       "shop": {
-        "cost": 1250
+        "cost": 1250,
+        "totalCost": null
       },
       "classification": {
-        "tier": null,
+        "tier": 2,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -3456,7 +3640,7 @@
       "details": {
         "summary": null,
         "passive": "+5% of all Stats from Items.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3474,20 +3658,26 @@
         "alt": "Blood-Bound Book icon"
       },
       "shop": {
-        "cost": 500
+        "cost": 500,
+        "totalCost": 2250
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 70,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: + Health Shield for 6s.\nShield = 7.5% Max Health & 75% Intelligence from items\nWhile Shielded: +10% Lifesteal\nKill a God: -25% Cooldown.\nCooldown: 80s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 80
       },
@@ -3506,21 +3696,30 @@
         "alt": "Bancroft's Talon icon"
       },
       "shop": {
-        "cost": 500
+        "cost": 500,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 55,
+        "maxMana": 150,
+        "manaRegen": 2,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Gain bonus Intelligence and Lifesteal scaled from missing Health.\nCaps at +60 Intelligence and +10% Lifesteal at 40% Health",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3538,20 +3737,26 @@
         "alt": "Eros' Bow icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "health": 300,
+        "attackSpeed": 30
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Mark an ally god\nOnly one ally may be Marked at a time\nMark breaks if ally is more than 20m away\nOn Attack Hit:\n\nHeal the Marked ally for +1.5% of your Max Health\nCooldown: 1s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 1
       },
@@ -3570,21 +3775,28 @@
         "alt": "Book of Thoth icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 30,
+        "maxMana": 200,
+        "manaRegen": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "+Intelligence equal to 5% of Mana from items.\nDeal 900 Damage to Minions or Jungle Monsters: +1 Stack.\n\nDamage dealt to Gods counts double\nPer Stack: +10 Mana.\nAt 50 Stacks, item evolves and gains:\n\nAdditional +Intelligence equal to 2% of Mana from Items\n+20 Intelligence\n+100 Mana",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3602,21 +3814,27 @@
         "alt": "Gem of Focus icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2350
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 50,
+        "cooldownRate": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Used: Gain a stack of Momentum.\nMomentum grants +4% Movement Speed for 6s. Stacks up to 3 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3634,21 +3852,29 @@
         "alt": "Jotunn's Revenge icon"
       },
       "shop": {
-        "cost": 400
+        "cost": 400,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 40,
+        "maxMana": 250,
+        "cooldownRate": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "mana",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "God Kill or Assist:\n-1s Cooldown for Non-Ultimate Abilities\n-5s Cooldown for Ultimate Abilities",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3666,16 +3892,20 @@
         "alt": "Sun Beam Bow icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
@@ -3698,21 +3928,27 @@
         "alt": "Chronos' Pendant icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 55,
+        "cooldownRate": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Every 10s: -1s Ability Cooldowns.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3730,21 +3966,28 @@
         "alt": "Transcendence icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 35,
+        "maxMana": 400,
+        "manaRegen": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "+Strength equal to 3% of Mana from Items.\nDeal 700 Damage to Minions or Jungle Monsters: +1 Stack.\n\nDamage dealt to Gods counts double\nPer Stack: +7 Mana.\nAt 50 Stacks, item evolves and gains:\n\n+15 Strength\n+100 Mana",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3762,21 +4005,30 @@
         "alt": "Hydra's Lament icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2450
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 45,
+        "maxMana": 200,
+        "manaRegen": 4,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "mana",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Used: Bonus Damage on your next Attack.\n+30% for Melee or +20% for Ranged\nBuff lasts 8s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3794,21 +4046,25 @@
         "alt": "Odysseus' Bow icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2450
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 45
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Every fourth Attack Hit: Trigger Chain Lightning.\nDamage = 15 (+60% Attack Damage) Physical Damage\nHits target and up to 4 nearby enemies\nBounce Range: 4.8m\nCan hit the same target more than once",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3826,21 +4082,25 @@
         "alt": "Rage icon"
       },
       "shop": {
-        "cost": 200
+        "cost": 200,
+        "totalCost": 2450
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 30
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
         "passive": "God Kill or Assist:\n+4% Critical Strike Chance (Max 20%)\nAfter 5 God Kills or Assists:\n\n+10% additional Critical Strike Chance",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3858,21 +4118,27 @@
         "alt": "Bracer of The Abyss icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 45,
+        "attackSpeed": 30
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Hit enemy Gods or Jungle Bosses: +10 Attack Damage for 10s.\nStacks up to 8 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3890,21 +4156,25 @@
         "alt": "Daybreak Gavel icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 300
+      },
       "tags": [
-        "item"
+        "item",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +60 Strength or +80 Intelligence (based on highest item stat).\nEach unique god Healed by a Healing Ability: +1 Stack (max 4)\nNon Healing Ability Use: Consume all Stacks, +13 Strength or +16 Intelligence (based on highest item stat) for 8s per Stack (max 4)",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3922,21 +4192,27 @@
         "alt": "Barbed Carver icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 40,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: Target gains +1 Stack of Jagged Wounds for 5s (max 3)\nTriggers once per Ability, per target\nEach Stack: +8% (+1% per 10% Lifesteal) Attack and Ability Damage as Physical Damage.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3954,21 +4230,28 @@
         "alt": "Vital Amplifier icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 200,
+        "healthRegen": 3,
+        "attackSpeed": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +30 Strength or +45 Intelligence (based on highest item stat).\nHeal yourself or an ally with an Ability:\n\n+7.5% Attack Speed\n+5% Attack Damage\nBuff lasts 6s, Stacks up to 3x",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -3986,21 +4269,29 @@
         "alt": "Nimble Ring icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 35,
+        "attackSpeed": 20,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "attack-speed",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "For every 10 Intelligence:\n+1 Attack Damage\n+1% Attack Speed",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4018,21 +4309,27 @@
         "alt": "Devourer's Gauntlet icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 35,
+        "lifesteal": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Kill Minion or Jungle Monsters: +1 Stack.\nEach Stack grants:\n\n+.4 Strength\n+0.05% Lifesteal\nAt 75 Stacks, gain:\n\n+10 Strength\n+3% Lifesteal\nContinue to stack more Slowly; 10 Minion Kills: +1 Stack, Jungle Boss Kill or Assist: +5 Stacks",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4050,20 +4347,26 @@
         "alt": "Lernaean Bow icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "strength": 40,
+        "attackSpeed": 30
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Fire 3 arrows that pierce enemies in a 10.5m line.\nDeals 40% of your Attack Damage as Physical Damage\n-50% Shield\nCan Critically Strike\nCooldown: 30s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 30
       },
@@ -4082,20 +4385,24 @@
         "alt": "Dagger of Frenzy icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use:\n+10 (+4 per Level) Attack Damage\n+20% (+1% per Level) Attack Speed\nBuff lasts 6 Attacks.\nKilling a God refreshes Cooldown.\nCooldown: 15s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 15
       },
@@ -4114,21 +4421,25 @@
         "alt": "Divine Ruin icon"
       },
       "shop": {
-        "cost": 400
+        "cost": 400,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 85
+      },
       "tags": [
-        "item"
+        "item",
+        "magical"
       ],
       "details": {
         "summary": null,
         "passive": "On God Damaged: Apply 25% Healing Reduction for 5s and trigger Chain Lightning when off cooldown\nChain Lightning:\n\nMagical Damage = 40 + 20% Intelligence\nHits enemy and up to 4 nearby enemies within 4.8m\nCan hit the same target more than once and applies the 25% Healing Reduction\nCooldown: 15s. Healing Reduction does not stack with other similar effects.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4146,21 +4457,29 @@
         "alt": "Soul Gem icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 60,
+        "lifesteal": 7.5,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: +1 Stack.\nThree Stacks: Next Ability Hit:\n\nDeals Bonus Damage (40% Intelligence)\n+20(+6 per Level) Heal you and allies within 3.2m\nRemoves the Stacks",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4178,21 +4497,28 @@
         "alt": "Polynomicon icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 75,
+        "maxMana": 200,
+        "manaRegen": 3
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Used: Your next Attack deals bonus Magical Damage\nDamage = 80% of your Intelligence\nCooldown: 2s",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4210,21 +4536,25 @@
         "alt": "The Executioner icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +30 Strength or +55 Intelligence (based on hightest item stat).\nAttack a God or Boss: Apply 1 Stack of Piercing.Piercing reduces 6% Protections for 4s. Stacks up to 5 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4242,20 +4572,26 @@
         "alt": "Bloodforge icon"
       },
       "shop": {
-        "cost": 350
+        "cost": 350,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "strength": 45,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: + Health Shield for 6s.\nShield = 10% Max Health & 150% Strength from Items\nWhile Shielded: +10% Lifesteal\nKill a God: -25% Cooldown.\nCooldown: 80s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 80
       },
@@ -4274,21 +4610,29 @@
         "alt": "Bragi's Harp icon"
       },
       "shop": {
-        "cost": 500
+        "cost": 500,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 35,
+        "intelligence": 25,
+        "attackSpeed": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "magical",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Attack Hit: +10 (+3 per Level) bonus Magical Damage.\nStructures and Bosses take half damage from Bragi's Harp",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4306,21 +4650,28 @@
         "alt": "Necronomicon icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 50,
+        "maxMana": 300,
+        "manaRegen": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "God Kill or Assist: +1 Stack of:\n+30 Intelligence\nStacks up to 6 times.\nOn Death: Lose 4 Stacks.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4338,21 +4689,25 @@
         "alt": "Oath-Sworn Spear icon"
       },
       "shop": {
-        "cost": 300
+        "cost": 300,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 60
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: Target is -1 Physical Protection per your Level for 4s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4370,21 +4725,27 @@
         "alt": "Typhon’s Heart icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 80,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "On Minion or Jungle Kill: +1 StackOn God Kill: +30 StacksOn Assist: +15 Stacks\nAt 30 Stacks: Summon a Monster of Typhon\n\nHealth = 200 (+55 per Level)\nDamage = 300% of your Lifesteal and 30% of your Intelligence\nYour Lifesteal heals the monster\nIf another would be summoned:\n\nFully Heal current monster\nBuff it with +25% Health, Attack Speed, and Movement Speed (Stacks up to 5x)",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4402,21 +4763,29 @@
         "alt": "Gluttonous Grimoire icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 55,
+        "health": 150,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Store 25% of your Lifesteal healing as  bonus Magical Damage on your next Attack.\nIf at  full Health: Store 40% instead\nStored damage is capped to 33% of your Max Health",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4434,21 +4803,27 @@
         "alt": "The Reaper icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 55,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Kill a God:\nHeal +15% of Slain God's Max Health\nAssist a God: Heal +7.5% of Slain God's Max Health\nDuring Moonlight Phase:\n\nHeal +15% of Slain God's Max Health, on Kill or Assist",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4466,21 +4841,27 @@
         "alt": "Tyrfing icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 25,
+        "attackSpeed": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Attacks deal +15 bonus Physical Damage.\nOn God hit:\n\nIncrease bonus Damage by +15 for 4s\nStacks once, +1 Stack per 4 Levels (Max 6 Stacks)",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4498,21 +4879,25 @@
         "alt": "Qin's Blade icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Attack Hit: +Bonus Physical Damage.\nBonus Damage = +2% Target Base Health +5% Target Item Health",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4530,21 +4915,27 @@
         "alt": "Ancient Signet icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 80,
+        "maxMana": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: +20 (+12 per Level) bonus Magical Damage\nKill or Assist a Minion:\n\n-2s Cooldown\nCooldown: 15s",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4562,54 +4953,28 @@
         "alt": "Pendulum Blade icon"
       },
       "shop": {
-        "cost": 600
+        "cost": 600,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "strength": 45,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: -4s Ability Cooldowns.\nCooldown: 40s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 40
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "death-metal",
-      "name": "Death Metal",
-      "icon": {
-        "localPath": "/images/items/death-metal.webp",
-        "alt": "Death Metal icon"
-      },
-      "shop": {
-        "cost": 500
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "active"
-      },
-      "stats": {},
-      "tags": [
-        "item"
-      ],
-      "details": {
-        "summary": null,
-        "passive": "",
-        "active": "On Use: You and Allies within 6.4m gain:\n+25% Crit Chance\n+25% Attack Speed\nBuff lasts 6s.\nCooldown: 45s\nYou can own up to 3 active items at once",
-        "cooldownSeconds": 45
       },
       "relationships": {
         "buildsFrom": [],
@@ -4626,21 +4991,30 @@
         "alt": "The Cosmic Horror icon"
       },
       "shop": {
-        "cost": 1050
+        "cost": 1050,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 85,
+        "maxMana": 200,
+        "manaRegen": 3,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Have 275+ Item Intelligence: +10 Cooldown Rate.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4658,21 +5032,25 @@
         "alt": "Hastened Fatalis icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Attack Hits a God: -12.5% Attack Movement Penalty.\nMelee hits grants 2 Stacks.\nStacks up to 4 times.\nBuff lasts 2s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4690,21 +5068,27 @@
         "alt": "Spear of Desolation icon"
       },
       "shop": {
-        "cost": 500
+        "cost": 500,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 100,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "God Kill:\n-3s Non Ultimate Cooldowns\n-10s Ultimate Cooldowns\nGod Assist:\n\n-1.5s Non Ultimate Cooldowns\n-5s Ultimate Cooldowns",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4722,21 +5106,27 @@
         "alt": "Avenging Blade icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 60,
+        "health": 200
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Attack hit a God: Debuff that God.\n-3.5% Protections\nWhen Debuffed God is in Jungle OR Heals 5% of their Health:\n\nStacks become twice as effective.\nDebuff lasts 4s, Stacks up to 3 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4754,20 +5144,26 @@
         "alt": "Arondight icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "strength": 55,
+        "cooldownRate": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Reveal enemy Gods within 17.6m for 6s.\nReveal persists through Stealth\nIf any God is revealed, +25% Movement Speed for 6s\nFirst time you damage a revealed God:\n+50 (+50% Strength) Physical Damage\nCooldown: 60s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 60
       },
@@ -4786,21 +5182,27 @@
         "alt": "Tekko-Kagi icon"
       },
       "shop": {
-        "cost": 1050
+        "cost": 1050,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 60,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Used: Gain a stack of Momentum.\nMomentum grants +4% Movement Speed for 6s. Stacks up to 3 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4818,21 +5220,27 @@
         "alt": "Riptalon icon"
       },
       "shop": {
-        "cost": 1100
+        "cost": 1100,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "attackSpeed": 20,
+        "lifesteal": 7.5
+      },
       "tags": [
-        "item"
+        "item",
+        "attack-speed",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "While Above 50% Health:\n+10% Attack Damage\nWhile Below 50% Health:\n\n+25% Attack Damage\n+7.5% Lifesteal",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4850,21 +5258,28 @@
         "alt": "Doom Orb icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 90,
+        "maxMana": 200,
+        "manaRegen": 2
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Kill or Assist a Minion: +1 Stack.\nKill or Assist a God: +5 Stacks.\nPer Stack: +8 Intelligence\nMax 5 Stacks.\nStacks last 10s. Stacks fall off one at a time",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4882,21 +5297,25 @@
         "alt": "Musashi's Dual Swords icon"
       },
       "shop": {
-        "cost": 450
+        "cost": 450,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 35
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
         "passive": "Critically Strike: +15% Movement Speed for 5s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4914,20 +5333,26 @@
         "alt": "Jade Scepter icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2750
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 100,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Place a jade current at a target location.\nAfter 1s it erupts, knocking away all gods. Enemies are knocked towards the caster.\nCooldown: 60s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 60
       },
@@ -4946,21 +5371,27 @@
         "alt": "Demon Blade icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2750
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 30,
+        "attackSpeed": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "Critically Strike: +30% Attack Speed for 3s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -4978,20 +5409,26 @@
         "alt": "Staff of Myrddin icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2750
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 70,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Next non-Ultimate Ability used will have no cooldown.\nCooldown: 80s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 80
       },
@@ -5010,21 +5447,28 @@
         "alt": "The World Stone icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2800
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 70,
+        "maxMana": 250,
+        "manaRegen": 3
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "-30% Cooldown for your Ultimate Ability.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5042,21 +5486,27 @@
         "alt": "Totem of Death icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2800
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 60,
+        "cooldownRate": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit a God or Boss: Apply 1 Stack of Piercing\nPiercing reduces 6% Protections for 4s. Stacks up to 5 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5074,21 +5524,27 @@
         "alt": "The Crusher icon"
       },
       "shop": {
-        "cost": 550
+        "cost": 550,
+        "totalCost": 2800
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 50,
+        "cooldownRate": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: +Physical Damage.\nDamage = 35% of your Strength\nDamage is dealt over 1s\nSubsequent hits on the same target deal 33% bonus Damage, over 3s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5106,21 +5562,25 @@
         "alt": "Deathbringer icon"
       },
       "shop": {
-        "cost": 650
+        "cost": 650,
+        "totalCost": 2900
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 45
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
         "passive": "+35% Critical Strike Damage.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5138,21 +5598,28 @@
         "alt": "Soul Reaver icon"
       },
       "shop": {
-        "cost": 1100
+        "cost": 1100,
+        "totalCost": 2950
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 85,
+        "maxMana": 250,
+        "manaRegen": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: +Bonus Magical Damage.\nBonus Damage = +1.2% Target Base Health & +3% Target Item Health, dealt 4 times over 2s.\nTriggers once per Ability, per god.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5170,21 +5637,28 @@
         "alt": "Heartseeker icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 3000
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 55,
+        "maxMana": 250,
+        "manaRegen": 2
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit: +%Health Physical Damage.\nDamage = 2% of your Strength, as a % of the target's Max Health.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5202,21 +5676,28 @@
         "alt": "Rod of Tahuti icon"
       },
       "shop": {
-        "cost": 600
+        "cost": 600,
+        "totalCost": 3000
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 85,
+        "maxMana": 250,
+        "manaRegen": 2
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "+Intelligence equal to 25% of your Intelligence from items.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5234,21 +5715,25 @@
         "alt": "Obsidian Shard icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 3050
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 60
+      },
       "tags": [
-        "item"
+        "item",
+        "magical"
       ],
       "details": {
         "summary": null,
         "passive": "Gain the Shattering effect:\n+35% Penetration\nDoes not stack with itself",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5266,21 +5751,25 @@
         "alt": "Titan's Bane icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 3100
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 40
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
         "passive": "Gain the Shattering effect:\n+35% Penetration\nDoes not stack with itself",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5298,20 +5787,24 @@
         "alt": "Dreamer's Idol icon"
       },
       "shop": {
-        "cost": 1700
+        "cost": 1700,
+        "totalCost": 3500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 140
+      },
       "tags": [
-        "item"
+        "item",
+        "magical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use:\n+25% Intelligence\nBecome Immune to Displacement\nBuff lasts 10s.\nCooldown: 120s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 120
       },
@@ -5330,20 +5823,24 @@
         "alt": "Avatar's Parashu icon"
       },
       "shop": {
-        "cost": 1700
+        "cost": 1700,
+        "totalCost": 3700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "strength": 100
+      },
       "tags": [
-        "item"
+        "item",
+        "physical"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: +25% Strength and Immune to Displacement for 10s.\nCooldown: 120s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 120
       },
@@ -5362,21 +5859,27 @@
         "alt": "Gauntlet of Thebes icon"
       },
       "shop": {
-        "cost": 1400
+        "cost": 1400,
+        "totalCost": 2200
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 200,
+        "maxMana": 150
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Assist a Minion: +1 Stack.\nGod Kill or Assist: +5 Stacks.\nStacks grant +15 Max Health (max 40 Stacks).\nAt 40 Stacks, Item evolves: +100 Max Health.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5394,21 +5897,29 @@
         "alt": "Yogi's Necklace icon"
       },
       "shop": {
-        "cost": 1050
+        "cost": 1050,
+        "totalCost": 2250
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 325,
+        "maxMana": 250,
+        "healthRegen": 6,
+        "manaRegen": 6
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
         "passive": "Heal +0.5% of your Max Health per second.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5426,21 +5937,27 @@
         "alt": "Spectral Armor icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "health": 400
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Enemies within 8.8m:\n-25% Attack Speed\nDeal -25% Damage with Critical Strikes\nDoes not stack with Spectral Visage",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5458,21 +5975,27 @@
         "alt": "Chandra's Grace icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 350,
+        "cooldownRate": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Every 30s: Lowest Health ally within 8.8m gain:\n+20 Health Regen\n+20 Mana Regen\n0.2s off Cooldowns, every 0.2s for 3s\nBuff lasts 3s.\nDuring Moonlight Phase: On trigger:\n\nYou also gain the Buff",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5490,16 +6013,23 @@
         "alt": "Eye of Providence icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 25,
+        "magicalProtection": 25,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
@@ -5522,21 +6052,27 @@
         "alt": "Spectral Visage icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2300
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 35,
+        "health": 400
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Enemies within 8.8m:\n-25% Attack Speed\nDeal -25% Damage with Critical Strikes\nDoes not stack with Spectral Armor",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5554,21 +6090,30 @@
         "alt": "Genji's Guard icon"
       },
       "shop": {
-        "cost": 1050
+        "cost": 1050,
+        "totalCost": 2350
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 50,
+        "maxMana": 200,
+        "manaRegen": 5,
+        "cooldownRate": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "mana",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Hit by Magical Ability Damage: -3s Cooldowns.\nCooldown: 15s",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5586,20 +6131,28 @@
         "alt": "Amanita Charm icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2350
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 15,
+        "magicalProtection": 15,
+        "health": 300,
+        "healthRegen": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Create a Healing Mushroom (6.4m radius) for 4.5s.\n+3% Health Heal every 1.5s\n+1 Stack of Damage Reduction per Heal\n10% Basic and Ability Damage Reduction per Stack\n5% Ultimate Damage Reduction per Stack\nAll Stacks removed after triggering\nCooldown: 60s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 60
       },
@@ -5618,21 +6171,28 @@
         "alt": "Erosion icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 20,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "-30% Shields applied to enemy Gods within 11.2m.\nWhen this occurs: +10% of your Physical and Magical Protections for 6s.\n\nCan stack up to 2 times",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5650,21 +6210,30 @@
         "alt": "Breastplate of Valor icon"
       },
       "shop": {
-        "cost": 1100
+        "cost": 1100,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 35,
+        "maxMana": 200,
+        "manaRegen": 2,
+        "cooldownRate": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "mana",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "On 500 (+25 per Level) Health lost: -1s Ability Cooldowns.\n25% of Self-Healing from Abilities counts towards the lost health trigger.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5682,21 +6251,26 @@
         "alt": "Contagion icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "health": 425,
+        "healthRegen": 6
+      },
       "tags": [
-        "item"
+        "item",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Damaged by an Attack or Ability: Apply +1 Stack of Contagion (1 per hit)\nIf an enemy Lifesteals 100 Health from you: Apply +5 Stacks\nAttack or Hard Crowd Control an afflicted enemy:\n\nDeal Magical Damage = 1% Max Health per stack in a 4m radius\nRemove the Stacks",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5714,21 +6288,28 @@
         "alt": "Prophetic Cloak icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 22,
+        "magicalProtection": 22,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Damage a God: +1 Protection Stack against the damage type they deal. Cooldown: 5s.\nAt +20 of each Protection Stack, item evolves:\n\n+5 Physical Protection and Magical Protection\n+6% Damage Mitigation (or +12% if total Protections > 300)",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5746,21 +6327,29 @@
         "alt": "Shield of the Phoenix icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 15,
+        "health": 225,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Ability Hit a God:\n+1.5% Health Heal\n+2% Mana Restore\nTriggers once per Ability, per God hit.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5778,20 +6367,26 @@
         "alt": "Phoenix Feather icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 35,
+        "health": 300
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Fire 3 Pulses that Heal you and True Damage enemies within 3.2m.\nHeal = +75 Health +7.5 Missing Health\nTrue Damage = +3% Max Health from Items\nCooldown: 120s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 120
       },
@@ -5810,21 +6405,26 @@
         "alt": "Magi's Cloak icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 35,
+        "magicalProtection": 35
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Every 90s: Gain a Hard Crowd Control protective bubble.\nWhen triggered, gain Crowd Control Immunity for 1.5s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5842,20 +6442,27 @@
         "alt": "Stampede icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "health": 250,
+        "healthRegen": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: You and allies within 6.4m gain:\nSlow Immunity\n+60% Movement Speed that decays to +20% over 4s\nCooldown: 90s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
@@ -5874,21 +6481,28 @@
         "alt": "Berserker's Shield icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 15,
+        "attackSpeed": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "When falling below 60% Health: Become Berserk for 8s.\nWhile Berserk:\n\n+65% Protections from Items\n+25% Attack Speed",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5906,20 +6520,26 @@
         "alt": "Screeching Gargoyle icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 50,
+        "cooldownRate": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Enemies in front of you:\nSilenced for 1s\n-10% Protections for 4s\nCooldown: 90s\nDuring Moonlight Phase:\n\nHits enemies around you\nSilence lasts 1.5s\n-15% Protections\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
@@ -5938,21 +6558,29 @@
         "alt": "Gladiator's Shield icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2450
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 25,
+        "health": 200,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Abilities deal bonus Physical Damage.\nDamage = +10 + 40 of your Item Protections\nTriggers once per Ability Cast, per God",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -5970,20 +6598,27 @@
         "alt": "Pharaoh's Curse icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2450
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 35,
+        "magicalProtection": 25,
+        "attackSpeed": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Enemies within 5.6m:\n-50% Shields\n-20% Movement Speed\n-40% Attack Speed\nDebuff lasts 4s.\nCooldown: 45s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 45
       },
@@ -6002,20 +6637,26 @@
         "alt": "Ancile icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 55,
+        "health": 300
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Your next Ability that damages a god Silences them for 1.5s\nCooldown: 70s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 70
       },
@@ -6034,21 +6675,27 @@
         "alt": "Umbral Link icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 40,
+        "lifesteal": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
         "passive": "Above 50% Health: Split your Lifesteal Healing with allies within 11.2m.\n+10 Physical and Magical Protections for 8s per unique ally Healed",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6066,21 +6713,29 @@
         "alt": "Shogun's Ofuda icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 30,
+        "health": 200,
+        "attackSpeed": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
         "passive": "+20% Attack Speed for you and allies within 8.8m.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6098,21 +6753,27 @@
         "alt": "Leviathan's Hide icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 40,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Damaged by God Attack: That God is -10% Strength & Attack Damage for 4s.\nAttack an Enemy God: +8 Max Health Permanently.\nCooldown: 10s.\nDamaged by Enemy God: -0.5s once per Ability Cast or Attack.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6130,21 +6791,26 @@
         "alt": "Spirit Robe icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 25,
+        "magicalProtection": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Hit by Hard Crowd Control:\n+40 Physical Protection\n+40 Magical Protection\n+4% Health Heal over time\nBuff lasts 6s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6162,21 +6828,30 @@
         "alt": "Oni Hunter's Garb icon"
       },
       "shop": {
-        "cost": 1150
+        "cost": 1150,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 40,
+        "health": 150,
+        "maxMana": 200,
+        "manaRegen": 8
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "mana",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "For each enemy god within 8.8m: +4% Damage Mitigation\nMax 3 stacks",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6194,21 +6869,29 @@
         "alt": "Regrowth Striders icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 35,
+        "manaRegen": 3,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "mana",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Heal yourself with an Ability:\n+25% Movement Speed (decays to 0%) for 4s\nCooldown: 10s\nGain any Movement Speed buff:\n\n+5% Health Heal over 10s",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6226,21 +6909,26 @@
         "alt": "Stygian Anchor icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 35,
+        "magicalProtection": 30
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "On God Damage Dealt: Apply 25% Healing Reduction for 5s & Apply 1 Stack of Stygian Sludge for 1.25s. (Max 5)Stacks fall off one at a time.\nTriggers once per Ability, per god.\nPer Stack:\n\n-3% Attack Speed\n5% of their Healing Echoed to you\nHealing Reduction does not stack with other similar effects.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6258,21 +6946,26 @@
         "alt": "Stone of Binding icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 25,
+        "physicalProtection": 35
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Hard Crowd Control an Enemy: Apply -7 Physical and Magical Protections for 6s.\nStacks up to 3 times. Stacks fall off one at a time.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6290,20 +6983,27 @@
         "alt": "Glorious Pridwen icon"
       },
       "shop": {
-        "cost": 1100
+        "cost": 1100,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 20,
+        "magicalProtection": 20,
+        "cooldownRate": 12
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use:\nExplode (4.8m radius):\nDeal Magical Damage (40% of Protections)\n+25% Slow for 3s\nGain a Shield (125% of Protections) for 5s.\nWhen the Shield expires or breaks: Explode again: Deal Magic Damage (70% of your Protections).\nCooldown: 45s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 45
       },
@@ -6322,20 +7022,27 @@
         "alt": "Hide of the Nemean Lion icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 35,
+        "health": 350,
+        "healthRegen": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Reflect:\n40% of pre-mitigated Attack Damage\n20% of pre-mitigated Ability Damage\nDamage is Reflected as Physical Damage\nBuff lasts 4s.\nCooldown: 60s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 60
       },
@@ -6354,21 +7061,27 @@
         "alt": "Mystical Mail icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 25,
+        "health": 300
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Enemies within 4m: 15 (+1 per Level) Magical Damage and lose 25% of Health Shield per 1s.\nRange Scaling Damage:\n\n+50% at Close Range\n-50% at Maximum Range",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6386,21 +7099,28 @@
         "alt": "Freya's Tears icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 20,
+        "magicalProtection": 25,
+        "cooldownRate": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "On 25% of your Health Lost:\n+15 Physical and Magical Protections from items for 5s\nCan stack up to 2 times",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6418,21 +7138,28 @@
         "alt": "Mantle Of Discord icon"
       },
       "shop": {
-        "cost": 1050
+        "cost": 1050,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 20,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "defense",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "Damaged while below 40% Health:\nStuns enemies within 3.2m for 1s\n+Crowd Control Immunity for 1s\nCooldown: 110s",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6450,20 +7177,26 @@
         "alt": "Ragnarok's Wake icon"
       },
       "shop": {
-        "cost": 900
+        "cost": 900,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 45,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Buildup for 2s before flying for 2.5s to your target location as a meteor of Ragnarok. Can travel up to 30m.\nEnemies near where you land take 600 Magical Damage and are knocked straight up.\nCooldown: 140s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 140
       },
@@ -6482,21 +7215,29 @@
         "alt": "Heartwood Charm icon"
       },
       "shop": {
-        "cost": 1200
+        "cost": 1200,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "health": 400,
+        "maxMana": 250,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "mana",
+        "cooldown"
       ],
       "details": {
         "summary": null,
         "passive": "-20% Cooldowns for your Healing Abilities.",
-        "active": "On Use: Your next non-Ultimate Healing Ability has no cooldown.\n-50% Damage on this Ability\nCooldown: 120s. -6s Cooldown on each Healing Ability Cast.\nYou can own up to 3 active items at once",
+        "active": "On Use: Your next non-Ultimate Healing Ability has no cooldown.\n-50% Damage on this Ability\n-6s Cooldown on each Healing Ability Cast\nCooldown: 120s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 120
       },
       "relationships": {
@@ -6514,21 +7255,28 @@
         "alt": "Draconic Scale icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 20,
+        "magicalProtection": 20,
+        "health": 300
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Damaged by a God:\nGain 2 Protections (+3% bonus Protections from items) against that God's damage type\nStacks last 1.5s (max 7)\nStacks decay 1 at a time",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6546,21 +7294,29 @@
         "alt": "Xibalban Effigy icon"
       },
       "shop": {
-        "cost": 1100
+        "cost": 1100,
+        "totalCost": 2750
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 30,
+        "magicalProtection": 30,
+        "maxMana": 300,
+        "manaRegen": 4
+      },
       "tags": [
-        "item"
+        "item",
+        "mana",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "On Use: Take 50% Damage for 4s.\nAfter: Take Physical Damage equal to mitigated Damage\nCannot drop below 5% Health\nDuring Moonlight Phase:\n\nOnly 50% of the mitigated Damage is dealt back\nYou can own up to 3 active items at once",
-        "active": "",
+        "passive": "On Use: Take 50% Damage for 4s.\nAfter: Take Physical Damage equal to mitigated Damage\nCannot drop below 5% Health\nDuring Moonlight Phase:\n\nOnly 50% of the mitigated Damage is dealt back\nCooldown: 90s\nYou can own up to 3 active items at once",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6578,21 +7334,28 @@
         "alt": "Circe's Hexstone icon"
       },
       "shop": {
-        "cost": 1400
+        "cost": 1400,
+        "totalCost": 2750
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "health": 250,
+        "healthRegen": 4,
+        "cooldownRate": 10
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "cooldown"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "On Use:\nBecome Polymorphed\nDash Forward, dealing 50 Physical Damage\n+CC Immune\n+60 Physical and Magical Protection\nOn Enemy God Hit:\n\nKnock Up\nBonus Damage equal to 10% of Current Health\n-40s Cooldown\nCooldown: 120s.\nYou can own up to 3 active items at once",
+        "passive": null,
+        "active": "On Use:\nBecome Polymorphed\nDash Forward, dealing 50 Physical Damage\n+CC Immune\n+60 Physical and Magical Protection\nOn Enemy God Hit:\n\nKnock Up\nBonus Damage equal to 10% of Current Health\n-40s Cooldown\nCooldown: 120s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 120
       },
       "relationships": {
@@ -6610,16 +7373,21 @@
         "alt": "Dwarven Plate icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2800
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 40,
+        "magicalProtection": 40
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
@@ -6642,21 +7410,28 @@
         "alt": "Hussar's Wings icon"
       },
       "shop": {
-        "cost": 1800
+        "cost": 1800,
+        "totalCost": 3500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 25,
+        "magicalProtection": 25,
+        "health": 500
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "You are Immune to Slows.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6674,21 +7449,28 @@
         "alt": "Rod Of Asclepius icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2350
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 55,
+        "health": 225,
+        "healthRegen": 3
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "On Use: Heal all allies within 8.8m.\n+10% Health Heal over 10s\nCounts as Ability healing\nIf target has 6 debuffs:\n\n+10% Health Heal instantly\nGrants all non-damage immunities for 1s\nCosts 35% Mana.\nCooldown: 90s.\nYou can own up to 3 active items at once",
+        "passive": null,
+        "active": "On Use: Heal all allies within 8.8m.\n+10% Health Heal over 10s\nCounts as Ability healing\nIf target has 6 debuffs:\n\n+10% Health Heal instantly\nGrants all non-damage immunities for 1s\nCosts 35% Mana.\nCooldown: 90s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
       "relationships": {
@@ -6706,21 +7488,30 @@
         "alt": "Scepter of Dominion icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 30,
+        "health": 150,
+        "maxMana": 200,
+        "manaRegen": 3
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "On Use: Create a zone that puts gods into Stasis.\nThe Zone appears after 1s\nThe Stasis lasts 2s\nCooldown: 90s.\nYou can own up to 3 active items at once",
+        "passive": null,
+        "active": "On Use: Create a zone that puts gods into Stasis.\nThe Zone appears after 1s\nThe Stasis lasts 2s\nCooldown: 90s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
       "relationships": {
@@ -6738,20 +7529,27 @@
         "alt": "Lifebinder icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 40,
+        "health": 300,
+        "healthRegen": 3
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Fire a Projectile that deals 60 (+8 per Level) Magical Damage.\nMarks enemy Gods for 6s\nFirst ally to damage a Marked target:\n+60 (+8 per Level) Heal\n+60 (+8 per Level) Shield\nConsumes the Mark\nCooldown: 20s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 20
       },
@@ -6770,21 +7568,28 @@
         "alt": "Shield Splitter icon"
       },
       "shop": {
-        "cost": 600
+        "cost": 600,
+        "totalCost": 2400
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 25,
+        "magicalProtection": 20,
+        "strength": 40
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "On Use: Fire a projectile 11.2m forward.\n+40 (+5 per Level) True Damage\nIf an enemy is Shielded:\n-65% Shield\nYou gain a Shield equal to the amount of Shield reduced\nCooldown: 15s.\nYou can own up to 3 active items at once",
+        "passive": null,
+        "active": "On Use: Fire a projectile 11.2m forward.\n+40 (+5 per Level) True Damage\nIf an enemy is Shielded:\n-65% Shield\nYou gain a Shield equal to the amount of Shield reduced\nCooldown: 15s\nYou can own up to 3 active items at once",
         "cooldownSeconds": 15
       },
       "relationships": {
@@ -6802,21 +7607,29 @@
         "alt": "Golden Blade icon"
       },
       "shop": {
-        "cost": 600
+        "cost": 600,
+        "totalCost": 2450
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 30,
+        "health": 200,
+        "attackSpeed": 20
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "health",
+        "attack-speed"
       ],
       "details": {
         "summary": null,
-        "passive": "Attacks deal bonus Physical Damage.\nDamage = +20 + +15% of your Item Protections\nDamages all Enemies within 2.5m",
-        "active": "",
+        "passive": "Attacks deal bonus Physical Damage.\nDamage = +20 + 15% of your Item Protections\nDamages all Enemies within 2.5m",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6834,20 +7647,28 @@
         "alt": "Eye of the Storm icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "strength": 25,
+        "magicalProtection": 35,
+        "health": 200
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Toggle Vortex around you.\nPulls enemies toward you\nDeals 6% of your Max Health to yourself as Magical Damage\nAutomatically deactivates at 200 Health\nYou can own up to 3 active items at once",
         "cooldownSeconds": null
       },
@@ -6866,21 +7687,27 @@
         "alt": "Helm of Radiance icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 65,
+        "physicalProtection": 35
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Take Physical Damage: +7 Physical Protection for 6s.\nStacks up to 4 times.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6898,21 +7725,27 @@
         "alt": "Gem of Isolation icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2500
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 50,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "Damaging Ability Hit: 15% Slow.\nThe Slow lasts for 2s.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6930,21 +7763,26 @@
         "alt": "Brawler’s Beat Stick icon"
       },
       "shop": {
-        "cost": 750
+        "cost": 750,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 15,
+        "magicalProtection": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Adaptive Stat: +40 Strength or +55 Intelligence (based on highest item stat).\nOn God Damage Dealt: Apply 25% Healing Reduction for 5s\nWhile in Combat: +2% Strength, +2% Intelligence, and +2% Protections every 1.5s. Stacks up to 5 times.\nWhile Out of Combat: -1 stack every 0.5s\nHealing Reduction does not stack with other similar effects.Combat lasts for 6s upon dealing or taking damage.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6962,21 +7800,28 @@
         "alt": "Runeforged Hammer icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 45,
+        "health": 350,
+        "healthRegen": 3
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "health"
       ],
       "details": {
         "summary": null,
-        "passive": "Hard Crowd Control a God:\nMark them with a Rune for 5s\nAttack to forge the Rune, dealing +50 (+65% of your Item Protections) as Magical Damage\nCooldown: 30s. Hard Crowd Control a God: -6s Item Cooldown.",
-        "active": "",
+        "passive": "Hard Crowd Control a God:\nMark them with a Rune for 5s\nAttack to forge the Rune, dealing +50 (+65% of your Item Protections) as Magical Damage\nHard Crowd Control a God: -6s Item Cooldown.\nCooldown: 30s",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -6994,16 +7839,22 @@
         "alt": "Eye of Erebus icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "health": 350,
+        "cooldownRate": 15
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "cooldown"
       ],
       "details": {
         "summary": null,
@@ -7026,21 +7877,29 @@
         "alt": "Void Shield icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2600
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 25,
+        "physicalProtection": 30,
+        "health": 150
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Enemies within 8.8m: -10% Physical Protection.\nRange Scaling Debuff:\n\n+50% at Close Range\n-50% at Maximum Range",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7058,16 +7917,24 @@
         "alt": "Sanguine Lash icon"
       },
       "shop": {
-        "cost": 700
+        "cost": 700,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 30,
+        "strength": 25,
+        "lifesteal": 5
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "defense",
+        "lifesteal"
       ],
       "details": {
         "summary": null,
@@ -7090,21 +7957,28 @@
         "alt": "Shifter's Shield icon"
       },
       "shop": {
-        "cost": 850
+        "cost": 850,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "physicalProtection": 15,
+        "magicalProtection": 15,
+        "health": 300
+      },
       "tags": [
-        "item"
+        "item",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Over 75% Health:+45 Strength or +55 Intelligence (whichever is higher).\nUnder 75% Health: +20 Physical and Magical Protection.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7122,21 +7996,29 @@
         "alt": "Void Stone icon"
       },
       "shop": {
-        "cost": 950
+        "cost": 950,
+        "totalCost": 2650
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 40,
+        "magicalProtection": 35,
+        "health": 150
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Enemies Within 8.8m: -10% MAgical Protection.\nRange Scaling Debuff:\n\n+50% at Close Range\n-50% at Maximum Range",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7154,21 +8036,29 @@
         "alt": "Triton's Conch icon"
       },
       "shop": {
-        "cost": 800
+        "cost": 800,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "strength": 25,
+        "intelligence": 40,
+        "health": 250
+      },
       "tags": [
-        "item"
+        "item",
+        "physical",
+        "magical",
+        "health"
       ],
       "details": {
         "summary": null,
         "passive": "You and allies within 8.8m:\n+10 (+0.5 per Level) Strength\n+10 (+1 per Level) Intelligence",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7186,20 +8076,27 @@
         "alt": "Helm of Darkness icon"
       },
       "shop": {
-        "cost": 1000
+        "cost": 1000,
+        "totalCost": 2700
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
         "effectType": "active"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 40,
+        "physicalProtection": 20,
+        "magicalProtection": 25
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "defense"
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use: Become Stealthed and pass through players and walls for 6s.\nCannot use while Casting\nCooldown: 90s.\nDuring Moonlight Phase:\n\nWhile Stealthed: +15% Movement Speed\nPass through an enemy god:\nPhysical Damage equal to 15% of your Max Health\nYou can own up to 3 active items at once",
         "cooldownSeconds": 90
       },
@@ -7218,21 +8115,27 @@
         "alt": "Sphere of Negation icon"
       },
       "shop": {
-        "cost": 1100
+        "cost": 1100,
+        "totalCost": 2750
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
-      "stats": {},
+      "stats": {
+        "magicalProtection": 50,
+        "intelligence": 40
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "defense"
       ],
       "details": {
         "summary": null,
         "passive": "Gain +2% Max Health Magical Shield every 3s, up to a maximum of +14% Max Health.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7250,21 +8153,29 @@
         "alt": "Wish-Granting Pearl icon"
       },
       "shop": {
-        "cost": 1800
+        "cost": 1800,
+        "totalCost": 3550
       },
       "classification": {
-        "tier": null,
+        "tier": 3,
         "category": "item",
-        "effectType": "active"
+        "effectType": "none"
       },
-      "stats": {},
+      "stats": {
+        "intelligence": 120,
+        "health": 425,
+        "maxMana": 200
+      },
       "tags": [
-        "item"
+        "item",
+        "magical",
+        "health",
+        "mana"
       ],
       "details": {
         "summary": null,
-        "passive": "",
-        "active": "",
+        "passive": null,
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7282,12 +8193,13 @@
         "alt": "Genie's Lamp icon"
       },
       "shop": {
-        "cost": 1
+        "cost": 1,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "both"
       },
       "stats": {},
       "tags": [
@@ -7314,12 +8226,13 @@
         "alt": "Masterwork Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7328,7 +8241,7 @@
       "details": {
         "summary": null,
         "passive": "Thumper gains 300 increased HP and applies a 10/15/20/25/30 Physical and Magical Protection buff to allied gods hit for 3s.\nSet 3 - You can only have one Mod from each set.Requires level 14.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7346,12 +8259,13 @@
         "alt": "Thermal Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7360,7 +8274,7 @@
       "details": {
         "summary": null,
         "passive": "Backfire and Magma Bomb deal 30 + 20% INT Bonus Magical Damage.\nSet 2 - You can only have one Mod from each set.Requires level 7.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7378,12 +8292,13 @@
         "alt": "Seismic Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7392,7 +8307,7 @@
       "details": {
         "summary": null,
         "passive": "Earthshaker Knocks Up and Trembles enemies it hits for 2s.\nSet 3 - You can only have one Mod from each set.Requires level 14.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7410,12 +8325,13 @@
         "alt": "Surplus Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7424,7 +8340,7 @@
       "details": {
         "summary": null,
         "passive": "You can have 2 Inferno Cannons deployed at the same time.\nSet 3 - You can only have one Mod from each set.Requires level 14.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7442,12 +8358,13 @@
         "alt": "Shrapnel Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7456,7 +8373,7 @@
       "details": {
         "summary": null,
         "passive": "Inferno Cannon applies additional damage over time on hit. Hits 6 times over 3s for 3/6/9/12/15 + 2% INT per hit.\nSet 2 - You can only have one Mod from each set.\nRequires level 7.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7474,12 +8391,13 @@
         "alt": "Resonator Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7488,7 +8406,7 @@
       "details": {
         "summary": null,
         "passive": "Thumper gains 150 increased HP and applies an 10/15/20/25/30% Attack Speed debuff for 3s on hit.\nSet 2 - You can only have one Mod from each set.\nRequires level 7.",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7506,12 +8424,13 @@
         "alt": "Dual Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7520,7 +8439,7 @@
       "details": {
         "summary": null,
         "passive": "Gain access to the Thumper Turret in your first consumable slot. This will occupy this slot for the entire game.\nThumper pulses out an attack around it every 1s that deals 20/30/40/50/60 + 10% INT Magical Damage to all enemies in the area.\nThumper's Rank will match Inferno Cannon's. Cooldown 20s.\nSet 1 - You can only have one Mod from each set\nCan be built at level 1",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7538,12 +8457,13 @@
         "alt": "Efficiency Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7552,7 +8472,7 @@
       "details": {
         "summary": null,
         "passive": "Do not gain access to the Thumper ability, instead your passive grants 20 CDR and 5 Intelligence + 1 Per Level, in addition to the other effects when triggered.\nSet 1 - You can only have one Mod from each set.\nCan be built at level 1",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7570,7 +8490,8 @@
         "alt": "Training Grounds icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -7583,7 +8504,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "Consume: Plant a Banner that lasts 45s or until destroyed.\nHua Mulan within 11m: Always benefits from Training Arc's Cooldown Reduction\nAllies within 11m: +5% Movement Speed\nAllies up to 25m away: Gain up to +20% Movement Speed when facing the banner\nMovement Speed scales down as they get closer",
         "cooldownSeconds": null
       },
@@ -7602,12 +8523,13 @@
         "alt": "Alternator Mod icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "active"
+        "effectType": "passive"
       },
       "stats": {},
       "tags": [
@@ -7616,7 +8538,7 @@
       "details": {
         "summary": null,
         "passive": "Gain access to the Thumper Turret by alternating between an Inferno Cannon and Thumper each ability activation.\nThumper pulses out an attack around it every 1s that deals 20/30/40/50/60 + 10% INT Magical Damage to all enemies in the area. \nThumper's Rank will match Inferno Cannon's. Cooldown 6s.\nSet 1 - You can only have one Mod from each set.\nCan be built at level 1",
-        "active": "",
+        "active": null,
         "cooldownSeconds": null
       },
       "relationships": {
@@ -7634,7 +8556,8 @@
         "alt": "Baron's Brew icon"
       },
       "shop": {
-        "cost": 100
+        "cost": 100,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
@@ -7647,7 +8570,7 @@
       ],
       "details": {
         "summary": null,
-        "passive": "",
+        "passive": null,
         "active": "On Use:\n+18 Heal per second for 14s\n+18 Mana per second for 14s\nEmpty the Brew\nOn Use of Empty Brew: Throw a Projectile:\n\nDeals 40 (+13 per Level) Magic Damage\nApplies 30 Hysteria\nBaron's Brew is refilled when you return to base.",
         "cooldownSeconds": null
       },
@@ -7666,76 +8589,13 @@
         "alt": "Smite Wiki icon"
       },
       "shop": {
-        "cost": 0
+        "cost": 0,
+        "totalCost": null
       },
       "classification": {
         "tier": null,
         "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {},
-      "tags": [
-        "item"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "game-modes",
-      "name": "Game Modes",
-      "icon": {
-        "localPath": "/images/items/game-modes.webp",
-        "alt": "Game Modes icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
-      },
-      "stats": {},
-      "tags": [
-        "item"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
-    },
-    {
-      "id": "patch-notes",
-      "name": "Patch notes",
-      "icon": {
-        "localPath": "/images/items/patch-notes.webp",
-        "alt": "Patch notes icon"
-      },
-      "shop": {
-        "cost": 0
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "passive"
+        "effectType": "none"
       },
       "stats": {},
       "tags": [

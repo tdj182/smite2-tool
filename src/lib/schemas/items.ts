@@ -14,7 +14,7 @@ export const ItemCategorySchema = z.enum([
   "mod",
 ]);
 
-export const ItemEffectTypeSchema = z.enum(["passive", "active"]);
+export const ItemEffectTypeSchema = z.enum(["passive", "active", "both", "none"]);
 
 /**
  * v1 history: intentionally lightweight.
@@ -34,6 +34,7 @@ export const ItemIconSchema = z.object({
 
 export const ItemShopSchema = z.object({
   cost: z.number().int().nonnegative(),
+  totalCost: z.number().int().nonnegative().nullable().optional(),
 });
 
 export const ItemClassificationSchema = z.object({
