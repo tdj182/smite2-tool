@@ -30,12 +30,12 @@ export default function ItemsList() {
   return (
     <div>
       <h1>Items</h1>
-      <p className="mb-8 text-text-secondary">
+      <p className="mb-8 ">
         Browse all {itemsData.items.length} items. Click on an item to view detailed information.
       </p>
 
       {/* Filters */}
-      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-surface p-6">
+      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
         <div>
           <label className="mb-2 block font-bold">Search:</label>
           <Input
@@ -111,7 +111,7 @@ export default function ItemsList() {
                   </div>
                 </div>
 
-                <div className="mb-3 text-sm text-text-secondary">
+                <div className="mb-3 text-sm ">
                   {item.classification.category} • {item.classification.effectType}
                   {item.classification.tier !== null && ` • Tier ${item.classification.tier}`}
                 </div>
@@ -133,7 +133,7 @@ export default function ItemsList() {
 
                 {/* Stats Preview */}
                 {Object.keys(item.stats).length > 0 && (
-                  <div className="text-sm text-text-secondary">
+                  <div className="text-sm ">
                     {Object.entries(item.stats)
                       .slice(0, 2)
                       .map(([stat, value]) => (
@@ -151,7 +151,7 @@ export default function ItemsList() {
       </div>
 
       {filteredItems.length === 0 && (
-        <div className="p-12 text-center text-text-secondary">
+        <div className="p-12 text-center ">
           <p>No items found matching your filters.</p>
         </div>
       )}

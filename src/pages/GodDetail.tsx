@@ -100,7 +100,7 @@ export default function GodDetail() {
           {god.details.summary && (
             <div className="mb-8">
               <h2>Overview</h2>
-              <p className="leading-relaxed text-text-secondary">{god.details.summary}</p>
+              <p className="leading-relaxed ">{god.details.summary}</p>
             </div>
           )}
 
@@ -131,7 +131,7 @@ export default function GodDetail() {
               <h3>Beginner Tips</h3>
               <ul className="leading-loose">
                 {god.details.beginnerTips.map((tip, idx) => (
-                  <li key={idx} className="text-text-secondary">{tip}</li>
+                  <li key={idx} className="">{tip}</li>
                 ))}
               </ul>
             </div>
@@ -156,10 +156,10 @@ export default function GodDetail() {
                             {ability.type.toUpperCase()}
                           </Badge>
                         </div>
-                        <span className="text-sm text-text-secondary">Key: {ability.key}</span>
+                        <span className="text-sm ">Key: {ability.key}</span>
                       </div>
                       {ability.description && (
-                        <p className="mt-3 leading-relaxed text-text-secondary">{ability.description}</p>
+                        <p className="mt-3 leading-relaxed ">{ability.description}</p>
                       )}
                       <div className="mt-3 flex gap-4 text-sm">
                         {ability.cooldownSeconds !== null && (
@@ -188,7 +188,7 @@ export default function GodDetail() {
                     <CardContent className="p-4">
                       <strong className="text-lg">{aspect.name}</strong>
                       {aspect.summary && (
-                        <p className="mt-2 text-text-secondary">{aspect.summary}</p>
+                        <p className="mt-2 ">{aspect.summary}</p>
                       )}
                       {aspect.tradeoff && (
                         <p className="mt-2 text-sm italic text-text-muted">
@@ -210,7 +210,7 @@ export default function GodDetail() {
                   <div key={idx} className="border-l-[3px] border-gods pl-4">
                     <strong>{entry.patch}</strong>
                     {entry.notes && (
-                      <p className="mt-1 mb-0 text-text-secondary">{entry.notes}</p>
+                      <p className="mt-1 mb-0 ">{entry.notes}</p>
                     )}
                   </div>
                 ))}

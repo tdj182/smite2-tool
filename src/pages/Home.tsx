@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <h1>Welcome to SMITE 2 Tool</h1>
-      <p className="mb-8 text-lg text-text-secondary">
+      <p className="mb-8 text-lg ">
         A comprehensive database for SMITE 2 gods and items with validated data.
       </p>
 
@@ -42,12 +42,12 @@ export default function Home() {
         </Card>
       </div>
 
-      <Card className="mt-12 bg-surface">
+      <Card className="mt-12 bg-muted">
         <CardHeader>
           <CardTitle className="text-lg">Data Information</CardTitle>
         </CardHeader>
         <CardContent>
-          <ul className="space-y-1 text-text-secondary">
+          <ul className="space-y-1 ">
             <li>Patch: {godsData.meta.patch}</li>
             <li>Data Version: {godsData.meta.dataVersion}</li>
             <li>Last Updated: {new Date(godsData.meta.lastUpdatedUtc).toLocaleDateString()}</li>

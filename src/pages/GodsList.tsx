@@ -30,12 +30,12 @@ export default function GodsList() {
   return (
     <div>
       <h1>Gods</h1>
-      <p className="mb-8 text-text-secondary">
+      <p className="mb-8 ">
         Browse all {godsData.gods.length} gods. Click on a god to view detailed information.
       </p>
 
       {/* Filters */}
-      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-surface p-6">
+      <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
         <div>
           <label className="mb-2 block font-bold">Search:</label>
           <Input
@@ -103,7 +103,7 @@ export default function GodsList() {
                   />
                   <div>
                     <h3 className="m-0 mb-1">{god.name}</h3>
-                    <div className="text-sm text-text-secondary">
+                    <div className="text-sm ">
                       {god.identity.pantheon || 'Unknown'} • {god.identity.primaryDamageType || 'Unknown'}
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export default function GodsList() {
                   ))}
                 </div>
                 {god.details.summary && (
-                  <p className="m-0 mt-2 line-clamp-2 text-sm leading-relaxed text-text-secondary">
+                  <p className="m-0 mt-2 line-clamp-2 text-sm leading-relaxed ">
                     {god.details.summary}
                   </p>
                 )}
@@ -127,7 +127,7 @@ export default function GodsList() {
       </div>
 
       {filteredGods.length === 0 && (
-        <div className="p-12 text-center text-text-secondary">
+        <div className="p-12 text-center ">
           <p>No gods found matching your filters.</p>
         </div>
       )}

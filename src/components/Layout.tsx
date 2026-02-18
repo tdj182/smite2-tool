@@ -1,8 +1,12 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { useTheme } from '@/hooks/use-theme';
+import { Moon, Sun } from '@/components/Icons';
 
 export default function Layout() {
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   const isActive = (path: string) => {
     if (path === '/' && location.pathname === '/') return true;
@@ -42,6 +46,14 @@ export default function Layout() {
               </Link>
             ))}
           </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={toggleTheme}
+            className="ml-auto text-white hover:bg-white/10 hover:text-white"
+          >
+            {theme === 'dark' ? <Sun /> : <Moon /> }
+          </Button>
         </nav>
       </header>
 
@@ -49,7 +61,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <footer className="bg-surface px-8 py-4 text-center text-sm text-text-secondary">
+      <footer className="bg-surface px-8 py-4 text-center text-sm ">
         SMITE 2 Tool v1.0 - Built with validated data using Zod
       </footer>
     </div>

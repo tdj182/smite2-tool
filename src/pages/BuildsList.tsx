@@ -37,7 +37,7 @@ export default function BuildsList() {
   return (
     <div>
       <h1>Builds</h1>
-      <p className="mb-8 text-text-secondary">
+      <p className="mb-8 ">
         Generic builds for each role. Perfect for beginners who want a solid foundation.
       </p>
 
@@ -76,13 +76,13 @@ export default function BuildsList() {
                   </Badge>
                 </div>
                 {build.description && (
-                  <p className="mt-2 mb-0 text-text-secondary">{build.description}</p>
+                  <p className="mt-2 mb-0 ">{build.description}</p>
                 )}
               </div>
 
               {/* Build Path */}
               <div>
-                <h3 className="mb-4 text-base text-text-secondary">Build Order</h3>
+                <h3 className="mb-4 text-base ">Build Order</h3>
                 <div className="flex flex-wrap items-start gap-4">
                   {build.itemIds.map((itemId, index) => {
                     const item = getItemById(itemId);
@@ -108,7 +108,7 @@ export default function BuildsList() {
                                   }}
                                 />
                                 <div className="mb-1 font-bold">{item.name}</div>
-                                <div className="text-xs text-text-secondary">
+                                <div className="text-xs ">
                                   {item.classification.category}
                                 </div>
                                 <div className="mt-1 text-sm text-items">
@@ -170,7 +170,7 @@ export default function BuildsList() {
       </div>
 
       {filteredBuilds.length === 0 && (
-        <div className="p-12 text-center text-text-secondary">
+        <div className="p-12 text-center ">
           <p>No builds found for this role.</p>
         </div>
       )}

@@ -108,7 +108,7 @@ export default function ItemDetail() {
               {item.details.summary && (
                 <div className="mb-4">
                   <h3>Summary</h3>
-                  <p className="leading-relaxed text-text-secondary">{item.details.summary}</p>
+                  <p className="leading-relaxed ">{item.details.summary}</p>
                 </div>
               )}
 
@@ -116,7 +116,7 @@ export default function ItemDetail() {
                 <Card className="mb-4 bg-passive-bg">
                   <CardContent className="p-4">
                     <strong className="text-amber-600">PASSIVE:</strong>
-                    <p className="mt-2 mb-0 leading-relaxed text-text-secondary">{item.details.passive}</p>
+                    <p className="mt-2 mb-0 leading-relaxed ">{item.details.passive}</p>
                   </CardContent>
                 </Card>
               )}
@@ -127,12 +127,12 @@ export default function ItemDetail() {
                     <div className="flex items-center justify-between">
                       <strong className="text-blue-700">ACTIVE:</strong>
                       {item.details.cooldownSeconds !== null && (
-                        <span className="text-sm text-text-secondary">
+                        <span className="text-sm ">
                           Cooldown: {item.details.cooldownSeconds}s
                         </span>
                       )}
                     </div>
-                    <p className="mt-2 mb-0 leading-relaxed text-text-secondary">{item.details.active}</p>
+                    <p className="mt-2 mb-0 leading-relaxed ">{item.details.active}</p>
                   </CardContent>
                 </Card>
               )}
@@ -146,7 +146,7 @@ export default function ItemDetail() {
 
               {item.relationships.buildsFrom.length > 0 && (
                 <div className="mb-4">
-                  <h3 className="text-base text-text-secondary">Builds From</h3>
+                  <h3 className="text-base ">Builds From</h3>
                   <div className="flex flex-wrap gap-3">
                     {item.relationships.buildsFrom.map(id => {
                       const buildItem = getItemById(id);
@@ -162,7 +162,7 @@ export default function ItemDetail() {
 
               {upgradesInto.length > 0 && (
                 <div>
-                  <h3 className="text-base text-text-secondary">Upgrades Into</h3>
+                  <h3 className="text-base ">Upgrades Into</h3>
                   <div className="flex flex-wrap gap-3">
                     {upgradesInto.map(upgradeItem => (
                       <Button key={upgradeItem.id} variant="outline" asChild>
@@ -182,7 +182,7 @@ export default function ItemDetail() {
               <Card className="border-red-400 bg-restriction-bg">
                 <CardContent className="p-4">
                   <strong className="text-weakness">God-Specific Item</strong>
-                  <p className="mt-2 mb-0 text-text-secondary">
+                  <p className="mt-2 mb-0 ">
                     Only available to: {item.relationships.restrictedToGodIds.join(', ')}
                   </p>
                 </CardContent>
@@ -198,7 +198,7 @@ export default function ItemDetail() {
                 {item.history.map((entry, idx) => (
                   <div key={idx} className="border-l-[3px] border-items pl-4">
                     <strong>{entry.patch}</strong>
-                    {entry.notes && <p className="mt-1 mb-0 text-text-secondary">{entry.notes}</p>}
+                    {entry.notes && <p className="mt-1 mb-0 ">{entry.notes}</p>}
                   </div>
                 ))}
               </div>
