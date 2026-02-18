@@ -5,14 +5,15 @@ import type { ItemCategory } from '@/lib/schemas/items';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export default function ItemsList() {
   const [selectedCategory, setSelectedCategory] = useState<ItemCategory | 'all'>('all');
   const [selectedTier, setSelectedTier] = useState<number | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories: (ItemCategory | 'all')[] = ['all', 'item', 'starter', 'relic', 'consumable', 'curio', 'mod'];
-  const tiers: (number | 'all')[] = ['all', 1, 2, 3, 4, 5];
+  const categories: (ItemCategory | 'all')[] = ['all', 'item', 'starter', 'relic', 'consumable', 'curio'];
+  const tiers: (number | 'all')[] = ['all', 1, 2, 3];
 
   const filteredItems = itemsData.items.filter(item => {
     if (selectedCategory !== 'all' && item.classification.category !== selectedCategory) {
@@ -49,32 +50,34 @@ export default function ItemsList() {
 
         <div>
           <label className="mb-2 block font-bold">Category:</label>
-          <select
-            value={selectedCategory}
-            onChange={e => setSelectedCategory(e.target.value as ItemCategory | 'all')}
-            className="rounded border border-border-light px-2 py-2"
-          >
-            {categories.map(category => (
-              <option key={category} value={category}>
-                {category === 'all' ? 'All Categories' : category.charAt(0).toUpperCase() + category.slice(1)}
-              </option>
-            ))}
-          </select>
+          <Select value={selectedCategory} onValueChange={v => setSelectedCategory(v as ItemCategory | 'all')}>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {categories.map(category => (
+                <SelectItem key={category} value={category}>
+                  {category === 'all' ? 'All Categories' : category.charAt(0).toUpperCase() + category.slice(1)}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <div>
           <label className="mb-2 block font-bold">Tier:</label>
-          <select
-            value={selectedTier}
-            onChange={e => setSelectedTier(e.target.value === 'all' ? 'all' : Number(e.target.value))}
-            className="rounded border border-border-light px-2 py-2"
-          >
-            {tiers.map(tier => (
-              <option key={tier} value={tier}>
-                {tier === 'all' ? 'All Tiers' : `Tier ${tier}`}
-              </option>
-            ))}
-          </select>
+          <Select value={String(selectedTier)} onValueChange={v => setSelectedTier(v === 'all' ? 'all' : Number(v))}>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {tiers.map(tier => (
+                <SelectItem key={tier} value={String(tier)}>
+                  {tier === 'all' ? 'All Tiers' : `Tier ${tier}`}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <div className="ml-auto">

@@ -5,6 +5,7 @@ import type { GodRole, Pantheon } from '@/lib/schemas/gods';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export default function GodsList() {
   const [selectedRole, setSelectedRole] = useState<GodRole | 'all'>('all');
@@ -49,32 +50,34 @@ export default function GodsList() {
 
         <div>
           <label className="mb-2 block font-bold">Role:</label>
-          <select
-            value={selectedRole}
-            onChange={e => setSelectedRole(e.target.value as GodRole | 'all')}
-            className="rounded border border-border-light px-2 py-2"
-          >
-            {roles.map(role => (
-              <option key={role} value={role}>
-                {role === 'all' ? 'All Roles' : role.charAt(0).toUpperCase() + role.slice(1)}
-              </option>
-            ))}
-          </select>
+          <Select value={selectedRole} onValueChange={v => setSelectedRole(v as GodRole | 'all')}>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {roles.map(role => (
+                <SelectItem key={role} value={role}>
+                  {role === 'all' ? 'All Roles' : role.charAt(0).toUpperCase() + role.slice(1)}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <div>
           <label className="mb-2 block font-bold">Pantheon:</label>
-          <select
-            value={selectedPantheon}
-            onChange={e => setSelectedPantheon(e.target.value as Pantheon | 'all')}
-            className="rounded border border-border-light px-2 py-2"
-          >
-            {pantheons.map(pantheon => (
-              <option key={pantheon} value={pantheon}>
-                {pantheon === 'all' ? 'All Pantheons' : pantheon}
-              </option>
-            ))}
-          </select>
+          <Select value={selectedPantheon} onValueChange={v => setSelectedPantheon(v as Pantheon | 'all')}>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {pantheons.map(pantheon => (
+                <SelectItem key={pantheon} value={pantheon}>
+                  {pantheon === 'all' ? 'All Pantheons' : pantheon}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <div className="ml-auto">

@@ -6,7 +6,7 @@ import type { BuildRole } from '@/lib/schemas/builds';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export default function BuildsList() {
   const [selectedRole, setSelectedRole] = useState<BuildRole | 'all'>('all');
@@ -45,17 +45,18 @@ export default function BuildsList() {
       <div className="mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-muted p-6">
         <div>
           <label className="mb-2 block font-bold">Role:</label>
-          <select
-            value={selectedRole}
-            onChange={e => setSelectedRole(e.target.value as BuildRole | 'all')}
-            className="rounded border border-border-light px-2 py-2"
-          >
-            {roles.map(role => (
-              <option key={role} value={role}>
-                {role === 'all' ? 'All Roles' : role.toUpperCase()}
-              </option>
-            ))}
-          </select>
+          <Select value={selectedRole} onValueChange={v => setSelectedRole(v as BuildRole | 'all')}>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {roles.map(role => (
+                <SelectItem key={role} value={role}>
+                  {role === 'all' ? 'All Roles' : role.toUpperCase()}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <div className="ml-auto">
@@ -71,7 +72,7 @@ export default function BuildsList() {
               <div className="mb-6">
                 <div className="mb-2 flex items-center gap-4">
                   <h2 className="m-0">{build.name}</h2>
-                  <Badge className="bg-builds text-sm font-bold uppercase text-white">
+                  <Badge className="bg-chart-1 text-sm font-bold uppercase">
                     {build.role}
                   </Badge>
                 </div>
@@ -97,7 +98,7 @@ export default function BuildsList() {
                             <>
                               <Link
                                 to={`/items/${itemId}`}
-                                className="block min-w-[120px] rounded-lg border-2 border-items bg-white p-4 text-center no-underline transition-all duration-200 hover:-translate-y-0.5 hover:bg-active-bg"
+                                className="block min-w-[120px] rounded-lg border-2 border-items p-4 text-center no-underline transition-all duration-200 hover:-translate-y-0.5"
                               >
                                 <img
                                   src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
@@ -111,7 +112,7 @@ export default function BuildsList() {
                                 <div className="text-xs ">
                                   {item.classification.category}
                                 </div>
-                                <div className="mt-1 text-sm text-items">
+                                <div className="mt-1 text-sm">
                                   {item.shop.cost}g
                                 </div>
                               </Link>
@@ -122,10 +123,7 @@ export default function BuildsList() {
                                   variant={isExpanded ? "default" : "secondary"}
                                   size="sm"
                                   onClick={() => toggleNote(build.id, itemId)}
-                                  className={cn(
-                                    "text-xs font-bold",
-                                    isExpanded ? "bg-items text-white hover:bg-items/90" : ""
-                                  )}
+                                  className="text-xs font-bold"
                                 >
                                   {isExpanded ? '▲ Hide Notes' : '▼ Show Notes'}
                                 </Button>
@@ -133,13 +131,13 @@ export default function BuildsList() {
 
                               {/* Expandable Notes */}
                               {hasNote && isExpanded && (
-                                <div className="max-w-[280px] rounded-lg border border-items bg-active-bg p-3 text-sm leading-relaxed text-text-primary">
+                                <div className="max-w-[280px] rounded-lg border border-items p-3 text-sm leading-relaxed">
                                   {build.itemNotes![itemId]}
                                 </div>
                               )}
                             </>
                           ) : (
-                            <div className="min-w-[120px] rounded-lg border-2 border-dashed border-border-light bg-muted p-4 text-center text-text-muted">
+                            <div className="min-w-[120px] rounded-lg border-2 border-dashed border-border-light p-4 text-center">
                               <div className="text-sm">{itemId}</div>
                               <div className="text-xs">(Not found)</div>
                             </div>
