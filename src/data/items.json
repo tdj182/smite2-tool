@@ -8580,39 +8580,6 @@
         "restrictedToGodIds": []
       },
       "history": []
-    },
-    {
-      "id": "smite-wiki",
-      "name": "Smite Wiki",
-      "icon": {
-        "localPath": "/images/items/smite-wiki.webp",
-        "alt": "Smite Wiki icon"
-      },
-      "shop": {
-        "cost": 0,
-        "totalCost": null
-      },
-      "classification": {
-        "tier": null,
-        "category": "item",
-        "effectType": "none"
-      },
-      "stats": {},
-      "tags": [
-        "item"
-      ],
-      "details": {
-        "summary": null,
-        "passive": null,
-        "active": null,
-        "cooldownSeconds": null
-      },
-      "relationships": {
-        "buildsFrom": [],
-        "buildsInto": [],
-        "restrictedToGodIds": []
-      },
-      "history": []
     }
   ]
 }

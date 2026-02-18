@@ -74,6 +74,7 @@ async function getAllItemNames() {
         itemName.includes("Edit section") ||
         itemName.startsWith("Edit ") ||
         itemName === "SMITE 2" ||
+        itemName === "Smite Wiki" ||
         itemName === "Statistics" ||
         itemName === "Attack and Defense" ||
         itemName === "Gold"

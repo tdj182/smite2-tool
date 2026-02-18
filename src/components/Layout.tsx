@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { useTheme } from '@/hooks/use-theme';
 import { Moon, Sun } from '@/components/Icons';
 
@@ -27,7 +28,7 @@ export default function Layout() {
         <nav className="flex items-center gap-8">
           <h1 className="m-0 text-2xl">
             <Link to="/" className="text-white no-underline">
-              SMITE 2 Tool
+              SMITE 2 Tool <Badge variant='destructive'>ALPHA</Badge>
             </Link>
           </h1>
           <div className="flex gap-4">
@@ -62,7 +63,7 @@ export default function Layout() {
       </main>
 
       <footer className="bg-muted px-8 py-4 text-center text-sm ">
-        SMITE 2 Tool v1.0 - Built with validated data using Zod
+        SMITE 2 Tool <Badge variant='destructive'>ALPHA</Badge>
       </footer>
     </div>
   );
