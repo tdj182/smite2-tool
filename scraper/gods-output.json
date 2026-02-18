@@ -3,7 +3,7 @@
     "game": "smite2",
     "dataVersion": 1,
     "patch": "Open Beta",
-    "lastUpdatedUtc": "2026-02-16T15:03:12.913Z"
+    "lastUpdatedUtc": "2026-02-18T22:30:49.058Z"
   },
   "gods": [
     {
@@ -23,11 +23,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 622.5,
         "healthPerLevel": 97.5,
@@ -46,7 +41,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-prowess",
+          "name": "Aspect of Prowess",
+          "description": "Combat Dodge can now be recast after striking a Jungle Monster or Boss, with Spear Strike gaining increased Scaling when forgoing Achilles's Armor. Radiant Glory no longer grants increased Protections or Crowd Control Reduction.",
+          "abilities": [
+            {
+              "key": "2",
+              "name": "Radiant Glory",
+              "type": "ability",
+              "description": "You are blessed by the Gods, gaining bonus Strength for a short duration. Damaging enemies with abilities during this time Heals you",
+              "cooldownSeconds": 9,
+              "manaCost": 40,
+              "scalingText": null
+            },
+            {
+              "key": "3",
+              "name": "Combat Dodge (Spear Strike)",
+              "type": "ability",
+              "description": "Dodge in your current direction and ready your spear to strike enemies for Physical Damage. Hitting a God or Jungle Monster with the strike allows you to recast the ability once before it goes on cooldown.",
+              "cooldownSeconds": 14,
+              "manaCost": 22,
+              "scalingText": "15% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -101,24 +122,6 @@
           "cooldownSeconds": 90,
           "manaCost": 60,
           "scalingText": "100% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Radiant Glory",
-          "type": "ability",
-          "description": "You are blessed by the Gods, gaining bonus Strength for a short duration. Damaging enemies with abilities during this time Heals you",
-          "cooldownSeconds": 9,
-          "manaCost": 40,
-          "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Combat Dodge (Spear Strike)",
-          "type": "ability",
-          "description": "Dodge in your current direction and ready your spear to strike enemies for Physical Damage. Hitting a God or Jungle Monster with the strike allows you to recast the ability once before it goes on cooldown.",
-          "cooldownSeconds": 14,
-          "manaCost": 22,
-          "scalingText": "15% Strength"
         }
       ],
       "details": {
@@ -150,11 +153,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -173,7 +171,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-combustion",
+          "name": "Aspect of Combustion",
+          "description": "Your Basic Attacks now ignite enemies dealing damage over time and stacking 5 times. Flame Wave and Rain of Fire consume ignites dealing a burst of damage. Rain of Fire deals reduced damage.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Combustion",
+              "type": "passive",
+              "description": "Hitting an enemy with a Basic Attack ignites them, dealing Magical Damage over 3 seconds and stacking 5 times. Flame Wave and Rain of Fire consume the ignite, dealing Magical Damage",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "70% Strength"
+            },
+            {
+              "key": "4",
+              "name": "Rain Fire",
+              "type": "ultimate",
+              "description": "Summon a meteor, dealing Magical Damage. You can have up to 3 charges of this ability",
+              "cooldownSeconds": 18,
+              "manaCost": 10,
+              "scalingText": "20% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -228,24 +252,6 @@
           "cooldownSeconds": 18,
           "manaCost": 10,
           "scalingText": "65% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Combustion",
-          "type": "passive",
-          "description": "Hitting an enemy with a Basic Attack ignites them, dealing Magical Damage over 3 seconds and stacking 5 times. Flame Wave and Rain of Fire consume the ignite, dealing Magical Damage",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "70% Strength"
-        },
-        {
-          "key": "4",
-          "name": "Rain Fire",
-          "type": "ultimate",
-          "description": "Summon a meteor, dealing Magical Damage. You can have up to 3 charges of this ability",
-          "cooldownSeconds": 18,
-          "manaCost": 10,
-          "scalingText": "20% Intelligence"
         }
       ],
       "details": {
@@ -276,11 +282,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 622.5,
@@ -386,11 +387,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 647.4,
         "healthPerLevel": 101.4,
@@ -409,7 +405,24 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-valor",
+          "name": "Aspect of Valor",
+          "description": "Divine Presence now defaults to Red Buff, and when activated, you gain Movement Speed, Haste and Basic Attack Power in addition to the original effects. It no longer alternates to Gold Buff, or heals you when activated.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Divine Presence",
+              "type": "ability",
+              "description": "Provide you and nearby allies with a persistent Strength and Intelligence Buff.",
+              "cooldownSeconds": 12,
+              "manaCost": 30,
+              "scalingText": "3% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -464,15 +477,6 @@
           "cooldownSeconds": 110,
           "manaCost": 100,
           "scalingText": "45% Strength + 50% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Divine Presence",
-          "type": "ability",
-          "description": "Provide you and nearby allies with a persistent Strength and Intelligence Buff.",
-          "cooldownSeconds": 12,
-          "manaCost": 30,
-          "scalingText": "3% Intelligence"
         }
       ],
       "details": {
@@ -504,11 +508,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -527,7 +526,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-pride",
+          "name": "Aspect of Pride",
+          "description": "Enfeeble no longer Debuffs enemies but dealing damage to the same enemy god with Basic Attacks provides Anhur up to 100% bonus Attack Speed.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Enfeeble",
+              "type": "passive",
+              "description": "Dealing Basic Attack Damage to the same enemy god provides you stacks of Attack Speed.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -582,15 +598,6 @@
           "cooldownSeconds": 90,
           "manaCost": 80,
           "scalingText": "115% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Enfeeble",
-          "type": "passive",
-          "description": "Dealing Basic Attack Damage to the same enemy god provides you stacks of Attack Speed.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
         }
       ],
       "details": {
@@ -621,11 +628,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591.38,
@@ -732,11 +734,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -841,11 +838,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -864,7 +856,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-harmony",
+          "name": "Aspect of Harmony",
+          "description": "Audacity now grants free So Beautiful casts but no Attack Speed. So Beautiful scales with item Health, lowers enemy Attack Speed, and grants nearby allies Attack Speed on God or Boss hits, but deals less Base Damage. Serenade now shields nearby allies and Protections while it holds. Buffing an ally grants an Audacity stack.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Audacity",
+              "type": "passive",
+              "description": "Gain a stack of Audacity for each successful Basic Attack on any enemy and for each successful damaging ability on Enemy Gods. At 10 stacks you gain a free usage of So Beautiful",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "So Beautiful",
+              "type": "ability",
+              "description": "Send a projectile forward that deals Physical Damage. Enemies hit have their Attack Speed reduced.",
+              "cooldownSeconds": 11,
+              "manaCost": 60,
+              "scalingText": "10% Health from Items"
+            },
+            {
+              "key": "2",
+              "name": "Serenade",
+              "type": "ability",
+              "description": "Sing to Mesmerize all nearby enemies. Nearby allies gain a Health Shield. While the Shield holds, they gain additional Protections.",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -919,33 +946,6 @@
           "cooldownSeconds": 110,
           "manaCost": 20,
           "scalingText": "25% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Audacity",
-          "type": "passive",
-          "description": "Gain a stack of Audacity for each successful Basic Attack on any enemy and for each successful damaging ability on Enemy Gods. At 10 stacks you gain a free usage of So Beautiful",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "So Beautiful",
-          "type": "ability",
-          "description": "Send a projectile forward that deals Physical Damage. Enemies hit have their Attack Speed reduced.",
-          "cooldownSeconds": 11,
-          "manaCost": 60,
-          "scalingText": "10% Health from Items"
-        },
-        {
-          "key": "2",
-          "name": "Serenade",
-          "type": "ability",
-          "description": "Sing to Mesmerize all nearby enemies. Nearby allies gain a Health Shield. While the Shield holds, they gain additional Protections.",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": null
         }
       ],
       "details": {
@@ -977,11 +977,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672,
         "healthPerLevel": 105.32,
@@ -1000,7 +995,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-reverberation",
+          "name": "Aspect of Reverberation",
+          "description": "Call to Arms no longer grants Protections or affects allies. Instead, Ares empowers his Shield for his next Basic Attack stunning the target and spreading damage to nearby enemies.",
+          "abilities": [
+            {
+              "key": "2",
+              "name": "Call to Arms",
+              "type": "ability",
+              "description": "You gain Basic Attack Damage, and empower your Shield for your next Basic Attack.",
+              "cooldownSeconds": 15,
+              "manaCost": 40,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1055,15 +1067,6 @@
           "cooldownSeconds": 90,
           "manaCost": 80,
           "scalingText": "50% Intelligence + 55% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Call to Arms",
-          "type": "ability",
-          "description": "You gain Basic Attack Damage, and empower your Shield for your next Basic Attack.",
-          "cooldownSeconds": 15,
-          "manaCost": 40,
-          "scalingText": null
         }
       ],
       "details": {
@@ -1095,11 +1098,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -1118,7 +1116,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-wild",
+          "name": "Aspect of the Wild",
+          "description": "Transgressor's Fate no longer roots or cripples gods but can now target minions. Triggered traps now also heal Artemis and deal damage to enemies in a larger area.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Transgressor's Fate",
+              "type": "ability",
+              "description": "Place a trap on the ground. Enemies that come in contact with it activate it, causing it to repeatedly deal Physical Damage in an area over 3 seconds.",
+              "cooldownSeconds": 14,
+              "manaCost": 45,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1173,15 +1188,6 @@
           "cooldownSeconds": 90,
           "manaCost": 45,
           "scalingText": "90% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Transgressor's Fate",
-          "type": "ability",
-          "description": "Place a trap on the ground. Enemies that come in contact with it activate it, causing it to repeatedly deal Physical Damage in an area over 3 seconds.",
-          "cooldownSeconds": 14,
-          "manaCost": 45,
-          "scalingText": null
         }
       ],
       "details": {
@@ -1214,11 +1220,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -1237,7 +1238,14 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-denmother",
+          "name": "Aspect of the Denmother",
+          "description": "Artio can only change stances inside the fountain. Upon leaving the fountain, her abilities are enhanced and her ultimate changes based on her form.",
+          "abilities": []
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1296,11 +1304,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -1319,7 +1322,24 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-war",
+          "name": "Aspect of War",
+          "description": "Defender of Olympus now targets visible enemy gods instead of allies, dealing no landing damage but causing the enemy to take increased damage while Athena is channeling.",
+          "abilities": [
+            {
+              "key": "4",
+              "name": "Defender of Olympus",
+              "type": "ultimate",
+              "description": "Teleport to an enemy god, anywhere on the map",
+              "cooldownSeconds": 120,
+              "manaCost": 80,
+              "scalingText": "15% Max Health"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1374,15 +1394,6 @@
           "cooldownSeconds": 120,
           "manaCost": 80,
           "scalingText": "15% Max Health"
-        },
-        {
-          "key": "4",
-          "name": "Defender of Olympus",
-          "type": "ultimate",
-          "description": "Teleport to an enemy god, anywhere on the map",
-          "cooldownSeconds": 120,
-          "manaCost": 80,
-          "scalingText": "15% Max Health"
         }
       ],
       "details": {
@@ -1413,11 +1424,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591.4,
@@ -1523,11 +1529,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -1546,7 +1547,24 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-revelry",
+          "name": "Aspect of Revelry",
+          "description": "After using Chug, Bacchus's inhand attacks cleave and deal bonus damage scaling with Strength instead of Protections, for a short duration.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Chug",
+              "type": "ability",
+              "description": "Take a drink, Healing, and becoming more Drunk",
+              "cooldownSeconds": 10,
+              "manaCost": 20,
+              "scalingText": "0 | 50 | 50 | 50 | 50 | 50% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1601,15 +1619,6 @@
           "cooldownSeconds": 90,
           "manaCost": 90,
           "scalingText": "65% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Chug",
-          "type": "ability",
-          "description": "Take a drink, Healing, and becoming more Drunk",
-          "cooldownSeconds": 10,
-          "manaCost": 20,
-          "scalingText": "0 | 50 | 50 | 50 | 50 | 50% Strength"
         }
       ],
       "details": {
@@ -1641,11 +1650,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.8,
         "healthPerLevel": 92.62,
@@ -1664,7 +1668,51 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-hysteria",
+          "name": "Aspect of Hysteria",
+          "description": "Hysteria applied over max deals damage. Max Hysteria no longer reduces damage. Consign Spirits only heals Baron. Vivid Gaze bonus now grants Hysteria over time, but no debuff. Wrap It Up explosion and DoT apply Bonus Hysteria, but the explosion no longer Mesmerizes. Your personal Brew can be thrown every 20s.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Hysteria",
+              "type": "passive",
+              "description": "Damage applies Hysteria, granting your abilities bonus effects when enough is applied. Hysteria applied over maximum deals bonus Magical Damage. Your team can also purchase Baron's Brew from the Item Store",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "1.5% Intelligence"
+            },
+            {
+              "key": "1",
+              "name": "Vivid Gaze",
+              "type": "ability",
+              "description": "Summon skulls that deal Magical Damage in an X shape",
+              "cooldownSeconds": 11,
+              "manaCost": 55,
+              "scalingText": "70% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Consign Spirits",
+              "type": "ability",
+              "description": "Call spirits that deal Magical Damage to enemies in an area",
+              "cooldownSeconds": 14,
+              "manaCost": 60,
+              "scalingText": "5% Cooldown Rate"
+            },
+            {
+              "key": "3",
+              "name": "Wrap It Up",
+              "type": "ability",
+              "description": "Throw a snake that constricts enemy Gods, Slowing them to a Root",
+              "cooldownSeconds": 16,
+              "manaCost": 60,
+              "scalingText": "50% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1719,42 +1767,6 @@
           "cooldownSeconds": 110,
           "manaCost": 70,
           "scalingText": "2.5% Physical + Magical Protection"
-        },
-        {
-          "key": "passive",
-          "name": "Hysteria",
-          "type": "passive",
-          "description": "Damage applies Hysteria, granting your abilities bonus effects when enough is applied. Hysteria applied over maximum deals bonus Magical Damage. Your team can also purchase Baron's Brew from the Item Store",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "1.5% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Vivid Gaze",
-          "type": "ability",
-          "description": "Summon skulls that deal Magical Damage in an X shape",
-          "cooldownSeconds": 11,
-          "manaCost": 55,
-          "scalingText": "70% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Consign Spirits",
-          "type": "ability",
-          "description": "Call spirits that deal Magical Damage to enemies in an area",
-          "cooldownSeconds": 14,
-          "manaCost": 60,
-          "scalingText": "5% Cooldown Rate"
-        },
-        {
-          "key": "3",
-          "name": "Wrap It Up",
-          "type": "ability",
-          "description": "Throw a snake that constricts enemy Gods, Slowing them to a Root",
-          "cooldownSeconds": 16,
-          "manaCost": 60,
-          "scalingText": "50% Intelligence"
         }
       ],
       "details": {
@@ -1786,11 +1798,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 647.4,
         "healthPerLevel": 101.4,
@@ -1809,7 +1816,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-vindication",
+          "name": "Aspect of Vindication",
+          "description": "Bludgeon no longer deals bonus Final Slam Damage but whenever Bellona gains Block Stacks with Sword and Shield or gains Health from Scourge, nearby allied gods also gain those benefits.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Shield Bash",
+              "type": "ability",
+              "description": "Dash forward with your shield to deal Physical Damage and Slow enemies in front of you",
+              "cooldownSeconds": 14,
+              "manaCost": 50,
+              "scalingText": "7% Physical and Magical Protection"
+            },
+            {
+              "key": "2",
+              "name": "Bludgeon",
+              "type": "ability",
+              "description": "Spin your hammer to deal Physical Damage to enemies around you, then slam to deal Physical Damage to enemies in a line",
+              "cooldownSeconds": 14,
+              "manaCost": 40,
+              "scalingText": "70% Strength"
+            },
+            {
+              "key": "3",
+              "name": "Scourge",
+              "type": "ability",
+              "description": "Lash out with your Scourge to deal Physical Damage and Disarm enemies",
+              "cooldownSeconds": 16,
+              "manaCost": 40,
+              "scalingText": "6% Physical Protection"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -1864,33 +1906,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "60% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Shield Bash",
-          "type": "ability",
-          "description": "Dash forward with your shield to deal Physical Damage and Slow enemies in front of you",
-          "cooldownSeconds": 14,
-          "manaCost": 50,
-          "scalingText": "7% Physical and Magical Protection"
-        },
-        {
-          "key": "2",
-          "name": "Bludgeon",
-          "type": "ability",
-          "description": "Spin your hammer to deal Physical Damage to enemies around you, then slam to deal Physical Damage to enemies in a line",
-          "cooldownSeconds": 14,
-          "manaCost": 40,
-          "scalingText": "70% Strength"
-        },
-        {
-          "key": "3",
-          "name": "Scourge",
-          "type": "ability",
-          "description": "Lash out with your Scourge to deal Physical Damage and Disarm enemies",
-          "cooldownSeconds": 16,
-          "manaCost": 40,
-          "scalingText": "6% Physical Protection"
         }
       ],
       "details": {
@@ -1922,11 +1937,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -1945,7 +1955,51 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-rotund-jotunn",
+          "name": "Aspect of the Rotund Jotunn",
+          "description": "Seismic Crush Stealths you and Slows enemies instead of Stunning. Refraction Shield stacks energy by dealing damage and bonus damage instead of a Stun. Tremors spawn a vision dealing damage and Slowing on the final hit. You teleport to a location before casting Tectonic Shift, each wall having less Health.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Seismic Crush",
+              "type": "ability",
+              "description": "Become enraged, increasing your Movement Speed and Attack Speed. While active, your next successful Basic Attack will Slow and deal bonus Magical Damage",
+              "cooldownSeconds": 15,
+              "manaCost": 50,
+              "scalingText": "45% Intelligence + 80% Strength"
+            },
+            {
+              "key": "2",
+              "name": "Refraction Shield",
+              "type": "ability",
+              "description": "Clash your shields, unleashing a concussive blast that deals Magical Damage. Dealing damage charges your shields.",
+              "cooldownSeconds": 12,
+              "manaCost": 10,
+              "scalingText": "0.75% Max Health"
+            },
+            {
+              "key": "3",
+              "name": "Tremors",
+              "type": "ability",
+              "description": "Summon a vision that repeatedly deals Magical Damage to nearby enemies.",
+              "cooldownSeconds": 4,
+              "manaCost": 20,
+              "scalingText": "40% Intelligence + 50% Strength"
+            },
+            {
+              "key": "4",
+              "name": "Tectonic Shift",
+              "type": "ultimate",
+              "description": "Teleport to the target location, then Stomp the ground to create a fissure that deals Magical Damage to enemies in its path. From the fissure, five pieces of earth erupt to form a wall.",
+              "cooldownSeconds": 90,
+              "manaCost": 50,
+              "scalingText": "65% Intelligence + 95% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2000,42 +2054,6 @@
           "cooldownSeconds": 90,
           "manaCost": 50,
           "scalingText": "65% Intelligence + 95% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Seismic Crush",
-          "type": "ability",
-          "description": "Become enraged, increasing your Movement Speed and Attack Speed. While active, your next successful Basic Attack will Slow and deal bonus Magical Damage",
-          "cooldownSeconds": 15,
-          "manaCost": 50,
-          "scalingText": "45% Intelligence + 80% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Refraction Shield",
-          "type": "ability",
-          "description": "Clash your shields, unleashing a concussive blast that deals Magical Damage. Dealing damage charges your shields.",
-          "cooldownSeconds": 12,
-          "manaCost": 10,
-          "scalingText": "0.75% Max Health"
-        },
-        {
-          "key": "3",
-          "name": "Tremors",
-          "type": "ability",
-          "description": "Summon a vision that repeatedly deals Magical Damage to nearby enemies.",
-          "cooldownSeconds": 4,
-          "manaCost": 20,
-          "scalingText": "40% Intelligence + 50% Strength"
-        },
-        {
-          "key": "4",
-          "name": "Tectonic Shift",
-          "type": "ultimate",
-          "description": "Teleport to the target location, then Stomp the ground to create a fissure that deals Magical Damage to enemies in its path. From the fissure, five pieces of earth erupt to form a wall.",
-          "cooldownSeconds": 90,
-          "manaCost": 50,
-          "scalingText": "65% Intelligence + 95% Strength"
         }
       ],
       "details": {
@@ -2067,11 +2085,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672,
         "healthPerLevel": 0,
@@ -2090,7 +2103,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-souls",
+          "name": "Aspect of Souls",
+          "description": "Ghastly Breath ticks an additional time for every 3 god souls you have killed but souls no longer heal. Stygian Torment now only knocks up targets.",
+          "abilities": [
+            {
+              "key": "2",
+              "name": "Ghastly Breath",
+              "type": "ability",
+              "description": "Your heads release a cone of noxious breath dealing Magical Damage repeatedly to enemies in front of you",
+              "cooldownSeconds": 14,
+              "manaCost": 60,
+              "scalingText": null
+            },
+            {
+              "key": "3",
+              "name": "Soul Expulsion",
+              "type": "ability",
+              "description": "Leap forward dealing Magical Damage to enemies and severing their souls when you land",
+              "cooldownSeconds": 14,
+              "manaCost": 55,
+              "scalingText": "60% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Stygian Torment",
+              "type": "ultimate",
+              "description": "Knock Up nearby enemy Gods, severing their souls and dealing Magical Damage to them.",
+              "cooldownSeconds": 90,
+              "manaCost": 60,
+              "scalingText": "55% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2145,33 +2193,6 @@
           "cooldownSeconds": 90,
           "manaCost": 60,
           "scalingText": "55% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Ghastly Breath",
-          "type": "ability",
-          "description": "Your heads release a cone of noxious breath dealing Magical Damage repeatedly to enemies in front of you",
-          "cooldownSeconds": 14,
-          "manaCost": 60,
-          "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Soul Expulsion",
-          "type": "ability",
-          "description": "Leap forward dealing Magical Damage to enemies and severing their souls when you land",
-          "cooldownSeconds": 14,
-          "manaCost": 55,
-          "scalingText": "60% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Stygian Torment",
-          "type": "ultimate",
-          "description": "Knock Up nearby enemy Gods, severing their souls and dealing Magical Damage to them.",
-          "cooldownSeconds": 90,
-          "manaCost": 60,
-          "scalingText": "55% Intelligence"
         }
       ],
       "details": {
@@ -2203,11 +2224,6 @@
         "rangeClass": "melee",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -2226,7 +2242,51 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-strife",
+          "name": "Aspect of Strife",
+          "description": "Your Basic Attacks are now melee and deal increased damage, cleave, and apply stronger Shifter of Seasons effects to all enemies hit. In addition, Horn Charge's cooldown is reduced when hitting a god or Jungle Monster and applies Shifter of Seasons.",
+          "abilities": [
+            {
+              "key": "basic",
+              "name": "Cernunnos Basic Attack",
+              "type": "basic",
+              "description": "Deal Physical Damage to all enemies in front of you.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "130% Strength + 25% Intelligence + 130% Basic Attack Power"
+            },
+            {
+              "key": "passive",
+              "name": "Heavy Glaive",
+              "type": "passive",
+              "description": "Basic Attacks deal bonus Physical Damage to enemies in melee range",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "130% Strength + 25% Intelligence"
+            },
+            {
+              "key": "1",
+              "name": "Shifter Of Seasons",
+              "type": "ability",
+              "description": "Activate to toggle between Spring, Summer, Fall, or Winter Basic Attack bonus effects. Horn Charge can also trigger these effects.",
+              "cooldownSeconds": 0,
+              "manaCost": 0,
+              "scalingText": "2.5% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Horn Charge",
+              "type": "ability",
+              "description": "Dash forward, passing through all types of enemies.",
+              "cooldownSeconds": 15,
+              "manaCost": 70,
+              "scalingText": "85% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2281,42 +2341,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "80% Strength + 100% Intelligence"
-        },
-        {
-          "key": "basic",
-          "name": "Cernunnos Basic Attack",
-          "type": "basic",
-          "description": "Deal Physical Damage to all enemies in front of you.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "130% Strength + 25% Intelligence + 130% Basic Attack Power"
-        },
-        {
-          "key": "passive",
-          "name": "Heavy Glaive",
-          "type": "passive",
-          "description": "Basic Attacks deal bonus Physical Damage to enemies in melee range",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "130% Strength + 25% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Shifter Of Seasons",
-          "type": "ability",
-          "description": "Activate to toggle between Spring, Summer, Fall, or Winter Basic Attack bonus effects. Horn Charge can also trigger these effects.",
-          "cooldownSeconds": 0,
-          "manaCost": 0,
-          "scalingText": "2.5% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Horn Charge",
-          "type": "ability",
-          "description": "Dash forward, passing through all types of enemies.",
-          "cooldownSeconds": 15,
-          "manaCost": 70,
-          "scalingText": "85% Strength"
         }
       ],
       "details": {
@@ -2348,11 +2372,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 647.4,
         "healthPerLevel": 101.4,
@@ -2371,7 +2390,33 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-fulmination",
+          "name": "Aspect of Fulmination",
+          "description": "Rain Dance no longer heals but damages enemies in the area instead.",
+          "abilities": [
+            {
+              "key": "2",
+              "name": "Torrent",
+              "type": "ability",
+              "description": "Swing your Axe around you, dealing Physical Damage to enemies and gaining Protections for each enemy hit",
+              "cooldownSeconds": 10,
+              "manaCost": 50,
+              "scalingText": "6% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Rain Dance",
+              "type": "ability",
+              "description": "Create a rainstorm dealing Physical Damage repeatedly to enemies in an area.",
+              "cooldownSeconds": 13,
+              "manaCost": 55,
+              "scalingText": "15% Strength + 10% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2426,24 +2471,6 @@
           "cooldownSeconds": 90,
           "manaCost": 80,
           "scalingText": "120% Strength + 100% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Torrent",
-          "type": "ability",
-          "description": "Swing your Axe around you, dealing Physical Damage to enemies and gaining Protections for each enemy hit",
-          "cooldownSeconds": 10,
-          "manaCost": 50,
-          "scalingText": "6% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Rain Dance",
-          "type": "ability",
-          "description": "Create a rainstorm dealing Physical Damage repeatedly to enemies in an area.",
-          "cooldownSeconds": 13,
-          "manaCost": 55,
-          "scalingText": "15% Strength + 10% Intelligence"
         }
       ],
       "details": {
@@ -2475,16 +2502,46 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "manaRegen": 0,
         "manaRegenPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-heroic-tutor",
+          "name": "Aspect of the Heroic Tutor",
+          "description": "Target Mark now only applies to one target, and you passively copy 10% of damage done to that target, dealing it again as Physical Damage. Target Mark can no longer apply to lane minions. Training Exercise boosts Allies' Strength and Intelligence when it hits of cleanses them. Centaurus has less scaling, but slows enemies, and when it hits allies, grants them Attack Speed, Shield and applies Herbal Medicine's buff.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Training Exercise",
+              "type": "ability",
+              "description": "Deploy a constellation that grants CC Immunity to allies in the area. After a 1 second delay, it explodes dealing Physical Damage to all enemies in the area",
+              "cooldownSeconds": 13,
+              "manaCost": 55,
+              "scalingText": "80% Strength"
+            },
+            {
+              "key": "2",
+              "name": "Masterful Shot",
+              "type": "ability",
+              "description": "Apply Target Mark when you damage enemies with your Basic Attacks or abilities, reducing their Physical Protections. You can only mark one target at a time. When any damage is done to your marked target, you replicate 10% of that damage as Physical Damage.",
+              "cooldownSeconds": 15,
+              "manaCost": 65,
+              "scalingText": "80% Strength"
+            },
+            {
+              "key": "4",
+              "name": "Centaurus",
+              "type": "ultimate",
+              "description": "Transform into a constellation, reducing Movement Speed, but gaining the ability to fire three long distance arrows, dealing Physical Damage to and Slowing all enemies they hit, as well as applying a Shield, Attack Speed and your passive Healing to all allies they hit.",
+              "cooldownSeconds": 90,
+              "manaCost": 55,
+              "scalingText": "65% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2539,33 +2596,6 @@
           "cooldownSeconds": 90,
           "manaCost": 55,
           "scalingText": "65% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Training Exercise",
-          "type": "ability",
-          "description": "Deploy a constellation that grants CC Immunity to allies in the area. After a 1 second delay, it explodes dealing Physical Damage to all enemies in the area",
-          "cooldownSeconds": 13,
-          "manaCost": 55,
-          "scalingText": "80% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Masterful Shot",
-          "type": "ability",
-          "description": "Apply Target Mark when you damage enemies with your Basic Attacks or abilities, reducing their Physical Protections. You can only mark one target at a time. When any damage is done to your marked target, you replicate 10% of that damage as Physical Damage.",
-          "cooldownSeconds": 15,
-          "manaCost": 65,
-          "scalingText": "80% Strength"
-        },
-        {
-          "key": "4",
-          "name": "Centaurus",
-          "type": "ultimate",
-          "description": "Transform into a constellation, reducing Movement Speed, but gaining the ability to fire three long distance arrows, dealing Physical Damage to and Slowing all enemies they hit, as well as applying a Shield, Attack Speed and your passive Healing to all allies they hit.",
-          "cooldownSeconds": 90,
-          "manaCost": 55,
-          "scalingText": "65% Strength"
         }
       ],
       "details": {
@@ -2597,11 +2627,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -2620,7 +2645,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-love",
+          "name": "Aspect of Love",
+          "description": "Heart Bomb's damage is decreased but the enemy hit has reduced Attack Speed and the explosion area heals allies. At 8 stacks of Lovestruck, allies also gain a Health Shield.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Heart Bomb",
+              "type": "ability",
+              "description": "Fire an Arrow of Love, dealing Physical Damage to the first enemy hit and Slowing their Movement Speed and Attack Speed.",
+              "cooldownSeconds": 12,
+              "manaCost": 60,
+              "scalingText": "40% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2675,15 +2717,6 @@
           "cooldownSeconds": 100,
           "manaCost": 60,
           "scalingText": "12.5% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Heart Bomb",
-          "type": "ability",
-          "description": "Fire an Arrow of Love, dealing Physical Damage to the first enemy hit and Slowing their Movement Speed and Attack Speed.",
-          "cooldownSeconds": 12,
-          "manaCost": 60,
-          "scalingText": "40% Intelligence"
         }
       ],
       "details": {
@@ -2715,16 +2748,46 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "manaRegen": 0,
         "manaRegenPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-ferocity",
+          "name": "Aspect of Ferocity",
+          "description": "Horrible Burns no longer burns but provides Lifesteal and lasts for a short duration. One Thousand Cuts fires 2 swings, increasing at Attack Speed thresholds and deals Attack damage. Trickster Sprit does less damage but provides an Attack Speed buff.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Horrible Burns",
+              "type": "ability",
+              "description": "While active, you gain Lifesteal, your Attacks Slow, and deal bonus Physical Damage.",
+              "cooldownSeconds": 9,
+              "manaCost": 50,
+              "scalingText": "2% Strength"
+            },
+            {
+              "key": "2",
+              "name": "One Thousand Cuts",
+              "type": "ability",
+              "description": "Strike enemies ahead of you 2 times, dealing Physical Damage",
+              "cooldownSeconds": 11,
+              "manaCost": 60,
+              "scalingText": "75% Strength + 15% Intelligence + 75% Basic Attack Power"
+            },
+            {
+              "key": "3",
+              "name": "Trickster Spirit",
+              "type": "ability",
+              "description": "Teleport to a target character or ward after a short delay, gaining Attack Speed and dealing Physical Damage in an area",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": "60% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2779,33 +2842,6 @@
           "cooldownSeconds": 120,
           "manaCost": 50,
           "scalingText": "60% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Horrible Burns",
-          "type": "ability",
-          "description": "While active, you gain Lifesteal, your Attacks Slow, and deal bonus Physical Damage.",
-          "cooldownSeconds": 9,
-          "manaCost": 50,
-          "scalingText": "2% Strength"
-        },
-        {
-          "key": "2",
-          "name": "One Thousand Cuts",
-          "type": "ability",
-          "description": "Strike enemies ahead of you 2 times, dealing Physical Damage",
-          "cooldownSeconds": 11,
-          "manaCost": 60,
-          "scalingText": "75% Strength + 15% Intelligence + 75% Basic Attack Power"
-        },
-        {
-          "key": "3",
-          "name": "Trickster Spirit",
-          "type": "ability",
-          "description": "Teleport to a target character or ward after a short delay, gaining Attack Speed and dealing Physical Damage in an area",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": "60% Strength"
         }
       ],
       "details": {
@@ -2837,11 +2873,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -2860,7 +2891,33 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-fellowship",
+          "name": "Aspect of Fellowship",
+          "description": "Alluring Spirits no longer throws out a sake bottle but instead spawns 2 Clones. All of your Clones deal more damage and take less damage.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Dishonest Duplication",
+              "type": "passive",
+              "description": "You have a chance of spawning a clone of yourself with each Basic Attack hitting an enemy",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "12.5 | 13.75 | 15 | 16.25 | 17.5% Basic Attack Damage"
+            },
+            {
+              "key": "2",
+              "name": "Alluring Spirits",
+              "type": "ability",
+              "description": "Drink some sake, Healing over time before conjuring 2 Clones.",
+              "cooldownSeconds": 14,
+              "manaCost": 60,
+              "scalingText": "100%"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -2915,24 +2972,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "50% Strength + 80% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Dishonest Duplication",
-          "type": "passive",
-          "description": "You have a chance of spawning a clone of yourself with each Basic Attack hitting an enemy",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "12.5 | 13.75 | 15 | 16.25 | 17.5% Basic Attack Damage"
-        },
-        {
-          "key": "2",
-          "name": "Alluring Spirits",
-          "type": "ability",
-          "description": "Drink some sake, Healing over time before conjuring 2 Clones.",
-          "cooldownSeconds": 14,
-          "manaCost": 60,
-          "scalingText": "100%"
         }
       ],
       "details": {
@@ -2964,11 +3003,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 617.6,
         "healthPerLevel": 92.7,
@@ -2987,7 +3021,51 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-gilded-victor",
+          "name": "Aspect of the Gilded Victor",
+          "description": "Contest of Gods only provides you extra Attack Damage from Intelligence. Unruly Magic does not explode but returns back, dealing damage and providing a stack causing your next attacks to explode. Erratic Behavior no longer creates a field of stealth but attack speed and attack damage. Golden Apple of Discord is faster and does not spread.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Contest of Gods",
+              "type": "passive",
+              "description": "Gaining a level, god kill, or god assist provides a random temporary self buff of Intelligence, Lifesteal, or Healing.A portion of your Intelligence is converted to Attack Damage",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Unruly Magic",
+              "type": "ability",
+              "description": "Fire out an orb of unruly magic dealing Magical Damage before returning back dealing less Magical Damage.",
+              "cooldownSeconds": 12,
+              "manaCost": 50,
+              "scalingText": "40% Strength + 8% Intelligence + 40% Attack Damage"
+            },
+            {
+              "key": "3",
+              "name": "Erratic Behavior",
+              "type": "ability",
+              "description": "Leap and gain Movement Speed, Attack Speed, and Attack Damage.",
+              "cooldownSeconds": 13,
+              "manaCost": 50,
+              "scalingText": null
+            },
+            {
+              "key": "4",
+              "name": "Golden Apple of Discord",
+              "type": "ultimate",
+              "description": "Throw the Golden Apple of Discord which deals Magical Damage before exploding, dealing additional Magical Damage.",
+              "cooldownSeconds": 90,
+              "manaCost": 50,
+              "scalingText": "40% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -3042,42 +3120,6 @@
           "cooldownSeconds": 90,
           "manaCost": 50,
           "scalingText": "60% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Contest of Gods",
-          "type": "passive",
-          "description": "Gaining a level, god kill, or god assist provides a random temporary self buff of Intelligence, Lifesteal, or Healing.A portion of your Intelligence is converted to Attack Damage",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Unruly Magic",
-          "type": "ability",
-          "description": "Fire out an orb of unruly magic dealing Magical Damage before returning back dealing less Magical Damage.",
-          "cooldownSeconds": 12,
-          "manaCost": 50,
-          "scalingText": "40% Strength + 8% Intelligence + 40% Attack Damage"
-        },
-        {
-          "key": "3",
-          "name": "Erratic Behavior",
-          "type": "ability",
-          "description": "Leap and gain Movement Speed, Attack Speed, and Attack Damage.",
-          "cooldownSeconds": 13,
-          "manaCost": 50,
-          "scalingText": null
-        },
-        {
-          "key": "4",
-          "name": "Golden Apple of Discord",
-          "type": "ultimate",
-          "description": "Throw the Golden Apple of Discord which deals Magical Damage before exploding, dealing additional Magical Damage.",
-          "cooldownSeconds": 90,
-          "manaCost": 50,
-          "scalingText": "40% Intelligence"
         }
       ],
       "details": {
@@ -3109,11 +3151,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 617.6,
         "healthPerLevel": 92.7,
@@ -3132,7 +3169,42 @@
         "movementSpeed": 370,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-lifewarden",
+          "name": "Aspect of the Lifewarden",
+          "description": "Dispel Magic no longer requires an enemy god hit to shield allies and now applies Transference to all allies it shields. Wing Gust no longer has damage scaling, but applies a movement speed aura to allies, and when its projectiles hit enemies, all allies with Transference are healed.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Funeral Rites",
+              "type": "passive",
+              "description": "Whenever a God dies within 12.8m of Eset, she gains a stack of Funeral Rites; granting Health Regen and Mana Regen to her and nearby allies. Additionally, every third Basic Attack from Eset is empowered; allowing it to hit in a wider radius and dealing Bonus Damage based on her stacks of Invocation",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Wing Gust",
+              "type": "ability",
+              "description": "Fire 4 projectiles in a line, each dealing Magical Damage to all targets in their path",
+              "cooldownSeconds": 10,
+              "manaCost": 60,
+              "scalingText": "5% Magical Protection + 5% Physical Protection"
+            },
+            {
+              "key": "3",
+              "name": "Dispel Magic",
+              "type": "ability",
+              "description": "Eset Silences and Slows enemy Gods at her target location. Enemy Gods hit also have reduced Magical Protections",
+              "cooldownSeconds": 16,
+              "manaCost": 60,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -3187,33 +3259,6 @@
           "cooldownSeconds": 90,
           "manaCost": 60,
           "scalingText": "50% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Funeral Rites",
-          "type": "passive",
-          "description": "Whenever a God dies within 12.8m of Eset, she gains a stack of Funeral Rites; granting Health Regen and Mana Regen to her and nearby allies. Additionally, every third Basic Attack from Eset is empowered; allowing it to hit in a wider radius and dealing Bonus Damage based on her stacks of Invocation",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Wing Gust",
-          "type": "ability",
-          "description": "Fire 4 projectiles in a line, each dealing Magical Damage to all targets in their path",
-          "cooldownSeconds": 10,
-          "manaCost": 60,
-          "scalingText": "5% Magical Protection + 5% Physical Protection"
-        },
-        {
-          "key": "3",
-          "name": "Dispel Magic",
-          "type": "ability",
-          "description": "Eset Silences and Slows enemy Gods at her target location. Enemy Gods hit also have reduced Magical Protections",
-          "cooldownSeconds": 16,
-          "manaCost": 60,
-          "scalingText": null
         }
       ],
       "details": {
@@ -3245,11 +3290,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 605,
         "healthPerLevel": 80,
@@ -3268,7 +3308,42 @@
         "movementSpeed": 442,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-loyalty",
+          "name": "Aspect of Loyalty",
+          "description": "Brutalize deals less damage but applies a stacking Slow, provides increased Protections, and Protections persist afterwards. Seething Howl's Strength is decreased, but applies to all allies in an area around him and their Lifesteal heals Fenrir.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Unchained",
+              "type": "ability",
+              "description": "Savagely Leap forward, dealing Physical Damage when you land",
+              "cooldownSeconds": 15,
+              "manaCost": 50,
+              "scalingText": "85% Strength + 45% Physical and Magical Protection"
+            },
+            {
+              "key": "2",
+              "name": "Seething Howl",
+              "type": "ability",
+              "description": "Unleash a howl, providing increased Strength, Attack Speed, and Lifesteal to yourself and nearby allies",
+              "cooldownSeconds": 13,
+              "manaCost": 60,
+              "scalingText": null
+            },
+            {
+              "key": "3",
+              "name": "Brutalize",
+              "type": "ability",
+              "description": "Gain Protections, Leap forward, and grab onto an enemy, dealing Physical Damage repeatedly to all nearby enemies",
+              "cooldownSeconds": 12,
+              "manaCost": 60,
+              "scalingText": "40% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -3323,33 +3398,6 @@
           "cooldownSeconds": 110,
           "manaCost": 100,
           "scalingText": "115% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Unchained",
-          "type": "ability",
-          "description": "Savagely Leap forward, dealing Physical Damage when you land",
-          "cooldownSeconds": 15,
-          "manaCost": 50,
-          "scalingText": "85% Strength + 45% Physical and Magical Protection"
-        },
-        {
-          "key": "2",
-          "name": "Seething Howl",
-          "type": "ability",
-          "description": "Unleash a howl, providing increased Strength, Attack Speed, and Lifesteal to yourself and nearby allies",
-          "cooldownSeconds": 13,
-          "manaCost": 60,
-          "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Brutalize",
-          "type": "ability",
-          "description": "Gain Protections, Leap forward, and grab onto an enemy, dealing Physical Damage repeatedly to all nearby enemies",
-          "cooldownSeconds": 12,
-          "manaCost": 60,
-          "scalingText": "40% Strength"
         }
       ],
       "details": {
@@ -3381,11 +3429,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672,
         "healthPerLevel": 0,
@@ -3404,7 +3447,51 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-triumphant",
+          "name": "Aspect of the Triumphant",
+          "description": "Ohm no longer silences but deals damage to enemies in front of you and provides yourself and allies Movement Speed. Turn of Fate's mark now only procs the next time you hit the marked enemy with an ability. Additionally you no longer bestow kills to allies but each god kill provides permanent Cooldown Rate.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Good Fortune",
+              "type": "passive",
+              "description": "Any time you deal a killing blow on an enemy god, you gain permanent Cooldown Rate. In addition, your assist range is increased and the time before you lose assist credit is increased by 5 seconds.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Turn of Fate",
+              "type": "ability",
+              "description": "Send a curse forward dealing Magical Damage to enemies it passes through. For each enemy hit, all nearby allied Gods gain Bonus Damage",
+              "cooldownSeconds": 14,
+              "manaCost": 65,
+              "scalingText": "5 Per Enemy Level"
+            },
+            {
+              "key": "2",
+              "name": "Ohm",
+              "type": "ability",
+              "description": "Rise into the lotus position, dealing Magical Damage repeatedly to enemies in front of you and increasing Movement Speed of nearby allies gods.",
+              "cooldownSeconds": 14,
+              "manaCost": 55,
+              "scalingText": null
+            },
+            {
+              "key": "4",
+              "name": "Dharmic Pillars",
+              "type": "ultimate",
+              "description": "Summon 4 Great Pillars to imprison your enemies. Enemies that pass the field between each pillar take an initial hit of Magical Damage and have their Protections Reduced",
+              "cooldownSeconds": 100,
+              "manaCost": 65,
+              "scalingText": "64% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -3459,42 +3546,6 @@
           "cooldownSeconds": 75,
           "manaCost": 65,
           "scalingText": "64% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Good Fortune",
-          "type": "passive",
-          "description": "Any time you deal a killing blow on an enemy god, you gain permanent Cooldown Rate. In addition, your assist range is increased and the time before you lose assist credit is increased by 5 seconds.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Turn of Fate",
-          "type": "ability",
-          "description": "Send a curse forward dealing Magical Damage to enemies it passes through. For each enemy hit, all nearby allied Gods gain Bonus Damage",
-          "cooldownSeconds": 14,
-          "manaCost": 65,
-          "scalingText": "5 Per Enemy Level"
-        },
-        {
-          "key": "2",
-          "name": "Ohm",
-          "type": "ability",
-          "description": "Rise into the lotus position, dealing Magical Damage repeatedly to enemies in front of you and increasing Movement Speed of nearby allies gods.",
-          "cooldownSeconds": 14,
-          "manaCost": 55,
-          "scalingText": null
-        },
-        {
-          "key": "4",
-          "name": "Dharmic Pillars",
-          "type": "ultimate",
-          "description": "Summon 4 Great Pillars to imprison your enemies. Enemies that pass the field between each pillar take an initial hit of Magical Damage and have their Protections Reduced",
-          "cooldownSeconds": 100,
-          "manaCost": 65,
-          "scalingText": "64% Intelligence"
         }
       ],
       "details": {
@@ -3526,11 +3577,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -3549,7 +3595,69 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-calamity",
+          "name": "Aspect of Calamity",
+          "description": "Geb's attacks are ranged, travel slowly, and pierce with damage falloff. Shockwave deals circular damage, Crits, triggers on-hits, and grants Attack Speed on god hit. Stone Shield is self-only and buffs attack damage. Cataclysm causes Knockbacl rather than a Stun.",
+          "abilities": [
+            {
+              "key": "basic",
+              "name": "Geb Basic Attack",
+              "type": "basic",
+              "description": "Throw a piercing projectile that deals Magical Damage to all enemies hit.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "100% Strength + 20% Intelligence + 100% Basic Attack Power"
+            },
+            {
+              "key": "passive",
+              "name": "Hard as Rock",
+              "type": "passive",
+              "description": "Geb cannot take more than 40% of his max HP from a single attack. Additionally, Geb takes Reduced Damage from enemy God Basic Attacks and Critical Strikes",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Roll Out",
+              "type": "ability",
+              "description": "Charge forward, stopping on the first enemy God hit",
+              "cooldownSeconds": 14,
+              "manaCost": 50,
+              "scalingText": "75% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Shock Wave",
+              "type": "ability",
+              "description": "Create a shock wave in a cone, dealing Magical Damage.",
+              "cooldownSeconds": 14,
+              "manaCost": 60,
+              "scalingText": "50% Strength"
+            },
+            {
+              "key": "3",
+              "name": "Stone Shield",
+              "type": "ability",
+              "description": "Provide yourself a Health Shield",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": "10 Per Level"
+            },
+            {
+              "key": "4",
+              "name": "Cataclysm",
+              "type": "ultimate",
+              "description": "Pull apart the earth, dealing Magical Damage and Knocking Away enemy Gods hit",
+              "cooldownSeconds": 90,
+              "manaCost": 50,
+              "scalingText": "15% of Enemy's Current Health"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -3604,60 +3712,6 @@
           "cooldownSeconds": 90,
           "manaCost": 50,
           "scalingText": "15% of Enemy's Current Health"
-        },
-        {
-          "key": "basic",
-          "name": "Geb Basic Attack",
-          "type": "basic",
-          "description": "Throw a piercing projectile that deals Magical Damage to all enemies hit.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "100% Strength + 20% Intelligence + 100% Basic Attack Power"
-        },
-        {
-          "key": "passive",
-          "name": "Hard as Rock",
-          "type": "passive",
-          "description": "Geb cannot take more than 40% of his max HP from a single attack. Additionally, Geb takes Reduced Damage from enemy God Basic Attacks and Critical Strikes",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Roll Out",
-          "type": "ability",
-          "description": "Charge forward, stopping on the first enemy God hit",
-          "cooldownSeconds": 14,
-          "manaCost": 50,
-          "scalingText": "75% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Shock Wave",
-          "type": "ability",
-          "description": "Create a shock wave in a cone, dealing Magical Damage.",
-          "cooldownSeconds": 14,
-          "manaCost": 60,
-          "scalingText": "50% Strength"
-        },
-        {
-          "key": "3",
-          "name": "Stone Shield",
-          "type": "ability",
-          "description": "Provide yourself a Health Shield",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": "10 Per Level"
-        },
-        {
-          "key": "4",
-          "name": "Cataclysm",
-          "type": "ultimate",
-          "description": "Pull apart the earth, dealing Magical Damage and Knocking Away enemy Gods hit",
-          "cooldownSeconds": 90,
-          "manaCost": 50,
-          "scalingText": "15% of Enemy's Current Health"
         }
       ],
       "details": {
@@ -3689,11 +3743,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 647,
         "healthPerLevel": 102,
@@ -3712,7 +3761,60 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-general",
+          "name": "Aspect of the General",
+          "description": "Battle Fervor now provides Intelligence instead of Attack Speed. Conviction now applies an additional Heal over Time and will share Protections from Taolu Assault. However, Guan Yu loses all Strength scaling and reduced Intelligence damage scaling.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Battle Fervor",
+              "type": "passive",
+              "description": "Gain stacks of Fervor when dealing or taking damage",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Conviction",
+              "type": "ability",
+              "description": "Heal yourself then apply a Heal over Time that Heals every 0.5 seconds for 1.5 seconds to yourself and allies.",
+              "cooldownSeconds": 14,
+              "manaCost": 45,
+              "scalingText": "0.3% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Warrior's Will",
+              "type": "ability",
+              "description": "Dash forward, dealing Physical Damage to and Slowing enemies you pass through",
+              "cooldownSeconds": 13,
+              "manaCost": 50,
+              "scalingText": "0.2% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Taolu Assault",
+              "type": "ability",
+              "description": "Swing your blade in a flurry, dealing Physical Damage repeatedly and stealing protections from enemies hit up to 3 times",
+              "cooldownSeconds": 13,
+              "manaCost": 55,
+              "scalingText": "1.5% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Cavalry Charge",
+              "type": "ultimate",
+              "description": "Mount a warhorse, gaining CC Immunity. Strike enemies while riding, dealing Physical Damage. Dismount with a final swing that also Stuns all enemies hit",
+              "cooldownSeconds": 90,
+              "manaCost": 80,
+              "scalingText": "12.5% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -3767,51 +3869,6 @@
           "cooldownSeconds": 90,
           "manaCost": 80,
           "scalingText": "30% Strength + 25% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Battle Fervor",
-          "type": "passive",
-          "description": "Gain stacks of Fervor when dealing or taking damage",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Conviction",
-          "type": "ability",
-          "description": "Heal yourself then apply a Heal over Time that Heals every 0.5 seconds for 1.5 seconds to yourself and allies.",
-          "cooldownSeconds": 14,
-          "manaCost": 45,
-          "scalingText": "0.3% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Warrior's Will",
-          "type": "ability",
-          "description": "Dash forward, dealing Physical Damage to and Slowing enemies you pass through",
-          "cooldownSeconds": 13,
-          "manaCost": 50,
-          "scalingText": "0.2% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Taolu Assault",
-          "type": "ability",
-          "description": "Swing your blade in a flurry, dealing Physical Damage repeatedly and stealing protections from enemies hit up to 3 times",
-          "cooldownSeconds": 13,
-          "manaCost": 55,
-          "scalingText": "1.5% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Cavalry Charge",
-          "type": "ultimate",
-          "description": "Mount a warhorse, gaining CC Immunity. Strike enemies while riding, dealing Physical Damage. Dismount with a final swing that also Stuns all enemies hit",
-          "cooldownSeconds": 90,
-          "manaCost": 80,
-          "scalingText": "12.5% Intelligence"
         }
       ],
       "details": {
@@ -3842,11 +3899,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 647.4,
@@ -3952,11 +4004,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 572.7,
         "healthPerLevel": 89.7,
@@ -3975,7 +4022,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-ruin",
+          "name": "Aspect of Ruin",
+          "description": "Spell Eater can no longer be refired but instead reduces enemy ability damage in the area. Additionally, each time an enemy ability is cast a projectile lands and explodes at their location. Spell Eater's cooldown is increased.",
+          "abilities": [
+            {
+              "key": "2",
+              "name": "Spell Eater",
+              "type": "ability",
+              "description": "Create a Sigil that decreases enemy god ability damage done in a large area for 4 seconds.",
+              "cooldownSeconds": 12,
+              "manaCost": 50,
+              "scalingText": "20% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -4030,15 +4094,6 @@
           "cooldownSeconds": 90,
           "manaCost": 90,
           "scalingText": "85% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Spell Eater",
-          "type": "ability",
-          "description": "Create a Sigil that decreases enemy god ability damage done in a large area for 4 seconds.",
-          "cooldownSeconds": 12,
-          "manaCost": 50,
-          "scalingText": "20% Intelligence"
         }
       ],
       "details": {
@@ -4070,11 +4125,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 647.4,
         "healthPerLevel": 101.4,
@@ -4093,7 +4143,24 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-preservation",
+          "name": "Aspect of Preservation",
+          "description": "Mitigate Wounds no longer Heals based on damage or provides Attack Speed. Instead Hercules gains a Stack when he or nearby allied gods take damage from Basic Attacks and when the ability ends, stacks are expended to Heal nearby allied gods.",
+          "abilities": [
+            {
+              "key": "3",
+              "name": "Mitigate Wounds",
+              "type": "ability",
+              "description": "Immediately Heal yourself, and gain Protections for 4 seconds.",
+              "cooldownSeconds": 15,
+              "manaCost": 50,
+              "scalingText": "30% of Protections from Items"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -4148,15 +4215,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "100% Strength"
-        },
-        {
-          "key": "3",
-          "name": "Mitigate Wounds",
-          "type": "ability",
-          "description": "Immediately Heal yourself, and gain Protections for 4 seconds.",
-          "cooldownSeconds": 15,
-          "manaCost": 50,
-          "scalingText": "30% of Protections from Items"
         }
       ],
       "details": {
@@ -4188,11 +4246,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 596,
         "healthPerLevel": 86,
@@ -4211,7 +4264,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-mark",
+          "name": "Aspect of the Mark",
+          "description": "Basic Attacks now ricochet, dealing bonus damage to gods per bounce. Bounced Basic Attacks cannot damage structures. Ricochet no longer bounces or stuns; it applies Mark of the Golden Crow on its first hit. If already marked, the mark spreads. Basic Attacks hitting marked targets bounce to a nearby enemy.",
+          "abilities": [
+            {
+              "key": "basic",
+              "name": "Hou Yi Basic Attack",
+              "type": "basic",
+              "description": "Fire a projectile that ricochets off walls, dealing Physical Damage to the first enemy hit.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "100% Strength + 20% Intelligence + 100% Basic Attack Power"
+            },
+            {
+              "key": "1",
+              "name": "Ricochet",
+              "type": "ability",
+              "description": "Fire an arrow dealing Physical Damage to enemies it passes through. Applies Mark to unmarked targets.",
+              "cooldownSeconds": 10,
+              "manaCost": 60,
+              "scalingText": "70% Strength + 55% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Mark of the Golden Crow",
+              "type": "ability",
+              "description": "Mark an enemy causing your other abilities to apply additional effects.\nWhile Strength is higher than Intelligence, Marked enemies take bonus Physical Damage based on their missing health. While Intelligence is higher than Strength, Marked additional effects are amplified.",
+              "cooldownSeconds": 14,
+              "manaCost": 50,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -4266,33 +4354,6 @@
           "cooldownSeconds": 90,
           "manaCost": 60,
           "scalingText": "25% Strength + 15% Intelligence"
-        },
-        {
-          "key": "basic",
-          "name": "Hou Yi Basic Attack",
-          "type": "basic",
-          "description": "Fire a projectile that ricochets off walls, dealing Physical Damage to the first enemy hit.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "100% Strength + 20% Intelligence + 100% Basic Attack Power"
-        },
-        {
-          "key": "1",
-          "name": "Ricochet",
-          "type": "ability",
-          "description": "Fire an arrow dealing Physical Damage to enemies it passes through. Applies Mark to unmarked targets.",
-          "cooldownSeconds": 10,
-          "manaCost": 60,
-          "scalingText": "70% Strength + 55% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Mark of the Golden Crow",
-          "type": "ability",
-          "description": "Mark an enemy causing your other abilities to apply additional effects.\nWhile Strength is higher than Intelligence, Marked enemies take bonus Physical Damage based on their missing health. While Intelligence is higher than Strength, Marked additional effects are amplified.",
-          "cooldownSeconds": 14,
-          "manaCost": 50,
-          "scalingText": null
         }
       ],
       "details": {
@@ -4323,11 +4384,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 647.4,
@@ -4433,11 +4489,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 622.5,
         "healthPerLevel": 97.5,
@@ -4456,7 +4507,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-disruption",
+          "name": "Aspect of Disruption",
+          "description": "infused Strikes Slow gods hit by them, but do not grant Hun Batz the stacking Strength buff. Overhand Smash Stuns gods hit by it, but deals reduced damage.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Infused Strikes",
+              "type": "passive",
+              "description": "After using an ability, Hun Batz's next Basic Attack will Slow the target.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "2",
+              "name": "Overhand Smash",
+              "type": "ability",
+              "description": "Channel for a short duration. At the end of the Channel, deal Physical Damage to enemies in front of you, apply a Physical Protection Debuff, and Stun gods hit by the attack.",
+              "cooldownSeconds": 16,
+              "manaCost": 60,
+              "scalingText": "20% Strength"
+            },
+            {
+              "key": "3",
+              "name": "Sacred Monkey",
+              "type": "ability",
+              "description": "Throw a projectile monkey that deals Physical Damage to any enemies it hits. After hitting, it will bounce to nearby enemies applying a Mark to only the most recently hit enemy. Reactive this ability to Teleport to the Marked enemy",
+              "cooldownSeconds": 13,
+              "manaCost": 60,
+              "scalingText": "35% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -4511,33 +4597,6 @@
           "cooldownSeconds": 120,
           "manaCost": 60,
           "scalingText": null
-        },
-        {
-          "key": "passive",
-          "name": "Infused Strikes",
-          "type": "passive",
-          "description": "After using an ability, Hun Batz's next Basic Attack will Slow the target.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "2",
-          "name": "Overhand Smash",
-          "type": "ability",
-          "description": "Channel for a short duration. At the end of the Channel, deal Physical Damage to enemies in front of you, apply a Physical Protection Debuff, and Stun gods hit by the attack.",
-          "cooldownSeconds": 16,
-          "manaCost": 60,
-          "scalingText": "20% Strength"
-        },
-        {
-          "key": "3",
-          "name": "Sacred Monkey",
-          "type": "ability",
-          "description": "Throw a projectile monkey that deals Physical Damage to any enemies it hits. After hitting, it will bounce to nearby enemies applying a Mark to only the most recently hit enemy. Reactive this ability to Teleport to the Marked enemy",
-          "cooldownSeconds": 13,
-          "manaCost": 60,
-          "scalingText": "35% Strength"
         }
       ],
       "details": {
@@ -4568,11 +4627,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591.38,
@@ -4678,11 +4732,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 572,
         "healthPerLevel": 0,
@@ -4786,11 +4835,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591.38,
@@ -4897,11 +4941,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 567,
         "healthPerLevel": 105,
@@ -4920,7 +4959,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-unyielding",
+          "name": "Aspect of the Unyielding",
+          "description": "Toxic clouds do not deal tick damage but allied gods within them gain Damage Reduction. Within them, you do not gain Cooling but lower cooldown for Venomous Haze. Consuming Bellow does not deal bonus damage but allies gain INT and STR. Submerge Knockup height is increased.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Venomous Haze",
+              "type": "ability",
+              "description": "Fire noxious spit at an area dealing Magical Damage and creating a toxic cloud that persists for 20 seconds",
+              "cooldownSeconds": 13,
+              "manaCost": 50,
+              "scalingText": "40% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Consuming Bellow",
+              "type": "ability",
+              "description": "Channel briefly, drawing power from nearby toxic clouds, then roar to deal Magical Damage, Slow, and Tremble enemies around you while nearby allies gain Intelligence and Strength",
+              "cooldownSeconds": 12,
+              "manaCost": 70,
+              "scalingText": "45% Intelligence + 30% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -4975,24 +5040,6 @@
           "cooldownSeconds": 90,
           "manaCost": 50,
           "scalingText": "20% Intelligence + 15% Strength"
-        },
-        {
-          "key": "1",
-          "name": "Venomous Haze",
-          "type": "ability",
-          "description": "Fire noxious spit at an area dealing Magical Damage and creating a toxic cloud that persists for 20 seconds",
-          "cooldownSeconds": 13,
-          "manaCost": 50,
-          "scalingText": "40% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Consuming Bellow",
-          "type": "ability",
-          "description": "Channel briefly, drawing power from nearby toxic clouds, then roar to deal Magical Damage, Slow, and Tremble enemies around you while nearby allies gain Intelligence and Strength",
-          "cooldownSeconds": 12,
-          "manaCost": 70,
-          "scalingText": "45% Intelligence + 30% Strength"
         }
       ],
       "details": {
@@ -5024,11 +5071,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591,
         "healthPerLevel": 0,
@@ -5047,7 +5089,51 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-unbound-destruction",
+          "name": "Aspect of Unbound Destruction",
+          "description": "Kali's Basics are ranged. Rupture procs at 5 stacks to deal damage & heal her. Incense doesn't stun or proc Rupture but knocks back & applies Rupture. Destruction doesn't damage, prevent death, or give immunities but gives stats, has a lower cooldown, resets cooldown on Mark kills, makes her Basics apply 2 Rupture stacks & pierce.",
+          "abilities": [
+            {
+              "key": "basic",
+              "name": "Kali Basic Attack",
+              "type": "basic",
+              "description": "Fire a projectile that deals Physical Damage to the first enemy hit",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "100% Strength + 20% Intelligence + 100% Basic Attack Power"
+            },
+            {
+              "key": "passive",
+              "name": "Marked for Death",
+              "type": "passive",
+              "description": "Mark a God. Gain Physical Penetration against that God. Killing that God restores Health. Assists restore less Health. You also gain bonus Gold Bounty. Additionally, Basic Attacks and most abilities apply Rupture to enemies",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "2 Per Level"
+            },
+            {
+              "key": "3",
+              "name": "Incense",
+              "type": "ability",
+              "description": "Knockback enemies with incense, and deal Physical Damage.",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": "45% Strength + 85% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Destruction",
+              "type": "ultimate",
+              "description": "Become Displacement Immune, Slow Immune, and Root Immune. While active you gain increased Attack Speed, Lifesteal, Strength, and Intelligence.",
+              "cooldownSeconds": 50,
+              "manaCost": 60,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -5102,42 +5188,6 @@
           "cooldownSeconds": 90,
           "manaCost": 60,
           "scalingText": "4% Strength + 6.5% Intelligence"
-        },
-        {
-          "key": "basic",
-          "name": "Kali Basic Attack",
-          "type": "basic",
-          "description": "Fire a projectile that deals Physical Damage to the first enemy hit",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "100% Strength + 20% Intelligence + 100% Basic Attack Power"
-        },
-        {
-          "key": "passive",
-          "name": "Marked for Death",
-          "type": "passive",
-          "description": "Mark a God. Gain Physical Penetration against that God. Killing that God restores Health. Assists restore less Health. You also gain bonus Gold Bounty. Additionally, Basic Attacks and most abilities apply Rupture to enemies",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "2 Per Level"
-        },
-        {
-          "key": "3",
-          "name": "Incense",
-          "type": "ability",
-          "description": "Knockback enemies with incense, and deal Physical Damage.",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": "45% Strength + 85% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Destruction",
-          "type": "ultimate",
-          "description": "Become Displacement Immune, Slow Immune, and Root Immune. While active you gain increased Attack Speed, Lifesteal, Strength, and Intelligence.",
-          "cooldownSeconds": 50,
-          "manaCost": 60,
-          "scalingText": null
         }
       ],
       "details": {
@@ -5169,11 +5219,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -5192,7 +5237,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-laceration",
+          "name": "Aspect of Laceration",
+          "description": "Abduct no longer Pulls enemy gods but Roots them in place with Khepri, dealing constant Basic Attack Damage for the duration. Khepri no longer gains Protections after Abduct ends.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Abduct",
+              "type": "ability",
+              "description": "Lunge forward, Grabbing, and Rooting the first enemy God hit.",
+              "cooldownSeconds": 14,
+              "manaCost": 60,
+              "scalingText": "4% Max Health"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -5247,15 +5309,6 @@
           "cooldownSeconds": 110,
           "manaCost": 80,
           "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Abduct",
-          "type": "ability",
-          "description": "Lunge forward, Grabbing, and Rooting the first enemy God hit.",
-          "cooldownSeconds": 14,
-          "manaCost": 60,
-          "scalingText": "4% Max Health"
         }
       ],
       "details": {
@@ -5287,11 +5340,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 572.7,
         "healthPerLevel": 89.7,
@@ -5310,7 +5358,51 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-squall",
+          "name": "Aspect of the Squall",
+          "description": "You gain Mana from Jungle monster kills and god kills and assists. Zephyr has a shorter range but fires 3 projectiles. Slipstream is always a dash and steals protections. Whirlwind attaches to you and explodes in a blast that knocks back enemies.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Power of the Wind Jewel",
+              "type": "passive",
+              "description": "As you build items that provide Mana, you gain Bonus Intelligence",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Zephyr",
+              "type": "ability",
+              "description": "Blow three breezy projectiles that deal Magical Damage to enemies hit.",
+              "cooldownSeconds": 7,
+              "manaCost": 50,
+              "scalingText": "90% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Slipstream",
+              "type": "ability",
+              "description": "Summon the wind to Dash, dealing Magical Damage and Slowing enemies hit",
+              "cooldownSeconds": 13,
+              "manaCost": 40,
+              "scalingText": "65% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Whirlwind",
+              "type": "ability",
+              "description": "Create a Whirlwind that follows you, exploding into a blast of wind after a delay, dealing Magical Damage and Knocking Back enemies hit.",
+              "cooldownSeconds": 15,
+              "manaCost": 50,
+              "scalingText": "35% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -5365,42 +5457,6 @@
           "cooldownSeconds": 90,
           "manaCost": 120,
           "scalingText": "115% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Power of the Wind Jewel",
-          "type": "passive",
-          "description": "As you build items that provide Mana, you gain Bonus Intelligence",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Zephyr",
-          "type": "ability",
-          "description": "Blow three breezy projectiles that deal Magical Damage to enemies hit.",
-          "cooldownSeconds": 7,
-          "manaCost": 50,
-          "scalingText": "90% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Slipstream",
-          "type": "ability",
-          "description": "Summon the wind to Dash, dealing Magical Damage and Slowing enemies hit",
-          "cooldownSeconds": 13,
-          "manaCost": 40,
-          "scalingText": "65% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Whirlwind",
-          "type": "ability",
-          "description": "Create a Whirlwind that follows you, exploding into a blast of wind after a delay, dealing Magical Damage and Knocking Back enemies hit.",
-          "cooldownSeconds": 15,
-          "manaCost": 50,
-          "scalingText": "35% Intelligence"
         }
       ],
       "details": {
@@ -5432,11 +5488,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 617.63,
         "healthPerLevel": 92.62,
@@ -5455,7 +5506,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-agony",
+          "name": "Aspect of Agony",
+          "description": "Vanish no longer grants Stealth, but it inflicts Blind instead of Bleed. Agonizing Visions can be cast on allies, providing damage mitigation while slowing enemies. Behind you now deals bonus damage scaling with your Health and Protections rather than its percentage increase.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Behind You",
+              "type": "passive",
+              "description": "Hitting enemies from behind deals Bonus Damage",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "2% Max Health + 10% Protections"
+            },
+            {
+              "key": "1",
+              "name": "Vanish",
+              "type": "ability",
+              "description": "Gain Movement Speed and Empower your next attack, causing it to Blind enemies hit.",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": null
+            },
+            {
+              "key": "2",
+              "name": "Agonizing Visions",
+              "type": "ability",
+              "description": "Summon a vision of Loki that repeatedly deals Physical Damage to nearby enemies. Casting this on allies makes them the source of damage and grants them Damage Mitigation.",
+              "cooldownSeconds": 13,
+              "manaCost": 50,
+              "scalingText": "15% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -5510,33 +5596,6 @@
           "cooldownSeconds": 90,
           "manaCost": 90,
           "scalingText": "80% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Behind You",
-          "type": "passive",
-          "description": "Hitting enemies from behind deals Bonus Damage",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "2% Max Health + 10% Protections"
-        },
-        {
-          "key": "1",
-          "name": "Vanish",
-          "type": "ability",
-          "description": "Gain Movement Speed and Empower your next attack, causing it to Blind enemies hit.",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": null
-        },
-        {
-          "key": "2",
-          "name": "Agonizing Visions",
-          "type": "ability",
-          "description": "Summon a vision of Loki that repeatedly deals Physical Damage to nearby enemies. Casting this on allies makes them the source of damage and grants them Damage Mitigation.",
-          "cooldownSeconds": 13,
-          "manaCost": 50,
-          "scalingText": "15% Strength"
         }
       ],
       "details": {
@@ -5567,11 +5626,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591.38,
@@ -5677,11 +5731,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -5786,11 +5835,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591,
         "healthPerLevel": 93,
@@ -5809,7 +5853,24 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-pandemonium",
+          "name": "Aspect of Pandemonium",
+          "description": "Elemental Mastery has a reduced cooldown and each time it is used, a random Stance is selected with 2 random primary abilities, Flicker will always persist. Using Elemental Mastery provides an Intelligence buff for a short duration.",
+          "abilities": [
+            {
+              "key": "4",
+              "name": "Elemental Mastery",
+              "type": "ultimate",
+              "description": "Tap into your inner potential, exploding with energy in your current stance dealing Magical Damage to enemies hit",
+              "cooldownSeconds": 20,
+              "manaCost": 40,
+              "scalingText": "0.5 Per Level"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -5846,15 +5907,6 @@
           "cooldownSeconds": 30,
           "manaCost": 40,
           "scalingText": "15% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Elemental Mastery",
-          "type": "ultimate",
-          "description": "Tap into your inner potential, exploding with energy in your current stance dealing Magical Damage to enemies hit",
-          "cooldownSeconds": 20,
-          "manaCost": 40,
-          "scalingText": "0.5 Per Level"
         }
       ],
       "details": {
@@ -5886,11 +5938,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 632.2,
         "healthPerLevel": 91.85,
@@ -5909,7 +5956,33 @@
         "movementSpeed": 442,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-rage",
+          "name": "Aspect of Rage",
+          "description": "Basic Attacks while Bloodrage is active no longer provide bonus Protections or Attack Speed but instead Mordred's non-ultimate and non-passive ability cooldowns are lowered. Additionally Shoulder Charge deals more damage if it has hit an enemy god recently.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Shoulder Charge",
+              "type": "passive",
+              "description": "After using an ability or attacking, your Interact Key becomes a Dash forward",
+              "cooldownSeconds": 10,
+              "manaCost": 0,
+              "scalingText": "3 Per Level"
+            },
+            {
+              "key": "2",
+              "name": "Bloodrage",
+              "type": "ability",
+              "description": "Deal Physical Damage to enemies around you, then gain increased Attack Speed and Movement Speed",
+              "cooldownSeconds": 14,
+              "manaCost": 50,
+              "scalingText": "60% Strength + 40% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -5982,24 +6055,6 @@
           "cooldownSeconds": 0,
           "manaCost": 80,
           "scalingText": "25% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Shoulder Charge",
-          "type": "passive",
-          "description": "After using an ability or attacking, your Interact Key becomes a Dash forward",
-          "cooldownSeconds": 10,
-          "manaCost": 0,
-          "scalingText": "3 Per Level"
-        },
-        {
-          "key": "2",
-          "name": "Bloodrage",
-          "type": "ability",
-          "description": "Deal Physical Damage to enemies around you, then gain increased Attack Speed and Movement Speed",
-          "cooldownSeconds": 14,
-          "manaCost": 50,
-          "scalingText": "60% Strength + 40% Intelligence"
         }
       ],
       "details": {
@@ -6031,11 +6086,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -6054,7 +6104,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-wind",
+          "name": "Aspect of Wind",
+          "description": "Broken Weave explosions no longer Root enemies and the Buff has a reduced duration however the Attack Speed gained is much higher. Additionally using World Weaver provides stacks of Broken Weave.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Broken Weave",
+              "type": "passive",
+              "description": "Your abilities either create or detonate Weaves",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "0.25 Per Level"
+            },
+            {
+              "key": "4",
+              "name": "World Weaver",
+              "type": "ultimate",
+              "description": "Charge up and fire an arrow across the world, locked on to an enemy God and ignoring obstacles",
+              "cooldownSeconds": 100,
+              "manaCost": 80,
+              "scalingText": "105% Strength + 90% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -6109,24 +6185,6 @@
           "cooldownSeconds": 100,
           "manaCost": 80,
           "scalingText": "105% Strength + 90% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Broken Weave",
-          "type": "passive",
-          "description": "Your abilities either create or detonate Weaves",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "0.25 Per Level"
-        },
-        {
-          "key": "4",
-          "name": "World Weaver",
-          "type": "ultimate",
-          "description": "Charge up and fire an arrow across the world, locked on to an enemy God and ignoring obstacles",
-          "cooldownSeconds": 100,
-          "manaCost": 80,
-          "scalingText": "105% Strength + 90% Intelligence"
         }
       ],
       "details": {
@@ -6158,11 +6216,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 622.5,
         "healthPerLevel": 97.5,
@@ -6181,7 +6234,24 @@
         "movementSpeed": 370,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-justice",
+          "name": "Aspect of Justice",
+          "description": "Divine Judgement no longer does damage in an area but instead averages Nemesis's and the enemy god's current Health as long as Nemesis has less than the target.",
+          "abilities": [
+            {
+              "key": "4",
+              "name": "Divine Judgement",
+              "type": "ultimate",
+              "description": "Choose a single enemy God, averaging the current Health between you and the target. This Damages the enemy and Heals yourself as long as your current Health is lower than the target's.",
+              "cooldownSeconds": 90,
+              "manaCost": 90,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -6236,15 +6306,6 @@
           "cooldownSeconds": 90,
           "manaCost": 90,
           "scalingText": "45% Strength + 65% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Divine Judgement",
-          "type": "ultimate",
-          "description": "Choose a single enemy God, averaging the current Health between you and the target. This Damages the enemy and Heals yourself as long as your current Health is lower than the target's.",
-          "cooldownSeconds": 90,
-          "manaCost": 90,
-          "scalingText": null
         }
       ],
       "details": {
@@ -6276,16 +6337,46 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "manaRegen": 0,
         "manaRegenPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-righteous-flame",
+          "name": "Aspect of the Righteous Flame",
+          "description": "Righteous Sprit no longer stacks on hitting enemies. Taking damage charges Righteous Spirit to provide a Heal over Time. Ring Toss can bounce to allies for a Movement and Attack Speed boost. Flaming Spear is now a damaging AoE attack that buffs Ne Zha's Attacks and consumes Righteous Spirit to burst heal.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Righteous Spirit",
+              "type": "passive",
+              "description": "10% of damage taken charges Righteous Spirit reserves",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Universe Ring Toss",
+              "type": "ability",
+              "description": "Throw your ring to deal Physical Damage, then bounce dealing Physical Damage between enemies and allies. Enemies take Physical Protection Debuff and Slow. Subsequent hits deal 35% damage.",
+              "cooldownSeconds": 10,
+              "manaCost": 45,
+              "scalingText": "50% Strength + 35% Physical Protections + 35% Magical Protections"
+            },
+            {
+              "key": "2",
+              "name": "Flaming Spear",
+              "type": "ability",
+              "description": "After a wind up, unleash a devastating attack in a cone and circle area around you, dealing Physical Damage plus bonus damage based on their health.",
+              "cooldownSeconds": 14,
+              "manaCost": 55,
+              "scalingText": "4 | 4.5 | 5 | 5.5 | 6% of target Base Health + 4% of their Item Health"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -6340,33 +6431,6 @@
           "cooldownSeconds": 90,
           "manaCost": 50,
           "scalingText": "65% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Righteous Spirit",
-          "type": "passive",
-          "description": "10% of damage taken charges Righteous Spirit reserves",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Universe Ring Toss",
-          "type": "ability",
-          "description": "Throw your ring to deal Physical Damage, then bounce dealing Physical Damage between enemies and allies. Enemies take Physical Protection Debuff and Slow. Subsequent hits deal 35% damage.",
-          "cooldownSeconds": 10,
-          "manaCost": 45,
-          "scalingText": "50% Strength + 35% Physical Protections + 35% Magical Protections"
-        },
-        {
-          "key": "2",
-          "name": "Flaming Spear",
-          "type": "ability",
-          "description": "After a wind up, unleash a devastating attack in a cone and circle area around you, dealing Physical Damage plus bonus damage based on their health.",
-          "cooldownSeconds": 14,
-          "manaCost": 55,
-          "scalingText": "4 | 4.5 | 5 | 5.5 | 6% of target Base Health + 4% of their Item Health"
         }
       ],
       "details": {
@@ -6398,11 +6462,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.8,
         "healthPerLevel": 92.62,
@@ -6421,7 +6480,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-shining-mist",
+          "name": "Aspect of Shining Mist",
+          "description": "Mysterious Fog now travels a short distance before stopping but allows you to fire Basic Attacks within it and remain Stealthed. Shining Metal has reduced Scaling while Fire Shards now scales with Basic Attack Power, can Critically Strike, and procs Basic Attack Item Effects. Additionally Strength of Fire also provides Attack Speed.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Mysterious Fog",
+              "type": "ability",
+              "description": "Send a dense fog slowly forward that deals Magical Damage when it touches an enemy. Enemies that remain in the fog take additional damage every second. You and Allied Gods are Stealthed when inside the fog",
+              "cooldownSeconds": 12,
+              "manaCost": 60,
+              "scalingText": "50% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Shining Metal",
+              "type": "ability",
+              "description": "Launch a projectile dealing Magical Damage to enemies it passes through",
+              "cooldownSeconds": 10,
+              "manaCost": 50,
+              "scalingText": "20% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Fire Shards",
+              "type": "ultimate",
+              "description": "Become CC Immune and ascend into the air. You and your team gain visibility on all enemy Gods. Summon Fire Shards that deal Magical Damage to each enemy God",
+              "cooldownSeconds": 120,
+              "manaCost": 100,
+              "scalingText": "70% Basic Attack Power"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -6476,33 +6570,6 @@
           "cooldownSeconds": 120,
           "manaCost": 100,
           "scalingText": "30% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Mysterious Fog",
-          "type": "ability",
-          "description": "Send a dense fog slowly forward that deals Magical Damage when it touches an enemy. Enemies that remain in the fog take additional damage every second. You and Allied Gods are Stealthed when inside the fog",
-          "cooldownSeconds": 12,
-          "manaCost": 60,
-          "scalingText": "50% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Shining Metal",
-          "type": "ability",
-          "description": "Launch a projectile dealing Magical Damage to enemies it passes through",
-          "cooldownSeconds": 10,
-          "manaCost": 50,
-          "scalingText": "20% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Fire Shards",
-          "type": "ultimate",
-          "description": "Become CC Immune and ascend into the air. You and your team gain visibility on all enemy Gods. Summon Fire Shards that deal Magical Damage to each enemy God",
-          "cooldownSeconds": 120,
-          "manaCost": 100,
-          "scalingText": "70% Basic Attack Power"
         }
       ],
       "details": {
@@ -6535,11 +6602,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.62,
@@ -6558,7 +6620,60 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-cosmos",
+          "name": "Aspect of the Cosmos",
+          "description": "Flux becomes Cosmic Flux (Mitigation, decays). Decaying past 10 stacks Heals allies. Scaling -25%. Convergence grants a mini version of itself to allies on God hit. Crashing Comet Stuns and Slows. Warp grants CC immunity to self and 1 nearby ally.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Flux",
+              "type": "passive",
+              "description": "Cosmic Flux: Hitting enemies with Basic Attacks or Abilities grants stacks of Cosmic Flux up to 20. Each stack grants Protections.\nWhen stacks above 10 decays, you Heal the lowest health nearby ally.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Convergence",
+              "type": "ability",
+              "description": "Your Attacks fire two additional projectiles that deal Magical Damage. These and your Attack pass through enemies.",
+              "cooldownSeconds": 10,
+              "manaCost": 45,
+              "scalingText": "15% Intelligence + 12.5% Strength"
+            },
+            {
+              "key": "2",
+              "name": "Crashing Comet",
+              "type": "ability",
+              "description": "Call down a comet that deals Magical Damage where it lands and less Magical Damage in an area around it",
+              "cooldownSeconds": 15,
+              "manaCost": 65,
+              "scalingText": "40% Intelligence + 20% Strength"
+            },
+            {
+              "key": "3",
+              "name": "Warp",
+              "type": "ability",
+              "description": "Teleport in the direction you are moving and fire homing projectiles at nearby enemies that deal Magical Damage and applies a stacking slow. Subsequent hits deal 33% damage",
+              "cooldownSeconds": 14,
+              "manaCost": 50,
+              "scalingText": "32% Intelligence + 24% Strength"
+            },
+            {
+              "key": "4",
+              "name": "Skyfall",
+              "type": "ultimate",
+              "description": "Become CC Immune and ascend into the sky. Fire a massive black hole that deals Magical Damage before detonating for additional Magical Damage and Pulling enemies towards the center",
+              "cooldownSeconds": 100,
+              "manaCost": 45,
+              "scalingText": "32% Intelligence + 36% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -6613,51 +6728,6 @@
           "cooldownSeconds": 100,
           "manaCost": 45,
           "scalingText": "40% Intelligence + 45% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Flux",
-          "type": "passive",
-          "description": "Cosmic Flux: Hitting enemies with Basic Attacks or Abilities grants stacks of Cosmic Flux up to 20. Each stack grants Protections.\nWhen stacks above 10 decays, you Heal the lowest health nearby ally.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Convergence",
-          "type": "ability",
-          "description": "Your Attacks fire two additional projectiles that deal Magical Damage. These and your Attack pass through enemies.",
-          "cooldownSeconds": 10,
-          "manaCost": 45,
-          "scalingText": "15% Intelligence + 12.5% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Crashing Comet",
-          "type": "ability",
-          "description": "Call down a comet that deals Magical Damage where it lands and less Magical Damage in an area around it",
-          "cooldownSeconds": 15,
-          "manaCost": 65,
-          "scalingText": "40% Intelligence + 20% Strength"
-        },
-        {
-          "key": "3",
-          "name": "Warp",
-          "type": "ability",
-          "description": "Teleport in the direction you are moving and fire homing projectiles at nearby enemies that deal Magical Damage and applies a stacking slow. Subsequent hits deal 33% damage",
-          "cooldownSeconds": 14,
-          "manaCost": 50,
-          "scalingText": "32% Intelligence + 24% Strength"
-        },
-        {
-          "key": "4",
-          "name": "Skyfall",
-          "type": "ultimate",
-          "description": "Become CC Immune and ascend into the sky. Fire a massive black hole that deals Magical Damage before detonating for additional Magical Damage and Pulling enemies towards the center",
-          "cooldownSeconds": 100,
-          "manaCost": 45,
-          "scalingText": "32% Intelligence + 36% Strength"
         }
       ],
       "details": {
@@ -6688,11 +6758,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 647.4,
@@ -6798,11 +6863,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 647,
         "healthPerLevel": 0,
@@ -6821,7 +6881,51 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-fragmented",
+          "name": "Aspect of the Fragmented",
+          "description": "Osiris' abilities now scale with intelligence only. Fragments are lost passively on casts and on ability god hits. Osiris gains % Damage Dealt or Damage Mitigated on how whole he is. Sickle Strike has no Cooldown and costs 4 Fragments. Spirit Flail consumes Sickle Strike for bonus damage but no slow. Lord of the Afterlife summons a slowing, damage-dealing specter, but you can no longer leap to a location.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Fragmented",
+              "type": "passive",
+              "description": "Lose a fragment of your body every 4 seconds, on ability use, and on god hit with an ability. Restore your body by using Sickle Strike.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Sickle Strike",
+              "type": "ability",
+              "description": "Throw your Sickle, dealing Physical Damage and Slowing the first God hit. It passes through minions.",
+              "cooldownSeconds": 0,
+              "manaCost": 30,
+              "scalingText": "60% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Spirit Flail",
+              "type": "ability",
+              "description": "Strike the target area with your flail, dealing Physical Damage and granting Movement Speed",
+              "cooldownSeconds": 11,
+              "manaCost": 50,
+              "scalingText": "100% Intelligence + 70% Protections from Items"
+            },
+            {
+              "key": "4",
+              "name": "Lord of the Afterlife",
+              "type": "ultimate",
+              "description": "Launch a specter, dealing Physical Damage and Slowing enemies. Apply negative Cooldown Reduction and Healing Prevention to enemy Gods hit.",
+              "cooldownSeconds": 70,
+              "manaCost": 30,
+              "scalingText": "95% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -6876,42 +6980,6 @@
           "cooldownSeconds": 70,
           "manaCost": 30,
           "scalingText": "80% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Fragmented",
-          "type": "passive",
-          "description": "Lose a fragment of your body every 4 seconds, on ability use, and on god hit with an ability. Restore your body by using Sickle Strike.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Sickle Strike",
-          "type": "ability",
-          "description": "Throw your Sickle, dealing Physical Damage and Slowing the first God hit. It passes through minions.",
-          "cooldownSeconds": 0,
-          "manaCost": 30,
-          "scalingText": "60% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Spirit Flail",
-          "type": "ability",
-          "description": "Strike the target area with your flail, dealing Physical Damage and granting Movement Speed",
-          "cooldownSeconds": 11,
-          "manaCost": 50,
-          "scalingText": "100% Intelligence + 70% Protections from Items"
-        },
-        {
-          "key": "4",
-          "name": "Lord of the Afterlife",
-          "type": "ultimate",
-          "description": "Launch a specter, dealing Physical Damage and Slowing enemies. Apply negative Cooldown Reduction and Healing Prevention to enemy Gods hit.",
-          "cooldownSeconds": 70,
-          "manaCost": 30,
-          "scalingText": "95% Intelligence"
         }
       ],
       "details": {
@@ -6943,11 +7011,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 622.5,
         "healthPerLevel": 97.5,
@@ -6966,7 +7029,51 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-obsidian",
+          "name": "Aspect of Obsidian",
+          "description": "You only gain Fuel from Pyroclast and when damaged by enemies instead of over time. Magma Rush can no longer be refired but now provides Healing. Additionally Everlasting Flame now provides Protections instead of Strength and Lifesteal, and Volcanic Lightning damage no longer has Strength Scaling.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Everlasting Flame",
+              "type": "passive",
+              "description": "When you drop below 50% health, gain increased Physical and Magical Protections. This effect has a cooldown. Additionally, you gain fuel when damaged by enemies.",
+              "cooldownSeconds": 30,
+              "manaCost": null,
+              "scalingText": "1 Per Level"
+            },
+            {
+              "key": "1",
+              "name": "Pyroclast",
+              "type": "ability",
+              "description": "Fires a Magma projectile that deals Physical Damage and grants fuel once on hitting an enemy. At max range the Magma persists and fires additional shard projectiles back to you, dealing Physical Damage to enemies.",
+              "cooldownSeconds": 15,
+              "manaCost": 40,
+              "scalingText": "15% Strength"
+            },
+            {
+              "key": "3",
+              "name": "Magma Rush",
+              "type": "ability",
+              "description": "Repeatedly deal Physical Damage to nearby enemies and gain Movement Speed while this ability is active. Magma Rush uses Fuel for its duration and has no cooldown",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "2.5% of Health from Items"
+            },
+            {
+              "key": "4",
+              "name": "Volcanic Lightning",
+              "type": "ultimate",
+              "description": "Become CC Immune then Dash forward dealing Physical Damage and Slowing the first enemy God hit, and firing a cone attack that deals Physical Damage to other enemies",
+              "cooldownSeconds": 90,
+              "manaCost": 100,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7021,42 +7128,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "40% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Everlasting Flame",
-          "type": "passive",
-          "description": "When you drop below 50% health, gain increased Physical and Magical Protections. This effect has a cooldown. Additionally, you gain fuel when damaged by enemies.",
-          "cooldownSeconds": 30,
-          "manaCost": null,
-          "scalingText": "1 Per Level"
-        },
-        {
-          "key": "1",
-          "name": "Pyroclast",
-          "type": "ability",
-          "description": "Fires a Magma projectile that deals Physical Damage and grants fuel once on hitting an enemy. At max range the Magma persists and fires additional shard projectiles back to you, dealing Physical Damage to enemies.",
-          "cooldownSeconds": 15,
-          "manaCost": 40,
-          "scalingText": "15% Strength"
-        },
-        {
-          "key": "3",
-          "name": "Magma Rush",
-          "type": "ability",
-          "description": "Repeatedly deal Physical Damage to nearby enemies and gain Movement Speed while this ability is active. Magma Rush uses Fuel for its duration and has no cooldown",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "2.5% of Health from Items"
-        },
-        {
-          "key": "4",
-          "name": "Volcanic Lightning",
-          "type": "ultimate",
-          "description": "Become CC Immune then Dash forward dealing Physical Damage and Slowing the first enemy God hit, and firing a cone attack that deals Physical Damage to other enemies",
-          "cooldownSeconds": 90,
-          "manaCost": 100,
-          "scalingText": null
         }
       ],
       "details": {
@@ -7088,11 +7159,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.8,
         "healthPerLevel": 92.62,
@@ -7111,7 +7177,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-trident",
+          "name": "Aspect of the Trident",
+          "description": "Poseidon's basic attacks always fire side waves. Trident no longer affects Tidal Surge but can be activated to focus the side waves, causing them to pierce enemies, and both abilities deal extra basic attack damage.",
+          "abilities": [
+            {
+              "key": "basic",
+              "name": "Poseidon Basic Attack",
+              "type": "basic",
+              "description": "Fire a main projectile that deals Magical Damage to the first enemy hit",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "5%"
+            },
+            {
+              "key": "1",
+              "name": "Tidal Surge",
+              "type": "ability",
+              "description": "Summon a wave, dealing Magical Damage and Knocking Back enemies.",
+              "cooldownSeconds": 10,
+              "manaCost": 60,
+              "scalingText": "50%"
+            },
+            {
+              "key": "2",
+              "name": "Trident",
+              "type": "ability",
+              "description": "Activate your Trident, gaining  increased Attack Speed, Movement Speed, and Basic Attack Damage. While activated, your Basic Attack side projectiles focus in and deal bonus damage.",
+              "cooldownSeconds": 15,
+              "manaCost": 55,
+              "scalingText": "10%"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7166,33 +7267,6 @@
           "cooldownSeconds": 90,
           "manaCost": 60,
           "scalingText": "100% Intelligence"
-        },
-        {
-          "key": "basic",
-          "name": "Poseidon Basic Attack",
-          "type": "basic",
-          "description": "Fire a main projectile that deals Magical Damage to the first enemy hit",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "5%"
-        },
-        {
-          "key": "1",
-          "name": "Tidal Surge",
-          "type": "ability",
-          "description": "Summon a wave, dealing Magical Damage and Knocking Back enemies.",
-          "cooldownSeconds": 10,
-          "manaCost": 60,
-          "scalingText": "50%"
-        },
-        {
-          "key": "2",
-          "name": "Trident",
-          "type": "ability",
-          "description": "Activate your Trident, gaining  increased Attack Speed, Movement Speed, and Basic Attack Damage. While activated, your Basic Attack side projectiles focus in and deal bonus damage.",
-          "cooldownSeconds": 15,
-          "manaCost": 55,
-          "scalingText": "10%"
         }
       ],
       "details": {
@@ -7223,11 +7297,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 672.3,
@@ -7333,11 +7402,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -7356,7 +7420,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-precision",
+          "name": "Aspect of Precision",
+          "description": "Astral Strike is always active, but Rama has severely decreased Attack Speed and no longer regen Astral Arrows. When out of Astral Arrows, reload. While Infinite Arrows is active, Astral Arrows are not consumed.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Astral Quiver",
+              "type": "passive",
+              "description": "Your Basic Attacks cost Astral Arrows",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "1",
+              "name": "Astral Strike",
+              "type": "ability",
+              "description": "Your Basic Attacks are more powerful, dealing additional Physical Damage, piercing, and Slowing enemies.",
+              "cooldownSeconds": null,
+              "manaCost": 1,
+              "scalingText": "0 | 25 | 25 | 25 | 25 | 25% Strength"
+            },
+            {
+              "key": "2",
+              "name": "Infinite Arrows",
+              "type": "ability",
+              "description": "Focus your mind and gain increased Attack Speed",
+              "cooldownSeconds": 15,
+              "manaCost": 40,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7411,33 +7510,6 @@
           "cooldownSeconds": 90,
           "manaCost": 80,
           "scalingText": "75% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Astral Quiver",
-          "type": "passive",
-          "description": "Your Basic Attacks cost Astral Arrows",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Astral Strike",
-          "type": "ability",
-          "description": "Your Basic Attacks are more powerful, dealing additional Physical Damage, piercing, and Slowing enemies.",
-          "cooldownSeconds": null,
-          "manaCost": 1,
-          "scalingText": "0 | 25 | 25 | 25 | 25 | 25% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Infinite Arrows",
-          "type": "ability",
-          "description": "Focus your mind and gain increased Attack Speed",
-          "cooldownSeconds": 15,
-          "manaCost": 40,
-          "scalingText": null
         }
       ],
       "details": {
@@ -7469,11 +7541,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -7492,7 +7559,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-devourer",
+          "name": "Aspect of the Devourer",
+          "description": "Your non-ultimate abilities now provide Mana when damaging enemies instead of spending it. I'm a Monster can only be used when at full Mana, consuming all of it. It no longer provides Movement Speed, but now can be fired up to 3 times and the damage scales from your Max Mana. I'm a Monster stacks now immediately provide max Mana and at max rank you gain bonus Mana.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Quick Learner",
+              "type": "passive",
+              "description": "You cannot gain Mana from other sources, but damaging abilities provide Mana instead. In addition, gain Intelligence and Mana Regen for each max rank ability",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "4",
+              "name": "I'm a Monster",
+              "type": "ultimate",
+              "description": "All of your Mana is consumed as you become CC Immune for the next 6 seconds. This ability can be reactivated up to 3 times dealing Magical Damage at the target area.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "21 | 22 | 23 | 24 | 25% Max Mana"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7547,24 +7640,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "2% Intelligence Per Stack"
-        },
-        {
-          "key": "passive",
-          "name": "Quick Learner",
-          "type": "passive",
-          "description": "You cannot gain Mana from other sources, but damaging abilities provide Mana instead. In addition, gain Intelligence and Mana Regen for each max rank ability",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "4",
-          "name": "I'm a Monster",
-          "type": "ultimate",
-          "description": "All of your Mana is consumed as you become CC Immune for the next 6 seconds. This ability can be reactivated up to 3 times dealing Magical Damage at the target area.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "21 | 22 | 23 | 24 | 25% Max Mana"
         }
       ],
       "details": {
@@ -7596,11 +7671,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 626.4,
         "healthPerLevel": 101.4,
@@ -7619,7 +7689,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-prey",
+          "name": "Aspect of Prey",
+          "description": "Charge Prey now passes through all targets, knocks them forward, and has bonus scaling. Sickening Strike deals increased damage against Jungle Monsters and the cooldown reduction now triggers off Jungle Monsters.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Charge Prey",
+              "type": "ability",
+              "description": "Dash forward. Enemies hit take Magical Damage. Sobek Displaces enemies hit forward.",
+              "cooldownSeconds": 16,
+              "manaCost": 70,
+              "scalingText": "85% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Sickening Strike",
+              "type": "ability",
+              "description": "Strike in front of you. This strike deals Magical Damage in a cone and applies Disease",
+              "cooldownSeconds": 13,
+              "manaCost": 60,
+              "scalingText": "60% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7674,24 +7770,6 @@
           "cooldownSeconds": 100,
           "manaCost": 80,
           "scalingText": "80% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Charge Prey",
-          "type": "ability",
-          "description": "Dash forward. Enemies hit take Magical Damage. Sobek Displaces enemies hit forward.",
-          "cooldownSeconds": 16,
-          "manaCost": 70,
-          "scalingText": "85% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Sickening Strike",
-          "type": "ability",
-          "description": "Strike in front of you. This strike deals Magical Damage in a cone and applies Disease",
-          "cooldownSeconds": 13,
-          "manaCost": 60,
-          "scalingText": "60% Intelligence"
         }
       ],
       "details": {
@@ -7723,11 +7801,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -7746,7 +7819,33 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-conflagration",
+          "name": "Aspect of Conflagration",
+          "description": "Sol's Heat provides Intelligence and Ability Damage, but no longer provides Strength, Attack Speed, and Basic Attack Damage. Sol erupts and deals damage around her when becomes immune in Disapparate.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Unstable Manifestation",
+              "type": "passive",
+              "description": "Hit enemies with Basic Attacks or use abilities to gain Heat",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "3",
+              "name": "Disapparate",
+              "type": "ability",
+              "description": "Gain Movement Speed and Slow Immunity, gaining Heat and leaving a trail of fire behind you",
+              "cooldownSeconds": 16,
+              "manaCost": 60,
+              "scalingText": "50% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7801,24 +7900,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "40% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Unstable Manifestation",
-          "type": "passive",
-          "description": "Hit enemies with Basic Attacks or use abilities to gain Heat",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Disapparate",
-          "type": "ability",
-          "description": "Gain Movement Speed and Slow Immunity, gaining Heat and leaving a trail of fire behind you",
-          "cooldownSeconds": 16,
-          "manaCost": 60,
-          "scalingText": "50% Intelligence"
         }
       ],
       "details": {
@@ -7850,11 +7931,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -7873,7 +7949,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-transformation",
+          "name": "Aspect of Transformation",
+          "description": "72 Transformations has a reduced Cooldown and locks your animal form until Somersault Cloud is used. Locking in Ox form causes Master’s Will to Knockup. Tiger form provides stacking Attack Speed on hits of The Magic Cudgel and Eagle form causes your other two non-ultimate abilities to have a reduced Cooldown.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "The Magic Cudgel",
+              "type": "ability",
+              "description": "Slam down with your Cudgel, dealing Physical Damage",
+              "cooldownSeconds": 12,
+              "manaCost": 50,
+              "scalingText": "30% Strength + 70% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Master's Will",
+              "type": "ability",
+              "description": "Strike around you dealing Physical Damage. Enemies hit are Slowed and have reduced Attack Speed",
+              "cooldownSeconds": 11,
+              "manaCost": 60,
+              "scalingText": "32.5% Strength + 75% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "72 Transformations",
+              "type": "ability",
+              "description": "Transform into an Ox, Tiger, or Eagle, and charge forward. Using this ability locks you into the transformation picked until Somersault Cloud is used, however, you do gain a new effect based on the form chosen.",
+              "cooldownSeconds": 16,
+              "manaCost": 65,
+              "scalingText": "80% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -7928,33 +8039,6 @@
           "cooldownSeconds": 110,
           "manaCost": 100,
           "scalingText": "100% Strength"
-        },
-        {
-          "key": "1",
-          "name": "The Magic Cudgel",
-          "type": "ability",
-          "description": "Slam down with your Cudgel, dealing Physical Damage",
-          "cooldownSeconds": 12,
-          "manaCost": 50,
-          "scalingText": "30% Strength + 70% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Master's Will",
-          "type": "ability",
-          "description": "Strike around you dealing Physical Damage. Enemies hit are Slowed and have reduced Attack Speed",
-          "cooldownSeconds": 11,
-          "manaCost": 60,
-          "scalingText": "32.5% Strength + 75% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "72 Transformations",
-          "type": "ability",
-          "description": "Transform into an Ox, Tiger, or Eagle, and charge forward. Using this ability locks you into the transformation picked until Somersault Cloud is used, however, you do gain a new effect based on the form chosen.",
-          "cooldownSeconds": 16,
-          "manaCost": 65,
-          "scalingText": "80% Strength"
         }
       ],
       "details": {
@@ -7985,11 +8069,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591,
@@ -8095,11 +8174,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -8118,7 +8192,51 @@
         "movementSpeed": 370,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-grovers-wrath",
+          "name": "Aspect of Grover's Wrath",
+          "description": "Attacks: +15% damage to targets debuffed by Sylvanus. Wisp's Heal, Protections, and Ultimate Knockup reduced by 40%. Nature's Grasp tethers, dealing damage, slowing, and granting Sylvanus Haste. Gain Anger (+Attack Speed) when Verdant Growth/Ally dies; +2 on Ultimate cast. At 4 stacks, Enrage: +Attack Speed ana free Wisps or Nature's Grasp cast.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Nature's Bounty",
+              "type": "passive",
+              "description": "When your abilities hit or are deployed, a seed pod appears. Picking it up restores Mana and reduces your cooldowns. Picking up 8 spawns a pod near Sylvanus. Each pod destroyed or allied god slain angers Grover. At 4 stacks of Anger, he enrages.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "2",
+              "name": "Wisps",
+              "type": "ability",
+              "description": "Release Wisps that restores Health to allies or deals Magical Damage to enemies repeatedly over time. Sylvanus gain Protections while healed",
+              "cooldownSeconds": 14,
+              "manaCost": 60,
+              "scalingText": "10% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Nature's Grasp",
+              "type": "ability",
+              "description": "Extend a vine that Tethers the first enemy God hit, dealing Magical Damage repeatedly over time and Slowing them.",
+              "cooldownSeconds": 14,
+              "manaCost": 70,
+              "scalingText": "33% Strength + 10% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Wrath of Terra",
+              "type": "ultimate",
+              "description": "Slam the ground, Knocking Up enemies in an area and dealing Magical Damage repeatedly over time",
+              "cooldownSeconds": 90,
+              "manaCost": 100,
+              "scalingText": "25% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -8173,42 +8291,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": "25% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Nature's Bounty",
-          "type": "passive",
-          "description": "When your abilities hit or are deployed, a seed pod appears. Picking it up restores Mana and reduces your cooldowns. Picking up 8 spawns a pod near Sylvanus. Each pod destroyed or allied god slain angers Grover. At 4 stacks of Anger, he enrages.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "2",
-          "name": "Wisps",
-          "type": "ability",
-          "description": "Release Wisps that restores Health to allies or deals Magical Damage to enemies repeatedly over time. Sylvanus gain Protections while healed",
-          "cooldownSeconds": 14,
-          "manaCost": 60,
-          "scalingText": "10% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Nature's Grasp",
-          "type": "ability",
-          "description": "Extend a vine that Tethers the first enemy God hit, dealing Magical Damage repeatedly over time and Slowing them.",
-          "cooldownSeconds": 14,
-          "manaCost": 70,
-          "scalingText": "33% Strength + 10% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Wrath of Terra",
-          "type": "ultimate",
-          "description": "Slam the ground, Knocking Up enemies in an area and dealing Magical Damage repeatedly over time",
-          "cooldownSeconds": 90,
-          "manaCost": 100,
-          "scalingText": "25% Intelligence"
         }
       ],
       "details": {
@@ -8240,11 +8322,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 622.5,
         "healthPerLevel": 97.5,
@@ -8263,7 +8340,33 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-reaping",
+          "name": "Aspect of Reaping",
+          "description": "Harvester of Souls no longer Heals Thanatos but provides permanent Max Health. Additionally Soul Reap deals bonus damage and Heals Thanatos based on his Max Health.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Harvester of Souls",
+              "type": "passive",
+              "description": "You revel in the deaths of your foes",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": null
+            },
+            {
+              "key": "3",
+              "name": "Soul Reap",
+              "type": "ability",
+              "description": "Swing your scythe, dealing Physical Damage and Silencing enemies in front of you",
+              "cooldownSeconds": 14,
+              "manaCost": 4,
+              "scalingText": "0.3% Max Health"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -8318,24 +8421,6 @@
           "cooldownSeconds": 90,
           "manaCost": 6,
           "scalingText": "80% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Harvester of Souls",
-          "type": "passive",
-          "description": "You revel in the deaths of your foes",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Soul Reap",
-          "type": "ability",
-          "description": "Swing your scythe, dealing Physical Damage and Silencing enemies in front of you",
-          "cooldownSeconds": 14,
-          "manaCost": 4,
-          "scalingText": "0.3% Max Health"
         }
       ],
       "details": {
@@ -8367,11 +8452,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 575.63,
         "healthPerLevel": 92.62,
@@ -8390,7 +8470,24 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-mischief",
+          "name": "Aspect of Mischief",
+          "description": "Confusion no longer Stealths you but on refire, you swap positions with your clone.",
+          "abilities": [
+            {
+              "key": "3",
+              "name": "Confusion",
+              "type": "ability",
+              "description": "Create a phantom clone of yourself and gain Movement Speed",
+              "cooldownSeconds": 17,
+              "manaCost": 60,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -8445,15 +8542,6 @@
           "cooldownSeconds": 120,
           "manaCost": 100,
           "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Confusion",
-          "type": "ability",
-          "description": "Create a phantom clone of yourself and gain Movement Speed",
-          "cooldownSeconds": 17,
-          "manaCost": 60,
-          "scalingText": null
         }
       ],
       "details": {
@@ -8485,11 +8573,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.38,
         "healthPerLevel": 92.62,
@@ -8508,7 +8591,51 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-thunderstruck",
+          "name": "Aspect of Thunderstruck",
+          "description": "Thunderstruck is always active but chains for less damage. Triggering it 3 times on a god heals Thor, slowing and trembling them. Warrior's Madness grants Protections instead of Strength. Mjolnir's Attunement no longer deals bonus return damage, and Tectonic Rift has no damage scaling.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Warrior's Madness",
+              "type": "passive",
+              "description": "You gain Protections for each enemy God near you, up to 3. You always have Thunderstruck.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "0.0075% per Level"
+            },
+            {
+              "key": "1",
+              "name": "Mjolnir's Attunement",
+              "type": "ability",
+              "description": "Throw Mjolnir forward, dealing Physical Damage to enemies as it travels. When it reaches max range it flies back to you",
+              "cooldownSeconds": 14,
+              "manaCost": 55,
+              "scalingText": "35% Strength"
+            },
+            {
+              "key": "2",
+              "name": "Tectonic Rift",
+              "type": "ability",
+              "description": "Slam Mjolnir down creating a fissure, dealing Physical Damage to enemies as it erupts. Enemies hit are also Stunned",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": null
+            },
+            {
+              "key": "3",
+              "name": "Berserker Barrage",
+              "type": "ability",
+              "description": "Spin, dealing Physical Damage to enemies around you. You spin twice before unleashing a final cone attack that deals Physical Damage to enemies in front of you",
+              "cooldownSeconds": 12,
+              "manaCost": 55,
+              "scalingText": "70% Strength"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -8563,42 +8690,6 @@
           "cooldownSeconds": 110,
           "manaCost": 80,
           "scalingText": "85% Strength"
-        },
-        {
-          "key": "passive",
-          "name": "Warrior's Madness",
-          "type": "passive",
-          "description": "You gain Protections for each enemy God near you, up to 3. You always have Thunderstruck.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "0.0075% per Level"
-        },
-        {
-          "key": "1",
-          "name": "Mjolnir's Attunement",
-          "type": "ability",
-          "description": "Throw Mjolnir forward, dealing Physical Damage to enemies as it travels. When it reaches max range it flies back to you",
-          "cooldownSeconds": 14,
-          "manaCost": 55,
-          "scalingText": "35% Strength"
-        },
-        {
-          "key": "2",
-          "name": "Tectonic Rift",
-          "type": "ability",
-          "description": "Slam Mjolnir down creating a fissure, dealing Physical Damage to enemies as it erupts. Enemies hit are also Stunned",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": null
-        },
-        {
-          "key": "3",
-          "name": "Berserker Barrage",
-          "type": "ability",
-          "description": "Spin, dealing Physical Damage to enemies around you. You spin twice before unleashing a final cone attack that deals Physical Damage to enemies in front of you",
-          "cooldownSeconds": 12,
-          "manaCost": 55,
-          "scalingText": "70% Strength"
         }
       ],
       "details": {
@@ -8630,11 +8721,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 618,
         "healthPerLevel": 92.6,
@@ -8653,7 +8739,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-mangetsu",
+          "name": "Aspect of Mangetsu",
+          "description": "When gaining Shingetsu Ranged Attack, they become Mangetsu Ranged Attacks instead. Dark Moon Shuriken no longer sticks to gods. Piercing Moonlight hits each target only once for major damage in an AoE, before returning to his casting location.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Dark Moon Shuriken",
+              "type": "ability",
+              "description": "Throw a Shuriken that deals Physical Damage to enemies, stopping on the first God hit",
+              "cooldownSeconds": 14,
+              "manaCost": 50,
+              "scalingText": "30% Strength + 65% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Kusarigama",
+              "type": "ability",
+              "description": "Perform a 3-swing combo with a Kusarigama. The first 2 swings deal Physical Damage and Disarm enemies. The final swing deals more Damage",
+              "cooldownSeconds": 14,
+              "manaCost": 70,
+              "scalingText": "90% Strength + 80% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Piercing Moonlight",
+              "type": "ultimate",
+              "description": "Fire 4 piercing beams of moonlight, marking and dealing Physical Damage to enemy Gods. You are CC Immune and have Damage Reduction while firing",
+              "cooldownSeconds": 100,
+              "manaCost": 50,
+              "scalingText": "50% Strength + 75% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -8708,33 +8829,6 @@
           "cooldownSeconds": 100,
           "manaCost": 50,
           "scalingText": "55% Strength + 20% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Dark Moon Shuriken",
-          "type": "ability",
-          "description": "Throw a Shuriken that deals Physical Damage to enemies, stopping on the first God hit",
-          "cooldownSeconds": 14,
-          "manaCost": 50,
-          "scalingText": "30% Strength + 65% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Kusarigama",
-          "type": "ability",
-          "description": "Perform a 3-swing combo with a Kusarigama. The first 2 swings deal Physical Damage and Disarm enemies. The final swing deals more Damage",
-          "cooldownSeconds": 14,
-          "manaCost": 70,
-          "scalingText": "90% Strength + 80% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Piercing Moonlight",
-          "type": "ultimate",
-          "description": "Fire 4 piercing beams of moonlight, marking and dealing Physical Damage to enemy Gods. You are CC Immune and have Damage Reduction while firing",
-          "cooldownSeconds": 100,
-          "manaCost": 50,
-          "scalingText": "50% Strength + 75% Intelligence"
         }
       ],
       "details": {
@@ -8765,11 +8859,6 @@
         "basicAttackType": "melee",
         "rangeClass": "melee",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 672.3,
@@ -8848,11 +8937,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.8,
         "healthPerLevel": 92.62,
@@ -8871,7 +8955,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-fortification",
+          "name": "Aspect of Fortification",
+          "description": "Being near one of Vulcan's turrets grants Vulcan and the turret increased Protections and Health Regeneration. Backfire and Magma Bomb have lower Damage Scaling.",
+          "abilities": [
+            {
+              "key": "passive",
+              "name": "Master Craftsman",
+              "type": "passive",
+              "description": "Vulcan has access to a variety of Mods in the item shop that affect his abilities. There are 3 sets of Mods available at different levels. You can only have 1 Mod from each set.Additionally, Hitting an enemy God with an ability grants you increased Movement Speed and Mana RegenVulcan and Turrets within 8.8 meters gain Protections and Health Regen.",
+              "cooldownSeconds": null,
+              "manaCost": null,
+              "scalingText": "0.5 Per Level"
+            },
+            {
+              "key": "1",
+              "name": "Backfire",
+              "type": "ability",
+              "description": "Fire a projectile that causes you to Dash back and deal Magical Damage to all enemies it hits, marking the first God that is hit",
+              "cooldownSeconds": 9,
+              "manaCost": 40,
+              "scalingText": "30% Intelligence"
+            },
+            {
+              "key": "3",
+              "name": "Magma Bomb",
+              "type": "ability",
+              "description": "Lob a projectile that explodes on impact with the ground, dealing Magical Damage and Knocking Up enemies in the area",
+              "cooldownSeconds": 10,
+              "manaCost": 50,
+              "scalingText": "40% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -8926,33 +9045,6 @@
           "cooldownSeconds": 90,
           "manaCost": 80,
           "scalingText": "110% Intelligence"
-        },
-        {
-          "key": "passive",
-          "name": "Master Craftsman",
-          "type": "passive",
-          "description": "Vulcan has access to a variety of Mods in the item shop that affect his abilities. There are 3 sets of Mods available at different levels. You can only have 1 Mod from each set.Additionally, Hitting an enemy God with an ability grants you increased Movement Speed and Mana RegenVulcan and Turrets within 8.8 meters gain Protections and Health Regen.",
-          "cooldownSeconds": null,
-          "manaCost": null,
-          "scalingText": "0.5 Per Level"
-        },
-        {
-          "key": "1",
-          "name": "Backfire",
-          "type": "ability",
-          "description": "Fire a projectile that causes you to Dash back and deal Magical Damage to all enemies it hits, marking the first God that is hit",
-          "cooldownSeconds": 9,
-          "manaCost": 40,
-          "scalingText": "30% Intelligence"
-        },
-        {
-          "key": "3",
-          "name": "Magma Bomb",
-          "type": "ability",
-          "description": "Lob a projectile that explodes on impact with the ground, dealing Magical Damage and Knocking Up enemies in the area",
-          "cooldownSeconds": 10,
-          "manaCost": 50,
-          "scalingText": "40% Intelligence"
         }
       ],
       "details": {
@@ -8984,11 +9076,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 591.4,
         "healthPerLevel": 92.6,
@@ -9007,7 +9094,42 @@
         "movementSpeed": 365,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-the-nightstalker",
+          "name": "Aspect of the Nightstalker",
+          "description": "Branching Bola is no longer a toggle but provides 3 fires of ability-based projectiles. Poison Darts requires less hits to deal full damage. Darkest of Nights loses existing buffs but resets Poison darts and provides increased ability damage.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Branching Bola",
+              "type": "ability",
+              "description": "You next 3 Basic Attacks fire large projectiles that deal Physical damage.",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": "45% Strength + 65% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Poison Darts",
+              "type": "ability",
+              "description": "Fire 15 dart projectiles in a cone, dealing Physical Damage and poisoning enemies hit",
+              "cooldownSeconds": 15,
+              "manaCost": 60,
+              "scalingText": "25% Strength + 35% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "Darkest of Nights",
+              "type": "ultimate",
+              "description": "Shroud enemy gods in darkness, creating an area they cannot see out of. Using this ability resets the Cooldown of Poison Darts and during this time, your abilities deal increased damage.",
+              "cooldownSeconds": 90,
+              "manaCost": 100,
+              "scalingText": null
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -9062,33 +9184,6 @@
           "cooldownSeconds": 90,
           "manaCost": 100,
           "scalingText": null
-        },
-        {
-          "key": "1",
-          "name": "Branching Bola",
-          "type": "ability",
-          "description": "You next 3 Basic Attacks fire large projectiles that deal Physical damage.",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": "45% Strength + 65% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Poison Darts",
-          "type": "ability",
-          "description": "Fire 15 dart projectiles in a cone, dealing Physical Damage and poisoning enemies hit",
-          "cooldownSeconds": 15,
-          "manaCost": 60,
-          "scalingText": "25% Strength + 35% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "Darkest of Nights",
-          "type": "ultimate",
-          "description": "Shroud enemy gods in darkness, creating an area they cannot see out of. Using this ability resets the Cooldown of Poison Darts and during this time, your abilities deal increased damage.",
-          "cooldownSeconds": 90,
-          "manaCost": 100,
-          "scalingText": null
         }
       ],
       "details": {
@@ -9120,11 +9215,6 @@
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
       },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
-      },
       "baseStats": {
         "health": 672.3,
         "healthPerLevel": 105.3,
@@ -9143,7 +9233,42 @@
         "movementSpeed": 375,
         "movementSpeedPerLevel": 0
       },
-      "aspects": [],
+      "aspects": [
+        {
+          "id": "aspect-of-downpour",
+          "name": "Aspect of Downpour",
+          "description": "Mending Waters no longer affects allies but stops and bounces on enemy gods, dealing damage, shield damage and providing Yemoja stacking Intelligence per hit. Additionally Moonstrike no longer stuns gods but has increased Intelligence scaling.",
+          "abilities": [
+            {
+              "key": "1",
+              "name": "Bouncing Bubble",
+              "type": "ability",
+              "description": "Toss a bubble that bounces twice, dealing Magical Damage and Slows enemies before exploding into smaller bubbles",
+              "cooldownSeconds": null,
+              "manaCost": 2,
+              "scalingText": "25% Intelligence"
+            },
+            {
+              "key": "2",
+              "name": "Mending Waters",
+              "type": "ability",
+              "description": "Fire a water wave, dealing Magical Damage to enemies. This wave stops and bounces between enemy Gods.",
+              "cooldownSeconds": null,
+              "manaCost": 3,
+              "scalingText": "50% Intelligence"
+            },
+            {
+              "key": "4",
+              "name": "River's Rebuke",
+              "type": "ultimate",
+              "description": "Conjure 2 large walls of water that block enemy movement and projectiles. After a delay they crash down dealing Magical Damage, Trembling, and applying a decaying Slow to enemies hit",
+              "cooldownSeconds": 120,
+              "manaCost": null,
+              "scalingText": "85% Intelligence"
+            }
+          ]
+        }
+      ],
       "abilities": [
         {
           "key": "basic",
@@ -9198,33 +9323,6 @@
           "cooldownSeconds": 120,
           "manaCost": null,
           "scalingText": "70% Intelligence"
-        },
-        {
-          "key": "1",
-          "name": "Bouncing Bubble",
-          "type": "ability",
-          "description": "Toss a bubble that bounces twice, dealing Magical Damage and Slows enemies before exploding into smaller bubbles",
-          "cooldownSeconds": null,
-          "manaCost": 2,
-          "scalingText": "25% Intelligence"
-        },
-        {
-          "key": "2",
-          "name": "Mending Waters",
-          "type": "ability",
-          "description": "Fire a water wave, dealing Magical Damage to enemies. This wave stops and bounces between enemy Gods.",
-          "cooldownSeconds": null,
-          "manaCost": 3,
-          "scalingText": "50% Intelligence"
-        },
-        {
-          "key": "4",
-          "name": "River's Rebuke",
-          "type": "ultimate",
-          "description": "Conjure 2 large walls of water that block enemy movement and projectiles. After a delay they crash down dealing Magical Damage, Trembling, and applying a decaying Slow to enemies hit",
-          "cooldownSeconds": 120,
-          "manaCost": null,
-          "scalingText": "85% Intelligence"
         }
       ],
       "details": {
@@ -9255,11 +9353,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 672.3,
@@ -9364,11 +9457,6 @@
         "basicAttackType": "ranged",
         "rangeClass": "ranged",
         "scalingProfile": "hybrid"
-      },
-      "unlock": {
-        "costDiamonds": null,
-        "costGodTokens": null,
-        "isInRotation": null
       },
       "baseStats": {
         "health": 591.38,

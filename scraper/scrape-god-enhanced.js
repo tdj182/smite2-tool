@@ -7,6 +7,99 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { sanitizeId } from './scrape-utils.js';
 
+/**
+ * Parse an ability from a wikitable element.
+ * Shared between base abilities and aspect abilities.
+ */
+function parseAbilityTable($, table) {
+  const $table = $(table);
+
+  // Get ability header (contains name and type)
+  const headerCell = $table.find('th[colspan]').first();
+  const headerText = headerCell.text();
+
+  // Extract ability name (e.g., "Chain Lightning" from "1st Ability - Chain Lightning | PROJECTILE...")
+  const nameMatch = headerText.match(/(?:Passive|Basic Attack|1st Ability|2nd Ability|3rd Ability|Ultimate)\s*-\s*([^|]+)/);
+
+  if (!nameMatch) return null;
+
+  const abilityName = nameMatch[1].trim();
+
+  // Determine ability key and type
+  let key = 'unknown';
+  let type = 'ability';
+  if (headerText.includes('Passive')) {
+    key = 'passive';
+    type = 'passive';
+  } else if (headerText.includes('Basic Attack')) {
+    key = 'basic';
+    type = 'basic';
+  } else if (headerText.includes('1st Ability')) {
+    key = '1';
+    type = 'ability';
+  } else if (headerText.includes('2nd Ability')) {
+    key = '2';
+    type = 'ability';
+  } else if (headerText.includes('3rd Ability')) {
+    key = '3';
+    type = 'ability';
+  } else if (headerText.includes('Ultimate')) {
+    key = '4';
+    type = 'ultimate';
+  }
+
+  // Get description (second row, second cell)
+  const descriptionCell = $table.find('tr').eq(1).find('td').last();
+  const description = descriptionCell.text().trim();
+
+  // Parse stats from the bulleted list
+  const statsRow = $table.find('tr').eq(2);
+  const statsList = statsRow.find('li');
+
+  let cooldownSeconds = null;
+  let manaCost = null;
+  let scalingText = null;
+
+  statsList.each((_j, li) => {
+    const $li = $(li);
+    const text = $li.text().trim();
+
+    // Parse scaling: "Damage Scaling: 60% Intelligence"
+    if (text.match(/Scaling:/i)) {
+      const scalingMatch = text.match(/:\s*(.+)/);
+      if (scalingMatch) {
+        scalingText = scalingMatch[1].trim();
+      }
+    }
+
+    // Parse cooldown: "Cooldown: 12 | 11.5 | 11 | 10.5 | 10 seconds"
+    if (text.match(/^Cooldown:/i)) {
+      const cooldownMatch = text.match(/:\s*([\d.]+)/);
+      if (cooldownMatch) {
+        cooldownSeconds = parseFloat(cooldownMatch[1]);
+      }
+    }
+
+    // Parse cost: "Cost: 50 | 55 | 60 | 65 | 70 mana"
+    if (text.match(/^Cost:/i)) {
+      const costMatch = text.match(/:\s*([\d.]+)/);
+      if (costMatch) {
+        manaCost = parseFloat(costMatch[1]);
+      }
+    }
+  });
+
+  return {
+    key,
+    name: abilityName,
+    type,
+    description,
+    cooldownSeconds,
+    manaCost,
+    scalingText
+  };
+}
+
 export async function scrapeGod(godName) {
   console.log(`\n📥 Scraping ${godName}...`);
   console.log('='.repeat(60));
@@ -25,11 +118,6 @@ export async function scrapeGod(godName) {
       alt: `${godName} icon`
     },
     identity: {},
-    unlock: {
-      costDiamonds: null,
-      costGodTokens: null,
-      isInRotation: null
-    },
     baseStats: {},
     aspects: [],
     abilities: [],
@@ -165,107 +253,108 @@ export async function scrapeGod(godName) {
   godData.identity.scalingProfile = 'hybrid';
 
   // ============================================
-  // PARSE ABILITIES
+  // IDENTIFY ASPECT ABILITY TABLES (if any)
+  // These must be excluded from base abilities
   // ============================================
-  console.log('\n⚡ Parsing abilities...');
+  const aspectContainer = $('#mw-customcollapsible-aspectedability');
+  const aspectAbilityTableEls = new Set();
+
+  if (aspectContainer.length > 0) {
+    aspectContainer.find('.mw-collapsible-content table.wikitable').each((_i, table) => {
+      aspectAbilityTableEls.add(table);
+    });
+    console.log(`\n🔮 Found aspect ability container with ${aspectAbilityTableEls.size} ability tables`);
+  }
+
+  // ============================================
+  // PARSE BASE ABILITIES
+  // Only tables NOT inside the aspect container
+  // ============================================
+  console.log('\n⚡ Parsing base abilities...');
 
   const abilityTables = $('table.wikitable');
-  console.log(`  Found ${abilityTables.length} ability tables`);
+  console.log(`  Found ${abilityTables.length} total ability tables`);
 
   abilityTables.each((_i, table) => {
-    const $table = $(table);
+    // Skip tables that belong to the aspect section
+    if (aspectAbilityTableEls.has(table)) return;
 
-    // Get ability header (contains name and type)
-    const headerCell = $table.find('th[colspan]').first();
-    const headerText = headerCell.text();
-
-    // Extract ability name (e.g., "Chain Lightning" from "1st Ability - Chain Lightning | PROJECTILE...")
-    const nameMatch = headerText.match(/(?:Passive|Basic Attack|1st Ability|2nd Ability|3rd Ability|Ultimate)\s*-\s*([^|]+)/);
-
-    if (!nameMatch) return; // Skip if no valid ability name
-
-    const abilityName = nameMatch[1].trim();
-
-    // Determine ability key and type
-    let key = 'unknown';
-    let type = 'ability';
-    if (headerText.includes('Passive')) {
-      key = 'passive';
-      type = 'passive';
-    } else if (headerText.includes('Basic Attack')) {
-      key = 'basic';
-      type = 'basic';
-    } else if (headerText.includes('1st Ability')) {
-      key = '1';
-      type = 'ability';
-    } else if (headerText.includes('2nd Ability')) {
-      key = '2';
-      type = 'ability';
-    } else if (headerText.includes('3rd Ability')) {
-      key = '3';
-      type = 'ability';
-    } else if (headerText.includes('Ultimate')) {
-      key = '4';
-      type = 'ultimate';
-    }
-
-    // Get description (second row, second cell)
-    const descriptionCell = $table.find('tr').eq(1).find('td').last();
-    const description = descriptionCell.text().trim();
-
-    // Parse stats from the bulleted list
-    const statsRow = $table.find('tr').eq(2);
-    const statsList = statsRow.find('li');
-
-    let cooldownSeconds = null;
-    let manaCost = null;
-    let scalingText = null;
-
-    statsList.each((_j, li) => {
-      const $li = $(li);
-      const text = $li.text().trim();
-
-      // Parse scaling: "Damage Scaling: 60% Intelligence"
-      if (text.match(/Scaling:/i)) {
-        const scalingMatch = text.match(/:\s*(.+)/);
-        if (scalingMatch) {
-          scalingText = scalingMatch[1].trim();
-        }
-      }
-
-      // Parse cooldown: "Cooldown: 12 | 11.5 | 11 | 10.5 | 10 seconds"
-      // Extract first number as the base cooldown
-      if (text.match(/^Cooldown:/i)) {
-        const cooldownMatch = text.match(/:\s*([\d.]+)/);
-        if (cooldownMatch) {
-          cooldownSeconds = parseFloat(cooldownMatch[1]);
-        }
-      }
-
-      // Parse cost: "Cost: 50 | 55 | 60 | 65 | 70 mana"
-      // Extract first number as the base cost
-      if (text.match(/^Cost:/i)) {
-        const costMatch = text.match(/:\s*([\d.]+)/);
-        if (costMatch) {
-          manaCost = parseFloat(costMatch[1]);
-        }
-      }
-    });
-
-    // Create ability object matching schema
-    const ability = {
-      key: key,
-      name: abilityName,
-      type: type,
-      description: description,
-      cooldownSeconds: cooldownSeconds,
-      manaCost: manaCost,
-      scalingText: scalingText
-    };
+    const ability = parseAbilityTable($, table);
+    if (!ability) return;
 
     godData.abilities.push(ability);
-    console.log(`  ✓ ${key}: ${abilityName}`);
+    console.log(`  ✓ ${ability.key}: ${ability.name}`);
   });
+
+  // ============================================
+  // PARSE GOD ASPECTS
+  // ============================================
+  const aspectHeading = $('h2#God_Aspect');
+
+  if (aspectHeading.length > 0) {
+    console.log('\n🔮 Parsing god aspect...');
+
+    // The aspect info table is the first wikitable after the God Aspect heading.
+    // In MediaWiki HTML, headings are wrapped in a div.mw-heading, and the
+    // content table is a sibling element after that div.
+    const headingWrapper = aspectHeading.closest('.mw-heading');
+    let aspectInfoTable = null;
+
+    if (headingWrapper.length > 0) {
+      // Walk siblings after the heading wrapper to find the first wikitable
+      aspectInfoTable = headingWrapper.nextAll('table.wikitable').first();
+    }
+
+    if (!aspectInfoTable || aspectInfoTable.length === 0) {
+      // Fallback: look for the aspect name styled span near the heading
+      aspectInfoTable = aspectHeading.parent().nextAll('table.wikitable').first();
+    }
+
+    if (aspectInfoTable && aspectInfoTable.length > 0) {
+      // Extract aspect name from the styled span (gold-colored text)
+      const aspectName = aspectInfoTable.find('span[style*="color:#d6b68f"]').first().text().trim()
+        || aspectInfoTable.find('dd span').first().text().trim();
+
+      // Extract aspect description from the second <dl><dd> in the info cell
+      const ddElements = aspectInfoTable.find('td:nth-child(2) dl dd, td:last-child dl dd');
+      let aspectDescription = null;
+      if (ddElements.length > 1) {
+        aspectDescription = ddElements.last().text().trim();
+      } else if (ddElements.length === 1) {
+        // If only one dd, check if it's separate from the name
+        const ddText = ddElements.first().text().trim();
+        if (ddText !== aspectName) {
+          aspectDescription = ddText;
+        }
+      }
+
+      const aspectId = sanitizeId(aspectName || `${godName}-aspect`);
+
+      // Parse aspect-enhanced abilities
+      const aspectAbilities = [];
+      if (aspectContainer.length > 0) {
+        aspectContainer.find('.mw-collapsible-content table.wikitable').each((_i, table) => {
+          const ability = parseAbilityTable($, table);
+          if (ability) {
+            aspectAbilities.push(ability);
+            console.log(`  ✓ Aspect ability ${ability.key}: ${ability.name}`);
+          }
+        });
+      }
+
+      if (aspectName) {
+        const aspect = {
+          id: aspectId,
+          name: aspectName,
+          description: aspectDescription,
+          abilities: aspectAbilities
+        };
+
+        godData.aspects.push(aspect);
+        console.log(`  ✓ Aspect: ${aspectName} (${aspectAbilities.length} enhanced abilities)`);
+      }
+    }
+  }
 
   console.log('\n✅ Scraping complete!\n');
 
@@ -288,6 +377,6 @@ async function main() {
 }
 
 // Only run main() if this file is executed directly (not imported)
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
+if (process.argv[1] && import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
   main();
 }

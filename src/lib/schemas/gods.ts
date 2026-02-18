@@ -53,22 +53,14 @@ export const GodIconSchema = z.object({
   alt: z.string().min(1),
 });
 
-export const GodUnlockSchema = z.object({
-  // Keep currency out of v1 unless you truly need it. Values can change often.
-  // Use these as "display hints" for your app, not authoritative pricing.
-  costDiamonds: z.number().int().nonnegative().nullable(),
-  costGodTokens: z.number().int().nonnegative().nullable(),
-  isInRotation: z.boolean().nullable(),
-});
-
 export const GodAspectSchema = z.object({
   id: z
     .string()
     .min(1)
     .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "aspect id must be a kebab-case slug"),
   name: z.string().min(1),
-  summary: z.string().nullable(),
-  tradeoff: z.string().nullable(),
+  description: z.string().nullable(),
+  abilities: z.array(z.lazy(() => GodAbilitySchema)).default([]),
 });
 
 export const AbilityTypeSchema = z.enum(["passive", "ability", "ultimate", "basic"]);
@@ -156,12 +148,6 @@ export const GodSchema = z.object({
     rangeClass: RangeClassSchema.default("unknown"),
   }),
 
-  unlock: GodUnlockSchema.default({
-    costDiamonds: null,
-    costGodTokens: null,
-    isInRotation: null,
-  }),
-
   baseStats: GodBaseStatsSchema,
 
   aspects: z.array(GodAspectSchema).default([]),
@@ -222,7 +208,6 @@ export type GodRole = z.infer<typeof GodRoleSchema>;
 export type DamageType = z.infer<typeof DamageTypeSchema>;
 export type ScalingProfile = z.infer<typeof ScalingProfileSchema>;
 export type GodIcon = z.infer<typeof GodIconSchema>;
-export type GodUnlock = z.infer<typeof GodUnlockSchema>;
 export type GodAspect = z.infer<typeof GodAspectSchema>;
 export type GodAbility = z.infer<typeof GodAbilitySchema>;
 export type GodBaseStats = z.infer<typeof GodBaseStatsSchema>;

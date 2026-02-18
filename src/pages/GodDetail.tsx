@@ -58,23 +58,6 @@ export default function GodDetail() {
             </CardContent>
           </Card>
 
-          {god.unlock && (
-            <Card className="mb-6 bg-muted">
-              <CardContent className="p-6">
-                <h3 className="mt-0">Unlock</h3>
-                {god.unlock.costDiamonds !== null && (
-                  <div><strong>Diamonds:</strong> {god.unlock.costDiamonds}</div>
-                )}
-                {god.unlock.costGodTokens !== null && (
-                  <div><strong>God Tokens:</strong> {god.unlock.costGodTokens}</div>
-                )}
-                {god.unlock.isInRotation !== null && (
-                  <div><strong>In Rotation:</strong> {god.unlock.isInRotation ? "Yes" : "No"}</div>
-                )}
-              </CardContent>
-            </Card>
-          )}
-
           {/* Base Stats */}
           <Card className="bg-muted">
             <CardContent className="p-6">
@@ -145,7 +128,7 @@ export default function GodDetail() {
                   <Card
                     key={idx}
                     className={cn(
-                      ability.type === "ultimate" ? "bg-ultimate-bg" : "bg-white"
+                      ability.type === "ultimate" ? "bg-chart-4" : "bg-card"
                     )}
                   >
                     <CardContent className="p-4">
@@ -184,16 +167,45 @@ export default function GodDetail() {
               <h3>Aspects</h3>
               <div className="grid gap-4">
                 {god.aspects.map((aspect) => (
-                  <Card key={aspect.id}>
+                  <Card key={aspect.id} className="bg-muted">
                     <CardContent className="p-4">
                       <strong className="text-lg">{aspect.name}</strong>
-                      {aspect.summary && (
-                        <p className="mt-2 ">{aspect.summary}</p>
+                      {aspect.description && (
+                        <p className="mt-2">{aspect.description}</p>
                       )}
-                      {aspect.tradeoff && (
-                        <p className="mt-2 text-sm italic text-text-muted">
-                          Tradeoff: {aspect.tradeoff}
-                        </p>
+                      {aspect.abilities.length > 0 && (
+                        <div className="mt-4 grid gap-3">
+                          <strong className="text-sm">Enhanced Abilities</strong>
+                          {aspect.abilities.map((ability, idx) => (
+                            <Card key={idx}>
+                              <CardContent className="p-3">
+                                <div className="flex items-start justify-between">
+                                  <div>
+                                    <strong>{ability.name}</strong>
+                                    <Badge variant="secondary" className="ml-2 text-xs">
+                                      {ability.type.toUpperCase()}
+                                    </Badge>
+                                  </div>
+                                  <span className="text-sm">Key: {ability.key}</span>
+                                </div>
+                                {ability.description && (
+                                  <p className="mt-2 text-sm leading-relaxed">{ability.description}</p>
+                                )}
+                                <div className="mt-2 flex gap-4 text-sm">
+                                  {ability.cooldownSeconds !== null && (
+                                    <div><strong>CD:</strong> {ability.cooldownSeconds}s</div>
+                                  )}
+                                  {ability.manaCost !== null && (
+                                    <div><strong>Cost:</strong> {ability.manaCost} mana</div>
+                                  )}
+                                  {ability.scalingText && (
+                                    <div><strong>Scaling:</strong> {ability.scalingText}</div>
+                                  )}
+                                </div>
+                              </CardContent>
+                            </Card>
+                          ))}
+                        </div>
                       )}
                     </CardContent>
                   </Card>

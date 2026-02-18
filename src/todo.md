@@ -10,18 +10,17 @@
 - [x] Add build notes explaining win conditions
 
 ### [ ] Fix Scrapers - Remove Unnecessary Data
-- [ ] Stop downloading item images during scraping (images should be downloaded separately)
+- [ ] Maybe use wikitable class to narrowdown our search areas instead of using #mw-content-text
+- [ ] Verify smite wiki doesn't get pulled with items scrape
 - [ ] Remove any redundant data collection
 - [ ] Optimize scraper to only fetch needed fields
-- [ ] Update scrape-item-enhanced.js to skip image downloads
-- [ ] Update scrape-god-enhanced.js to skip image downloads
 
-### [ ] Fix Item Cost Calculation
-- [ ] Change scrapers to capture total item cost (not just final upgrade cost)
-- [ ] Calculate build path total cost correctly
-- [ ] Update items.json with accurate total costs
-- [ ] Verify cost calculations on item detail pages
-- [ ] Update BuildsList to show accurate total build costs
+### [x] Fix Item Cost Calculation
+- [x] Change scrapers to capture total item cost (not just final upgrade cost)
+- [x] Calculate build path total cost correctly
+- [x] Update items.json with accurate total costs
+- [x] Verify cost calculations on item detail pages
+- [x] Update BuildsList to show accurate total build costs
 
 ### [ ] Implement Patch/Update System
 - [ ] Design patch data structure (patch version, date, changes)

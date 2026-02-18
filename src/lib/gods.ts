@@ -64,21 +64,6 @@ export function getGodsByScaling(scaling: God["identity"]["scalingProfile"]): Go
   return godsData.gods.filter(god => god.identity.scalingProfile === scaling);
 }
 
-/**
- * Get all free gods (no unlock cost)
- */
-export function getFreeGods(): God[] {
-  return godsData.gods.filter(
-    god => god.unlock.costDiamonds === 0 || god.unlock.costGodTokens === 0
-  );
-}
-
-/**
- * Get all gods currently in rotation
- */
-export function getRotationGods(): God[] {
-  return godsData.gods.filter(god => god.unlock.isInRotation === true);
-}
 
 /**
  * Search gods by name (case-insensitive)
@@ -121,23 +106,6 @@ export function getGodAspect(godId: string, aspectId: string) {
   return god.aspects.find(aspect => aspect.id === aspectId);
 }
 
-/**
- * Get gods by their unlock cost range
- */
-export function getGodsByPriceRange(
-  minDiamonds?: number,
-  maxDiamonds?: number
-): God[] {
-  return godsData.gods.filter(god => {
-    const cost = god.unlock.costDiamonds;
-    if (cost === null) return false;
-
-    if (minDiamonds !== undefined && cost < minDiamonds) return false;
-    if (maxDiamonds !== undefined && cost > maxDiamonds) return false;
-
-    return true;
-  });
-}
 
 /**
  * Get recommended gods for a specific role (based on primary role)
@@ -173,14 +141,12 @@ export function getGodPoolStats() {
   const total = godsData.gods.length;
   const physical = getGodsByDamageType("physical").length;
   const magical = getGodsByDamageType("magical").length;
-  const free = getFreeGods().length;
   const withAspects = getGodsWithAspects().length;
 
   return {
     total,
     physical,
     magical,
-    free,
     withAspects,
     pantheons: getAllPantheons().length,
   };
