@@ -21,7 +21,7 @@ export default function ItemDetail() {
     );
   }
 
-  const upgradesInto = getItemsThatBuildInto(item.id);
+  // const upgradesInto = getItemsThatBuildInto(item.id);
 
   return (
     <div>
