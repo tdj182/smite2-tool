@@ -10,6 +10,7 @@ export const BuildSchema = z.object({
   itemIds: z.array(z.string()),
   itemNotes: z.record(z.string(), z.string()).optional(),
   tags: z.array(z.string()).default([]),
+  godIds: z.array(z.string()).default([]),
 });
 
 export const BuildsDataSchema = z.object({

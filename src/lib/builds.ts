@@ -26,6 +26,13 @@ export function getBuildsByItemId(itemId: string): Build[] {
 }
 
 /**
+ * Get all builds tagged with a specific god
+ */
+export function getBuildsByGodId(godId: string): Build[] {
+  return buildsData.builds.filter(build => build.godIds.includes(godId));
+}
+
+/**
  * Search builds by name or description
  */
 export function searchBuilds(query: string): Build[] {

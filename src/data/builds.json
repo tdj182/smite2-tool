@@ -23,7 +23,8 @@
         "tyrfing": "Strength + attack power + attack speed + amazing boxing passive",
         "riptalon": "Final bit of atk power + atk speed + sustain passive"
       },
-      "tags": ["generic", "beginner-friendly", "auto-attack", "late-game"]
+      "tags": ["generic", "beginner-friendly", "auto-attack", "late-game"],
+      "godIds": ["anhur", "apollo", "artemis", "cernunnos", "chiron", "cupid", "danzaburou", "hou-yi", "izanami", "jing-wei", "medusa", "neith", "rama", "ullr", "xbalanque"]
     },
     {
       "id": "generic-mid",
@@ -48,7 +49,8 @@
         "rod-of-tahuti": "Damage go boom: must build in all mage builds",
         "soul-reaver": "Good damage + good passive + adds to your thoth damage"
       },
-      "tags": ["generic", "beginner-friendly", "ability-damage", "burst"]
+      "tags": ["generic", "beginner-friendly", "ability-damage", "burst"],
+      "godIds": ["agni", "anubis", "baron-samedi", "discordia", "eset", "hades", "hecate", "janus", "kukulkan", "merlin", "nu-wa", "poseidon", "scylla", "sol", "the-morrigan", "vulcan", "zeus"]
     },
     {
       "id": "generic-jungle",
@@ -73,7 +75,8 @@
         "heartseeker": "Damage go boom: must build in jungle build",
         "the-crusher": "Strength + cooldown + extra dmg passive - can go blinking abyss here if you are confident in using your actives"
       },
-      "tags": ["generic", "beginner-friendly", "ability-damage", "cooldown"]
+      "tags": ["generic", "beginner-friendly", "ability-damage", "cooldown"],
+      "godIds": ["awilix", "da-ji", "fenrir", "hun-batz", "kali", "loki", "mercury", "ne-zha", "nemesis", "pele", "susano", "thanatos", "thor", "tsukuyomi"]
     },
     {
       "id": "generic-solo",
@@ -98,7 +101,8 @@
         "spirit-robe": "Protections + passive for more protections and sustain when getting cc'd",
         "blinking-abyss": "Get in there bud"
       },
-      "tags": ["generic", "beginner-friendly", "tank", "sustain", "flexible"]
+      "tags": ["generic", "beginner-friendly", "tank", "sustain", "flexible"],
+      "godIds": ["achilles", "amaterasu", "bellona", "chaac", "guan-yu", "hercules", "hua-mulan", "mordred", "odin", "osiris", "sun-wukong"]
     },
     {
       "id": "generic-support",
@@ -123,7 +127,8 @@
         "freyas-tears": "Holy protections batman + cooldown",
         "shell-of-rebuke": "Amazing relic for your team and allows you to have another relic (even another basic shell)"
       },
-      "tags": ["generic", "beginner-friendly", "tank", "utility", "team-support"]
+      "tags": ["generic", "beginner-friendly", "tank", "utility", "team-support"],
+      "godIds": ["ares", "athena", "bacchus", "cabrakan", "cerberus", "ganesha", "geb", "jormungandr", "khepri", "nut", "sobek", "sylvanus", "yemoja", "ymir", "artio"]
     }
   ]
 }

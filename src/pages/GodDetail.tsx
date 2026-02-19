@@ -1,5 +1,7 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { getGodById } from "@/lib/gods";
+import { getBuildsByGodId } from "@/lib/builds";
+import { getItemById } from "@/lib/items";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -225,6 +227,53 @@ export default function GodDetail() {
                       <p className="mt-1 mb-0 ">{entry.notes}</p>
                     )}
                   </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Recommended Builds */}
+          {getBuildsByGodId(god.id).length > 0 && (
+            <div className="mb-8">
+              <h3>Recommended Builds</h3>
+              <div className="grid gap-4">
+                {getBuildsByGodId(god.id).map(build => (
+                  <Card key={build.id} className="border-2 border-builds">
+                    <CardContent className="p-4">
+                      <div className="mb-2 flex items-center gap-3">
+                        <strong className="text-lg">{build.name}</strong>
+                        <Badge className="text-xs font-bold uppercase">
+                          {build.role}
+                        </Badge>
+                      </div>
+                      {build.description && (
+                        <p className="mb-3 text-sm">{build.description}</p>
+                      )}
+                      <div className="flex flex-wrap items-center gap-2">
+                        {build.itemIds.map((itemId, idx) => {
+                          const item = getItemById(itemId);
+                          if (!item) return null;
+                          return (
+                            <div key={itemId} className="flex items-center gap-2">
+                              <Link to={`/items/${itemId}`} title={item.name}>
+                                <img
+                                  src={import.meta.env.BASE_URL + item.icon.localPath.replace(/^\//, '')}
+                                  alt={item.icon.alt}
+                                  className="size-[40px] rounded-lg border-2 border-items object-cover transition-transform hover:scale-110"
+                                  onError={(e) => {
+                                    e.currentTarget.style.display = 'none';
+                                  }}
+                                />
+                              </Link>
+                              {idx < build.itemIds.length - 1 && (
+                                <span className="text-sm text-muted-foreground">→</span>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </div>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { buildsData } from '@/lib/builds';
 import { getItemById } from '@/lib/items';
+import { getGodById } from '@/lib/gods';
 import type { BuildRole } from '@/lib/schemas/builds';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -106,9 +107,39 @@ export default function BuildsList() {
                 )}
               </div>
 
+              {/* Tagged Gods */}
+              {build.godIds.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="mb-3 text-base">Gods</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {build.godIds.map(godId => {
+                      const god = getGodById(godId);
+                      if (!god) return null;
+                      return (
+                        <Link
+                          key={godId}
+                          to={`/gods/${godId}`}
+                          title={god.name}
+                          className="block"
+                        >
+                          <img
+                            src={import.meta.env.BASE_URL + god.icon.localPath.replace(/^\//, '')}
+                            alt={god.icon.alt}
+                            className="size-[38px] rounded-full border-2 border-gods object-cover transition-transform hover:scale-110"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none';
+                            }}
+                          />
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
               {/* Build Path */}
               <div>
-                <h3 className="mb-4 text-base ">Build Order</h3>
+                <h3 className="mb-4 text-base">Build Order</h3>
                 <div className="flex flex-wrap items-start gap-4">
                   {build.itemIds.map((itemId, index) => {
                     const item = getItemById(itemId);
